@@ -38,7 +38,12 @@ def get(path, params=None):
         sys.exit("INTERVALS_API_KEY is not set (add it as a GitHub Actions secret).")
     url = f"{API}{path}" + ("?" + urllib.parse.urlencode(params) if params else "")
     auth = base64.b64encode(f"API_KEY:{key}".encode()).decode()
-    req = urllib.request.Request(url, headers={"Authorization": f"Basic {auth}", "Accept": "application/json"})
+    req = urllib.request.Request(url, headers={
+        "Authorization": f"Basic {auth}",
+        "Accept": "application/json",
+        # Cloudflare (error 1010) blocks the default "Python-urllib" user agent
+        "User-Agent": "ironman-cairns-2027-sync/1.0 (+https://github.com/amizuno92/ironman-cairns-2027)",
+    })
     for attempt in range(3):
         try:
             with urllib.request.urlopen(req, timeout=30) as r:
