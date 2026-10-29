@@ -1,0 +1,103 @@
+[
+  {
+    "id": "i198143316",
+    "name": "Zwift - Group Ride: TBR 101 - Endurance (C)",
+    "type": "VirtualRide",
+    "start_date_local": "2026-10-17T06:00:30",
+    "start_date": "2026-10-16T20:00:30Z",
+    "moving_time": 10145,
+    "elapsed_time": 10145,
+    "distance": 101259.7,
+    "icu_average_watts": 167,
+    "icu_weighted_avg_watts": 176,
+    "icu_intensity": 72.72727,
+    "icu_ftp": 242,
+    "icu_training_load": 149,
+    "average_heartrate": 138,
+    "max_heartrate": 164,
+    "average_cadence": 86.657166,
+    "average_speed": 9.98,
+    "pace": 9.981242,
+    "decoupling": 7.7293344,
+    "icu_efficiency_factor": 1.2753624,
+    "icu_variability_index": 1.0538923,
+    "icu_zone_times": [
+      {
+        "id": "Z1",
+        "secs": 1335
+      },
+      {
+        "id": "Z2",
+        "secs": 6174
+      },
+      {
+        "id": "Z3",
+        "secs": 1617
+      },
+      {
+        "id": "Z4",
+        "secs": 598
+      },
+      {
+        "id": "Z5",
+        "secs": 223
+      },
+      {
+        "id": "Z6",
+        "secs": 157
+      },
+      {
+        "id": "Z7",
+        "secs": 42
+      },
+      {
+        "id": "SS",
+        "secs": 819
+      }
+    ],
+    "icu_hr_zone_times": [
+      1254,
+      6348,
+      1480,
+      953,
+      111,
+      0,
+      0
+    ],
+    "icu_hr_zones": [
+      129,
+      144,
+      149,
+      160,
+      165,
+      170,
+      175
+    ],
+    "icu_power_zones": [
+      55,
+      75,
+      90,
+      105,
+      120,
+      150,
+      999
+    ],
+    "interval_summary": [
+      "1x 11s 426w",
+      "1x 23s 388w"
+    ],
+    "device_name": "ZWIFT",
+    "trainer": true,
+    "source": "ZWIFT",
+    "total_elevation_gain": 583.0,
+    "carbs_used": 380,
+    "calories": 1625,
+    "icu_ctl": 47.207306,
+    "icu_atl": 48.396557,
+    "icu_weight": 80.4,
+    "icu_lap_count": 1,
+    "polarization_index": 1.15,
+    "lthr": 161,
+    "athlete_max_hr": 175
+  }
+]

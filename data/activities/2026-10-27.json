@@ -4,18 +4,21 @@
     "name": "Zwift - W3 Tue - VO2 5x3'",
     "type": "VirtualRide",
     "start_date_local": "2026-10-27T05:42:40",
+    "start_date": "2026-10-26T19:42:40Z",
     "moving_time": 3615,
     "elapsed_time": 3615,
     "distance": 34437.38,
     "icu_average_watts": 169,
     "icu_weighted_avg_watts": 198,
     "icu_intensity": 81.818184,
+    "icu_ftp": 242,
     "icu_training_load": 67,
     "average_heartrate": 0,
     "max_heartrate": 0,
-    "interval_summary": [
-      "5x 2m59s 269w"
-    ],
+    "average_cadence": 89.17157,
+    "average_speed": 9.523,
+    "pace": 9.526246,
+    "icu_variability_index": 1.1715976,
     "icu_zone_times": [
       {
         "id": "Z1",
@@ -36,16 +39,94 @@
       {
         "id": "Z5",
         "secs": 880
+      },
+      {
+        "id": "Z6",
+        "secs": 0
+      },
+      {
+        "id": "Z7",
+        "secs": 0
+      },
+      {
+        "id": "SS",
+        "secs": 13
       }
-    ]
+    ],
+    "icu_hr_zones": [
+      129,
+      144,
+      149,
+      160,
+      165,
+      170,
+      175
+    ],
+    "icu_power_zones": [
+      55,
+      75,
+      90,
+      105,
+      120,
+      150,
+      999
+    ],
+    "interval_summary": [
+      "5x 2m59s 269w"
+    ],
+    "device_name": "ZWIFT H~",
+    "trainer": true,
+    "source": "ZWIFT",
+    "total_elevation_gain": 53.0,
+    "carbs_used": 162,
+    "calories": 581,
+    "icu_ctl": 46.68824,
+    "icu_atl": 47.282085,
+    "icu_weight": 80.4,
+    "icu_lap_count": 21,
+    "polarization_index": 3.42,
+    "lthr": 161,
+    "athlete_max_hr": 175
   },
   {
     "id": "i202198848",
     "name": "Strength Training",
     "type": "WeightTraining",
     "start_date_local": "2026-10-27T11:47:18",
+    "start_date": "2026-10-27T01:47:18Z",
     "moving_time": 2623,
+    "elapsed_time": 2623,
+    "icu_intensity": 35.152496,
+    "icu_training_load": 9,
     "average_heartrate": 91,
-    "icu_training_load": 9
+    "max_heartrate": 115,
+    "icu_hr_zone_times": [
+      2624,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "icu_hr_zones": [
+      140,
+      149,
+      157,
+      166,
+      171,
+      176,
+      184
+    ],
+    "device_name": "Watch6,18",
+    "source": "OAUTH_CLIENT",
+    "calories": 191,
+    "icu_ctl": 46.68824,
+    "icu_atl": 47.282085,
+    "icu_weight": 80.4,
+    "icu_lap_count": 0,
+    "polarization_index": 0.0,
+    "lthr": 167,
+    "athlete_max_hr": 184
   }
 ]

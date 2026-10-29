@@ -1,0 +1,99 @@
+[
+  {
+    "id": "i196984564",
+    "name": "Zwift - Pacer Group Ride with Dani",
+    "type": "VirtualRide",
+    "start_date_local": "2026-10-14T06:04:58",
+    "start_date": "2026-10-13T20:04:58Z",
+    "moving_time": 3617,
+    "elapsed_time": 3617,
+    "distance": 34172.19,
+    "icu_average_watts": 157,
+    "icu_weighted_avg_watts": 161,
+    "icu_intensity": 66.52892,
+    "icu_ftp": 242,
+    "icu_training_load": 44,
+    "average_heartrate": 125,
+    "max_heartrate": 138,
+    "average_cadence": 84.06652,
+    "average_speed": 9.468,
+    "pace": 9.447661,
+    "decoupling": 5.450649,
+    "icu_efficiency_factor": 1.288,
+    "icu_variability_index": 1.0254776,
+    "icu_zone_times": [
+      {
+        "id": "Z1",
+        "secs": 520
+      },
+      {
+        "id": "Z2",
+        "secs": 2601
+      },
+      {
+        "id": "Z3",
+        "secs": 401
+      },
+      {
+        "id": "Z4",
+        "secs": 59
+      },
+      {
+        "id": "Z5",
+        "secs": 36
+      },
+      {
+        "id": "Z6",
+        "secs": 1
+      },
+      {
+        "id": "Z7",
+        "secs": 0
+      },
+      {
+        "id": "SS",
+        "secs": 101
+      }
+    ],
+    "icu_hr_zone_times": [
+      2717,
+      901,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "icu_hr_zones": [
+      129,
+      144,
+      149,
+      160,
+      165,
+      170,
+      175
+    ],
+    "icu_power_zones": [
+      55,
+      75,
+      90,
+      105,
+      120,
+      150,
+      999
+    ],
+    "device_name": "ZWIFT",
+    "trainer": true,
+    "source": "ZWIFT",
+    "total_elevation_gain": 139.0,
+    "carbs_used": 120,
+    "calories": 542,
+    "icu_ctl": 46.937317,
+    "icu_atl": 43.84349,
+    "icu_weight": 80.4,
+    "icu_lap_count": 1,
+    "polarization_index": 0.84,
+    "lthr": 161,
+    "athlete_max_hr": 175
+  }
+]

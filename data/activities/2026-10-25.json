@@ -1,0 +1,99 @@
+[
+  {
+    "id": "i201238683",
+    "name": "Zwift - Pacer Group Ride with Maria",
+    "type": "VirtualRide",
+    "start_date_local": "2026-10-25T06:09:13",
+    "start_date": "2026-10-24T20:09:13Z",
+    "moving_time": 3615,
+    "elapsed_time": 3615,
+    "distance": 34874.02,
+    "icu_average_watts": 169,
+    "icu_weighted_avg_watts": 177,
+    "icu_intensity": 73.140495,
+    "icu_ftp": 242,
+    "icu_training_load": 54,
+    "average_heartrate": 121,
+    "max_heartrate": 144,
+    "average_cadence": 85.62448,
+    "average_speed": 9.644,
+    "pace": 9.647032,
+    "decoupling": 6.418114,
+    "icu_efficiency_factor": 1.4628099,
+    "icu_variability_index": 1.0473373,
+    "icu_zone_times": [
+      {
+        "id": "Z1",
+        "secs": 385
+      },
+      {
+        "id": "Z2",
+        "secs": 2233
+      },
+      {
+        "id": "Z3",
+        "secs": 699
+      },
+      {
+        "id": "Z4",
+        "secs": 181
+      },
+      {
+        "id": "Z5",
+        "secs": 60
+      },
+      {
+        "id": "Z6",
+        "secs": 57
+      },
+      {
+        "id": "Z7",
+        "secs": 1
+      },
+      {
+        "id": "SS",
+        "secs": 305
+      }
+    ],
+    "icu_hr_zone_times": [
+      3290,
+      326,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "icu_hr_zones": [
+      129,
+      144,
+      149,
+      160,
+      165,
+      170,
+      175
+    ],
+    "icu_power_zones": [
+      55,
+      75,
+      90,
+      105,
+      120,
+      150,
+      999
+    ],
+    "device_name": "ZWIFT",
+    "trainer": true,
+    "source": "ZWIFT",
+    "total_elevation_gain": 339.0,
+    "carbs_used": 148,
+    "calories": 584,
+    "icu_ctl": 46.227707,
+    "icu_atl": 42.54524,
+    "icu_weight": 80.4,
+    "icu_lap_count": 1,
+    "polarization_index": 0.99,
+    "lthr": 161,
+    "athlete_max_hr": 175
+  }
+]

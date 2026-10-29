@@ -1,0 +1,165 @@
+[
+  {
+    "id": "i195242605",
+    "name": "Zwift - Group Ride: Standard - Stage 1 - Tour of Watopia 2026",
+    "type": "VirtualRide",
+    "start_date_local": "2026-10-09T06:00:27",
+    "start_date": "2026-10-08T20:00:27Z",
+    "moving_time": 2534,
+    "elapsed_time": 2534,
+    "distance": 24131.21,
+    "icu_average_watts": 173,
+    "icu_weighted_avg_watts": 197,
+    "icu_intensity": 81.40496,
+    "icu_ftp": 242,
+    "icu_training_load": 47,
+    "average_heartrate": 154,
+    "max_heartrate": 172,
+    "average_cadence": 88.40831,
+    "average_speed": 9.519,
+    "pace": 9.522972,
+    "decoupling": 7.6588864,
+    "icu_efficiency_factor": 1.2792208,
+    "icu_variability_index": 1.1387284,
+    "icu_zone_times": [
+      {
+        "id": "Z1",
+        "secs": 335
+      },
+      {
+        "id": "Z2",
+        "secs": 1357
+      },
+      {
+        "id": "Z3",
+        "secs": 568
+      },
+      {
+        "id": "Z4",
+        "secs": 173
+      },
+      {
+        "id": "Z5",
+        "secs": 49
+      },
+      {
+        "id": "Z6",
+        "secs": 23
+      },
+      {
+        "id": "Z7",
+        "secs": 30
+      },
+      {
+        "id": "SS",
+        "secs": 282
+      }
+    ],
+    "icu_hr_zone_times": [
+      13,
+      343,
+      275,
+      1379,
+      439,
+      70,
+      16
+    ],
+    "icu_hr_zones": [
+      129,
+      144,
+      149,
+      160,
+      165,
+      170,
+      175
+    ],
+    "icu_power_zones": [
+      55,
+      75,
+      90,
+      105,
+      120,
+      150,
+      999
+    ],
+    "interval_summary": [
+      "1x 3m58s 205w",
+      "1x 10s 555w",
+      "1x 10s 699w"
+    ],
+    "device_name": "ZWIFT",
+    "trainer": true,
+    "source": "ZWIFT",
+    "total_elevation_gain": 181.0,
+    "carbs_used": 123,
+    "calories": 447,
+    "icu_ctl": 45.70002,
+    "icu_atl": 29.706917,
+    "icu_weight": 79.8,
+    "icu_lap_count": 1,
+    "polarization_index": 0.96,
+    "lthr": 161,
+    "athlete_max_hr": 175
+  },
+  {
+    "id": "i195288206",
+    "name": "Miami",
+    "type": "OpenWaterSwim",
+    "start_date_local": "2026-10-09T11:28:00",
+    "start_date": "2026-10-09T01:28:00Z",
+    "moving_time": 2695,
+    "elapsed_time": 2704,
+    "distance": 2178.68,
+    "icu_intensity": 66.29568,
+    "icu_training_load": 33,
+    "average_heartrate": 145,
+    "max_heartrate": 162,
+    "average_cadence": 21.0,
+    "average_speed": 0.805,
+    "pace": 0.80841553,
+    "icu_hr_zone_times": [
+      205,
+      182,
+      315,
+      673,
+      446,
+      171,
+      46
+    ],
+    "icu_hr_zones": [
+      127,
+      136,
+      143,
+      151,
+      156,
+      160,
+      168
+    ],
+    "pace_zone_times": [
+      1369,
+      555,
+      227,
+      148,
+      104,
+      48,
+      249
+    ],
+    "interval_summary": [
+      "1x 100m 1:26",
+      "20x 98m 2:03",
+      "1x 99m 2:49"
+    ],
+    "icu_rpe": 6,
+    "session_rpe": 269,
+    "device_name": "Watch6,18",
+    "source": "OAUTH_CLIENT",
+    "calories": 491,
+    "icu_ctl": 45.70002,
+    "icu_atl": 29.706917,
+    "icu_weight": 79.8,
+    "icu_lap_count": 22,
+    "polarization_index": 1.88,
+    "lthr": 152,
+    "athlete_max_hr": 168
+  }
+]

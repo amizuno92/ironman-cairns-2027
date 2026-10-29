@@ -1,0 +1,24 @@
+{
+  "id": "i194859021",
+  "icu_intervals": [
+    {
+      "start_index": 0,
+      "distance": 16816.71,
+      "moving_time": 1836,
+      "elapsed_time": 1836,
+      "average_watts": 165,
+      "intensity": 68,
+      "weighted_average_watts": 189,
+      "decoupling": 29.021101,
+      "zone": 2,
+      "average_speed": 9.159429,
+      "average_heartrate": 142,
+      "max_heartrate": 167,
+      "average_cadence": 86.16394,
+      "type": "RECOVERY",
+      "end_index": 1836,
+      "group_id": null,
+      "label": null
+    }
+  ]
+}

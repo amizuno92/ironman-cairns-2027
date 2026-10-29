@@ -1,0 +1,62 @@
+{
+  "id": "i195585777",
+  "icu_intervals": [
+    {
+      "start_index": 0,
+      "distance": 41896.72,
+      "moving_time": 4455,
+      "elapsed_time": 4455,
+      "average_watts": 165,
+      "intensity": 68,
+      "weighted_average_watts": 177,
+      "decoupling": 12.303351,
+      "zone": 2,
+      "average_speed": 9.404427,
+      "average_heartrate": 138,
+      "max_heartrate": 160,
+      "average_cadence": 87.8743,
+      "type": "RECOVERY",
+      "end_index": 4455,
+      "group_id": null,
+      "label": null
+    },
+    {
+      "start_index": 4455,
+      "distance": 213.01953,
+      "moving_time": 16,
+      "elapsed_time": 16,
+      "average_watts": 619,
+      "intensity": 255,
+      "weighted_average_watts": 361,
+      "decoupling": 18.918688,
+      "zone": 7,
+      "average_speed": 13.313721,
+      "average_heartrate": 153,
+      "max_heartrate": 155,
+      "average_cadence": 118.875,
+      "type": "WORK",
+      "end_index": 4471,
+      "group_id": "16s@619w119rpm",
+      "label": null
+    },
+    {
+      "start_index": 4471,
+      "distance": 265.9414,
+      "moving_time": 27,
+      "elapsed_time": 27,
+      "average_watts": 46,
+      "intensity": 19,
+      "weighted_average_watts": 379,
+      "decoupling": 83.93123,
+      "zone": 1,
+      "average_speed": 9.849682,
+      "average_heartrate": 157,
+      "max_heartrate": 159,
+      "average_cadence": 20.851852,
+      "type": "RECOVERY",
+      "end_index": 4498,
+      "group_id": null,
+      "label": null
+    }
+  ]
+}

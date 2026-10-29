@@ -1,0 +1,24 @@
+{
+  "id": "i201732029",
+  "icu_intervals": [
+    {
+      "start_index": 0,
+      "distance": 2200.0,
+      "moving_time": 2481,
+      "elapsed_time": 2481,
+      "average_watts": null,
+      "intensity": 83,
+      "weighted_average_watts": null,
+      "decoupling": null,
+      "zone": 2,
+      "average_speed": 0.8867392,
+      "average_heartrate": 142,
+      "max_heartrate": 157,
+      "average_cadence": null,
+      "type": "RECOVERY",
+      "end_index": 2481,
+      "group_id": null,
+      "label": null
+    }
+  ]
+}

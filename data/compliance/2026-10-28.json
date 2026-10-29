@@ -44,7 +44,7 @@
       "rpe": 5,
       "feel": null,
       "notes": null,
-      "distance_m": 2600,
+      "distance_m": 2600.0,
       "pace_s_per_100m": 106.6,
       "pace": "1:47",
       "note_pool_as_ows": "Watch logged this as open water; pace includes rests.",
@@ -113,9 +113,19 @@
     "swims": 2
   },
   "wellness": {
+    "resting_hr_baseline": 55,
+    "resting_hr_recent": [
+      49,
+      53
+    ],
+    "hrv_baseline": 31.0,
+    "hrv_recent": [
+      29.0,
+      29.0
+    ],
     "ctl": 46.9,
     "atl": 48.6,
-    "tsb": -1.7
+    "tsb": -1.6
   },
   "flags": []
 }

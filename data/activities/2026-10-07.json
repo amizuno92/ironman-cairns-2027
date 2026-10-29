@@ -1,0 +1,43 @@
+[
+  {
+    "id": "i194885227",
+    "name": "Strength Training",
+    "type": "WeightTraining",
+    "start_date_local": "2026-10-07T07:47:36",
+    "start_date": "2026-10-06T21:47:36Z",
+    "moving_time": 1855,
+    "elapsed_time": 1855,
+    "icu_intensity": 31.158848,
+    "icu_training_load": 5,
+    "average_heartrate": 97,
+    "max_heartrate": 129,
+    "icu_hr_zone_times": [
+      1843,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "icu_hr_zones": [
+      140,
+      149,
+      157,
+      166,
+      171,
+      176,
+      184
+    ],
+    "device_name": "Watch6,18",
+    "source": "OAUTH_CLIENT",
+    "calories": 149,
+    "icu_ctl": 45.20784,
+    "icu_atl": 20.599066,
+    "icu_weight": 81.05,
+    "icu_lap_count": 0,
+    "polarization_index": 0.0,
+    "lthr": 167,
+    "athlete_max_hr": 184
+  }
+]

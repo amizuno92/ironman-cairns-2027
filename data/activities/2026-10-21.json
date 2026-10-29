@@ -1,0 +1,46 @@
+[
+  {
+    "id": "i199741231",
+    "name": "Surfing",
+    "type": "Surfing",
+    "start_date_local": "2026-10-21T05:36:53",
+    "start_date": "2026-10-20T19:36:53Z",
+    "moving_time": 3929,
+    "elapsed_time": 4630,
+    "distance": 2313.43,
+    "icu_intensity": 52.912575,
+    "icu_training_load": 36,
+    "average_heartrate": 112,
+    "max_heartrate": 140,
+    "average_speed": 0.556,
+    "pace": 0.58880883,
+    "icu_hr_zone_times": [
+      4209,
+      406,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "icu_hr_zones": [
+      129,
+      144,
+      149,
+      160,
+      165,
+      170,
+      175
+    ],
+    "device_name": "Watch6,18",
+    "source": "OAUTH_CLIENT",
+    "calories": 662,
+    "icu_ctl": 47.979523,
+    "icu_atl": 53.2419,
+    "icu_weight": 80.4,
+    "icu_lap_count": 0,
+    "polarization_index": 0.0,
+    "lthr": 161,
+    "athlete_max_hr": 175
+  }
+]

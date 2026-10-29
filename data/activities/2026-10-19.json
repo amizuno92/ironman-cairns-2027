@@ -1,0 +1,140 @@
+[
+  {
+    "id": "i198796422",
+    "name": "Zwift - Pacer Group Ride with Maria",
+    "type": "VirtualRide",
+    "start_date_local": "2026-10-19T06:06:10",
+    "start_date": "2026-10-18T20:06:10Z",
+    "moving_time": 3630,
+    "elapsed_time": 3630,
+    "distance": 35792.52,
+    "icu_average_watts": 166,
+    "icu_weighted_avg_watts": 173,
+    "icu_intensity": 71.4876,
+    "icu_ftp": 242,
+    "icu_training_load": 52,
+    "average_heartrate": 119,
+    "max_heartrate": 130,
+    "average_cadence": 85.85967,
+    "average_speed": 9.881,
+    "pace": 9.860198,
+    "decoupling": 4.3531275,
+    "icu_efficiency_factor": 1.4537815,
+    "icu_variability_index": 1.0421686,
+    "icu_zone_times": [
+      {
+        "id": "Z1",
+        "secs": 466
+      },
+      {
+        "id": "Z2",
+        "secs": 2233
+      },
+      {
+        "id": "Z3",
+        "secs": 600
+      },
+      {
+        "id": "Z4",
+        "secs": 199
+      },
+      {
+        "id": "Z5",
+        "secs": 80
+      },
+      {
+        "id": "Z6",
+        "secs": 47
+      },
+      {
+        "id": "Z7",
+        "secs": 6
+      },
+      {
+        "id": "SS",
+        "secs": 297
+      }
+    ],
+    "icu_hr_zone_times": [
+      3621,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "icu_hr_zones": [
+      129,
+      144,
+      149,
+      160,
+      165,
+      170,
+      175
+    ],
+    "icu_power_zones": [
+      55,
+      75,
+      90,
+      105,
+      120,
+      150,
+      999
+    ],
+    "device_name": "ZWIFT",
+    "trainer": true,
+    "source": "ZWIFT",
+    "total_elevation_gain": 182.0,
+    "carbs_used": 129,
+    "calories": 576,
+    "icu_ctl": 47.407207,
+    "icu_atl": 51.57289,
+    "icu_weight": 80.4,
+    "icu_lap_count": 1,
+    "polarization_index": 1.09,
+    "lthr": 161,
+    "athlete_max_hr": 175
+  },
+  {
+    "id": "i199015362",
+    "name": "Strength Training",
+    "type": "WeightTraining",
+    "start_date_local": "2026-10-19T17:00:56",
+    "start_date": "2026-10-19T07:00:56Z",
+    "moving_time": 3238,
+    "elapsed_time": 3238,
+    "icu_intensity": 44.742077,
+    "icu_training_load": 18,
+    "average_heartrate": 107,
+    "max_heartrate": 147,
+    "icu_hr_zone_times": [
+      3214,
+      25,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "icu_hr_zones": [
+      140,
+      149,
+      157,
+      166,
+      171,
+      176,
+      184
+    ],
+    "device_name": "Watch6,18",
+    "source": "OAUTH_CLIENT",
+    "calories": 292,
+    "icu_ctl": 47.407207,
+    "icu_atl": 51.57289,
+    "icu_weight": 80.4,
+    "icu_lap_count": 0,
+    "polarization_index": 0.0,
+    "lthr": 167,
+    "athlete_max_hr": 184
+  }
+]

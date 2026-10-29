@@ -28,7 +28,12 @@
       "zone_secs": {
         "Z1": 525,
         "Z2": 2243,
-        "Z3": 12
+        "Z3": 12,
+        "Z4": 0,
+        "Z5": 0,
+        "Z6": 0,
+        "Z7": 0,
+        "SS": 0
       },
       "flags": [],
       "planned_id": "w03-thu-bike-1",
@@ -46,7 +51,7 @@
       "actual_min": 39.6,
       "duration_ratio": 1.13,
       "avg_hr": 105,
-      "max_hr": null,
+      "max_hr": 141,
       "load": 14,
       "rpe": null,
       "feel": null,
@@ -102,6 +107,16 @@
     "swims": 2
   },
   "wellness": {
+    "resting_hr_baseline": 55,
+    "resting_hr_recent": [
+      null,
+      49
+    ],
+    "hrv_baseline": 31.0,
+    "hrv_recent": [
+      null,
+      29.0
+    ],
     "ctl": 46.6,
     "atl": 48.4,
     "tsb": -1.8
