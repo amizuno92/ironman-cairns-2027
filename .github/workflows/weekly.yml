@@ -1,0 +1,36 @@
+name: Weekly summary
+
+# Sunday 09:45 UTC = Sunday 7:45pm Brisbane (after the daily sync, before the Sunday review).
+on:
+  schedule:
+    - cron: "45 9 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-writes
+  cancel-in-progress: false
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Summarise this week
+        run: python scripts/weekly_summary.py --week-of "$(TZ=Australia/Brisbane date +%F)"
+      - name: Generate next week's workouts
+        run: python scripts/make_workouts.py --week-of "$(TZ=Australia/Brisbane date -d '+1 day' +%F)"
+      - name: Commit
+        run: |
+          git config user.name "training-bot"
+          git config user.email "training-bot@users.noreply.github.com"
+          git add data workouts
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Weekly summary $(TZ=Australia/Brisbane date +%F)"
+          git pull --rebase
+          git push

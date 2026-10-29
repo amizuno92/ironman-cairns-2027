@@ -1,0 +1,189 @@
+{
+  "date": "2026-10-27",
+  "weekday": "Tue",
+  "plan_week": 3,
+  "phase": "Base 1",
+  "week_kind": "load",
+  "sessions": [
+    {
+      "activity_id": "i202067496",
+      "name": "Zwift - W3 Tue - VO2 5x3'",
+      "actual_date": "2026-10-27",
+      "planned_date": "2026-10-27",
+      "moved": false,
+      "kind": "bike_intervals",
+      "planned_min": 60,
+      "actual_min": 60.2,
+      "duration_ratio": 1.0,
+      "avg_hr": null,
+      "max_hr": null,
+      "load": 67,
+      "rpe": null,
+      "feel": null,
+      "notes": null,
+      "avg_w": 169,
+      "np_w": 198,
+      "if": 0.82,
+      "decoupling_pct": null,
+      "zone_secs": {
+        "Z1": 1362,
+        "Z2": 1349,
+        "Z3": 13,
+        "Z4": 12,
+        "Z5": 880
+      },
+      "reps": {
+        "planned_reps": 5,
+        "planned_rep_min": 3,
+        "done_reps": 5,
+        "band_w": [
+          266,
+          281
+        ],
+        "reps": [
+          {
+            "secs": 180,
+            "watts": 269,
+            "hr": null
+          },
+          {
+            "secs": 179,
+            "watts": 269,
+            "hr": null
+          },
+          {
+            "secs": 178,
+            "watts": 270,
+            "hr": null
+          },
+          {
+            "secs": 179,
+            "watts": 270,
+            "hr": null
+          },
+          {
+            "secs": 179,
+            "watts": 269,
+            "hr": null
+          }
+        ],
+        "avg_rep_w": 269.4
+      },
+      "flags": [
+        {
+          "level": "info",
+          "code": "no_hr",
+          "msg": "no heart-rate data (strap not paired?)"
+        }
+      ],
+      "planned_id": "w03-tue-bike-1",
+      "planned_title": "Intervals — Z5 VO2max",
+      "sport": "Bike"
+    },
+    {
+      "activity_id": "i202198848",
+      "name": "Strength Training",
+      "actual_date": "2026-10-27",
+      "planned_date": "2026-10-27",
+      "moved": false,
+      "kind": "strength",
+      "planned_min": 40,
+      "actual_min": 43.7,
+      "duration_ratio": 1.09,
+      "avg_hr": 91,
+      "max_hr": null,
+      "load": 9,
+      "rpe": null,
+      "feel": null,
+      "notes": null,
+      "flags": [],
+      "planned_id": "w03-tue-strength-1",
+      "planned_title": "Strength A — base",
+      "sport": "Strength"
+    }
+  ],
+  "missed_so_far_this_week": [],
+  "still_to_do_this_week": [
+    {
+      "id": "w03-wed-swim-1",
+      "date": "2026-10-28",
+      "sport": "Swim",
+      "title": "CSS / threshold",
+      "duration_min": 50
+    },
+    {
+      "id": "w03-wed-run-1",
+      "date": "2026-10-28",
+      "sport": "Run",
+      "title": "Walk-run (stage 1)",
+      "duration_min": 20
+    },
+    {
+      "id": "w03-thu-bike-1",
+      "date": "2026-10-29",
+      "sport": "Bike",
+      "title": "Endurance ride",
+      "duration_min": 45
+    },
+    {
+      "id": "w03-thu-strength-1",
+      "date": "2026-10-29",
+      "sport": "Strength",
+      "title": "Strength B — base",
+      "duration_min": 35
+    },
+    {
+      "id": "w03-fri-swim-1",
+      "date": "2026-10-30",
+      "sport": "Swim",
+      "title": "Long aerobic swim",
+      "duration_min": 45
+    },
+    {
+      "id": "w03-fri-run-1",
+      "date": "2026-10-30",
+      "sport": "Run",
+      "title": "Walk-run (stage 1)",
+      "duration_min": 20
+    },
+    {
+      "id": "w03-sat-bike-1",
+      "date": "2026-10-31",
+      "sport": "Bike",
+      "title": "Long ride",
+      "duration_min": 90
+    }
+  ],
+  "week_to_date": {
+    "actual_hours": 2.73,
+    "planned_hours_to_date": 2.75,
+    "planned_hours_week": 7.83,
+    "by_sport_actual_h": {
+      "Run": 0.33,
+      "Swim": 0.67,
+      "Bike": 1.0,
+      "Strength": 0.73
+    },
+    "by_sport_planned_h": {
+      "Swim": 2.33,
+      "Run": 1.0,
+      "Bike": 3.25,
+      "Strength": 1.25
+    },
+    "run_km": 2.11,
+    "prev_week_run_km": 0.0,
+    "swims": 1
+  },
+  "wellness": {
+    "ctl": 46.7,
+    "atl": 47.3,
+    "tsb": -0.6
+  },
+  "flags": [
+    {
+      "level": "info",
+      "code": "no_hr",
+      "msg": "no heart-rate data (strap not paired?)"
+    }
+  ]
+}

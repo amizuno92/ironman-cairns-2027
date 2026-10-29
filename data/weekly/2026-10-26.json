@@ -1,0 +1,74 @@
+{
+  "week_start": "2026-10-26",
+  "plan_week": 3,
+  "phase": "Base 1",
+  "kind": "load",
+  "focus": "Run returns (walk-run stage 1, alternate days). Aerobic swim/bike base, VO2 touch on the bike.",
+  "planned_hours": 7.82,
+  "actual_hours": 5.27,
+  "planned_by_sport_h": {
+    "Swim": 2.33,
+    "Run": 0.99,
+    "Bike": 3.25,
+    "Strength": 1.25
+  },
+  "actual_by_sport_h": {
+    "Run": 0.67,
+    "Swim": 1.44,
+    "Bike": 1.77,
+    "Strength": 1.39
+  },
+  "compliance_pct": 67.0,
+  "sessions_planned": 11,
+  "sessions_done": 8,
+  "missed": [],
+  "intensity": {
+    "endurance_hours": 3.88,
+    "z4plus_min": 15,
+    "z4plus_pct": 6.4,
+    "bike_power_zone_min": {
+      "Z1": 31,
+      "Z2": 60,
+      "Z3": 0,
+      "Z4": 0,
+      "Z5": 15
+    },
+    "hr_zone_min": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "load": 225,
+  "run_km": 4.34,
+  "prev_week_run_km": null,
+  "run_km_change_pct": null,
+  "swims": 2,
+  "fitness": {
+    "ctl": 46.6,
+    "atl": 48.4,
+    "tsb": -1.8
+  },
+  "lift_sessions": [],
+  "tests": [],
+  "flags": [
+    {
+      "level": "info",
+      "code": "no_hr",
+      "msg": "no heart-rate data (strap not paired?)",
+      "date": "2026-10-27"
+    }
+  ],
+  "next_week": {
+    "week": 4,
+    "start": "2026-11-02",
+    "phase": "Base 1",
+    "kind": "load",
+    "focus": "Walk-run stage 2.",
+    "planned_hours": 8.5
+  }
+}

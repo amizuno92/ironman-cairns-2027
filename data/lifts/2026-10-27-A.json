@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-27",
+  "label": "Strength A",
+  "week": 3,
+  "source": "Lift Log artifact",
+  "exercises": [
+    {
+      "name": "Back Squat",
+      "unit": "kg",
+      "sets": [
+        {
+          "load": 60,
+          "reps": 6
+        },
+        {
+          "load": 70,
+          "reps": 6
+        },
+        {
+          "load": 80,
+          "reps": 4
+        }
+      ]
+    },
+    {
+      "name": "Bulgarian Split Squat",
+      "unit": "kg",
+      "sets": [
+        {
+          "load": 15,
+          "reps": 8
+        },
+        {
+          "load": 15,
+          "reps": 8
+        }
+      ]
+    },
+    {
+      "name": "Romanian Deadlift",
+      "unit": "kg",
+      "sets": [
+        {
+          "load": 60,
+          "reps": 6
+        },
+        {
+          "load": 70,
+          "reps": 6
+        }
+      ]
+    },
+    {
+      "name": "Pull-up",
+      "unit": "bw",
+      "sets": [
+        {
+          "load": 0,
+          "reps": 8
+        },
+        {
+          "load": 0,
+          "reps": 8
+        },
+        {
+          "load": 0,
+          "reps": 8
+        }
+      ]
+    },
+    {
+      "name": "Calf Raise",
+      "unit": "kg",
+      "sets": [
+        {
+          "load": 30,
+          "reps": 15
+        },
+        {
+          "load": 45,
+          "reps": 12
+        }
+      ]
+    },
+    {
+      "name": "Bicep Curl",
+      "unit": "kg",
+      "sets": [
+        {
+          "load": 15,
+          "reps": 10
+        },
+        {
+          "load": 15,
+          "reps": 10
+        },
+        {
+          "load": 15,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "name": "Side Plank",
+      "unit": "s",
+      "sets": [
+        {
+          "secs": 30
+        },
+        {
+          "secs": 30
+        },
+        {
+          "secs": 30
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+name: Daily sync
+
+# 09:15 UTC = 7:15pm Brisbane. Runs before the 8pm Claude review.
+on:
+  schedule:
+    - cron: "15 9 * * *"
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Days to re-sync"
+        default: "3"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-writes
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pull intervals.icu data
+        env:
+          INTERVALS_API_KEY: ${{ secrets.INTERVALS_API_KEY }}
+          INTERVALS_ATHLETE_ID: ${{ secrets.INTERVALS_ATHLETE_ID }}
+        run: python scripts/sync_intervals.py --days "${{ github.event.inputs.days || '3' }}"
+      - name: Planned vs actual (today and yesterday)
+        run: |
+          TODAY=$(TZ=Australia/Brisbane date +%F)
+          YDAY=$(TZ=Australia/Brisbane date -d yesterday +%F)
+          python scripts/compliance.py --date "$YDAY"
+          python scripts/compliance.py --date "$TODAY"
+      - name: Tomorrow's workouts
+        run: python scripts/make_workouts.py
+      - name: Commit
+        run: |
+          git config user.name "training-bot"
+          git config user.email "training-bot@users.noreply.github.com"
+          git add data workouts
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Daily sync $(TZ=Australia/Brisbane date +%F)"
+          git pull --rebase
+          git push

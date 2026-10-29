@@ -1,0 +1,29 @@
+{
+  "_about": "Thresholds the pipeline checks every day. Human-readable versions are in RULES.md. Change numbers here, not in code.",
+  "weekday_max_min": 120,
+  "weekend_max_min": 480,
+  "weekly_hours_increase_max": 0.10,
+  "weekly_run_km_increase_max": 0.10,
+  "max_swims_per_week": 3,
+  "swim_time": "Midday",
+  "duration_over_pct": 0.20,
+  "duration_under_pct": 0.20,
+  "power_over_w": 5,
+  "power_under_w": 3,
+  "hr_over_bpm": 3,
+  "decoupling_flag_pct": 5.0,
+  "decoupling_min_duration_min": 75,
+  "swim_pace_slow_s": 4,
+  "swim_pace_fast_s": 4,
+  "walk_run_until_week": 8,
+  "run_intensity_from_week": 16,
+  "resting_hr_rise_bpm": 5,
+  "hrv_drop_pct": 0.20,
+  "fatigue_days_in_row": 2,
+  "pain_words": ["pain", "shin", "tibia", "sore", "ache", "niggle", "tender", "sharp", "throb"],
+  "ftp_checkpoints": [
+    {"week": 6, "target_w": 252},
+    {"week": 14, "target_w": 260},
+    {"week": 22, "target_w": 268}
+  ]
+}

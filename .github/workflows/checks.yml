@@ -1,0 +1,22 @@
+name: Plan checks
+
+# Runs on every pull request that touches the plan: guards the rules in RULES.md.
+on:
+  pull_request:
+    paths: ["plan/**", "rules.json", "scripts/**"]
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Re-export plan and check rules
+        run: |
+          python scripts/export_plan.py
+          python scripts/check_plan.py
+      - name: Workouts build for every bike session
+        run: python tests/test_pipeline.py

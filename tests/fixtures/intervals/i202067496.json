@@ -1,0 +1,71 @@
+{
+  "id": "i202067496",
+  "icu_intervals": [
+    {
+      "type": "RECOVERY",
+      "elapsed_time": 902,
+      "average_watts": 142,
+      "average_heartrate": null
+    },
+    {
+      "type": "WORK",
+      "elapsed_time": 180,
+      "average_watts": 269,
+      "average_heartrate": null
+    },
+    {
+      "type": "RECOVERY",
+      "elapsed_time": 180,
+      "average_watts": 120,
+      "average_heartrate": null
+    },
+    {
+      "type": "WORK",
+      "elapsed_time": 179,
+      "average_watts": 269,
+      "average_heartrate": null
+    },
+    {
+      "type": "RECOVERY",
+      "elapsed_time": 182,
+      "average_watts": 121,
+      "average_heartrate": null
+    },
+    {
+      "type": "WORK",
+      "elapsed_time": 178,
+      "average_watts": 270,
+      "average_heartrate": null
+    },
+    {
+      "type": "RECOVERY",
+      "elapsed_time": 182,
+      "average_watts": 121,
+      "average_heartrate": null
+    },
+    {
+      "type": "WORK",
+      "elapsed_time": 179,
+      "average_watts": 270,
+      "average_heartrate": null
+    },
+    {
+      "type": "RECOVERY",
+      "elapsed_time": 180,
+      "average_watts": 120,
+      "average_heartrate": null
+    },
+    {
+      "type": "WORK",
+      "elapsed_time": 179,
+      "average_watts": 269,
+      "average_heartrate": null
+    },
+    {
+      "type": "RECOVERY",
+      "elapsed_time": 1095,
+      "average_watts": 138,
+      "average_heartrate": null
+    }
+  ]
+}

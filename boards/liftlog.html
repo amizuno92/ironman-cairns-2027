@@ -1,0 +1,253 @@
+<title>Andrew's Lift Log</title>
+<style>
+/* Layout: summary row, per-exercise progress table with sparklines, session history, then the log form. */
+:root{
+  --bg:#f3f5f8; --surface:#ffffff; --ink:#16202c; --muted:#5d6b7c; --line:#d9dfe7; --soft:#e9edf2;
+  --accent:#6b4fb3; --accent-bg:#eee9f8; --good:#2f7d4a; --good-bg:#e4f3e9; --warn:#a3570b; --warn-bg:#fff3df;
+  --display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f141b; --surface:#171e27; --ink:#e6ebf1; --muted:#97a3b2; --line:#2a3441; --soft:#1f2833;
+  --accent:#a993ec; --accent-bg:#2a2340; --good:#6fcf8e; --good-bg:#183224; --warn:#f2b35f; --warn-bg:#3a2a12; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f141b; --surface:#171e27; --ink:#e6ebf1; --muted:#97a3b2; --line:#2a3441; --soft:#1f2833;
+  --accent:#a993ec; --accent-bg:#2a2340; --good:#6fcf8e; --good-bg:#183224; --warn:#f2b35f; --warn-bg:#3a2a12; color-scheme:dark}
+html,body{background:var(--bg);color:var(--ink)}
+body{font-family:var(--body);font-size:14px;line-height:1.45}
+.wrap{max-width:1100px;margin:0 auto;padding-inline:16px;padding-block:20px 56px;display:flex;flex-direction:column;gap:22px}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(30px,4.5vw,42px);line-height:1;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:22px;margin:0 0 8px;letter-spacing:.01em}
+.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:600}
+.lede{color:var(--muted);margin:6px 0 0;max-width:64ch}
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.stat{background:var(--surface);padding:12px 14px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.stat b{font-family:var(--display);font-size:26px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.1}
+.stat span{font-size:12px;color:var(--muted)}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:720px}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:middle}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600;background:var(--soft)}
+tr:last-child td{border-bottom:0}
+td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.ex{font-weight:600}
+.chip{display:inline-block;font-size:11px;font-weight:700;border-radius:4px;padding:2px 6px;white-space:nowrap}
+.chip.up{background:var(--good-bg);color:var(--good)} .chip.same{background:var(--soft);color:var(--muted)} .chip.new{background:var(--accent-bg);color:var(--accent)} .chip.down{background:var(--warn-bg);color:var(--warn)}
+svg.spark{display:block}
+.sessions{display:flex;flex-direction:column;gap:10px}
+.sess{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:8px}
+.sesshead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;align-items:baseline}
+.sesshead b{font-family:var(--display);font-size:20px;font-weight:700}
+.sesshead span{color:var(--muted);font-size:12px}
+.setlist{display:grid;grid-template-columns:minmax(140px,220px) minmax(0,1fr);gap:4px 14px;font-size:13px}
+.setlist .s{font-family:var(--mono);color:var(--ink);overflow-wrap:anywhere}
+.note{font-size:12px;color:var(--muted)}
+.rowbtns{display:flex;gap:8px;justify-content:flex-end}
+button{font:inherit;cursor:pointer;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 12px;font-weight:600}
+button:hover{border-color:var(--muted)}
+button.primary{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+button.link{border:0;background:none;color:var(--muted);padding:2px 0;font-weight:500;font-size:12px}
+button.link.danger{color:var(--warn)}
+button:disabled{opacity:.5;cursor:default}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+form{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:12px}
+.frow{display:flex;flex-wrap:wrap;gap:10px}
+label{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--muted);font-weight:600;min-width:0}
+input,select{font:inherit;font-size:14px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:7px 9px;min-width:0}
+.exrows{display:flex;flex-direction:column;gap:8px}
+.exrow{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr) auto;gap:8px;align-items:end}
+.exrow .parsed{grid-column:1/-1;font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:-4px}
+.exrow .parsed.bad{color:var(--warn)}
+@media (max-width:560px){.exrow{grid-template-columns:1fr}}
+.hint{font-size:12px;color:var(--muted);margin:0}
+.status{font-size:12px;color:var(--muted);min-height:1em}
+.empty{color:var(--muted);padding:18px;text-align:center;border:1px dashed var(--line);border-radius:10px;background:var(--surface)}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600;700&display=swap">
+<main class="wrap">
+  <header>
+    <div class="eyebrow">IRONMAN Cairns · Strength</div>
+    <h1>Lift Log</h1>
+    <p class="lede">Every strength session, with the top set and estimated one-rep max (e1RM) for each lift, so you can see the trend at a glance. Log a session at the bottom using shorthand like <code>60x6, 70x6, 80x4</code>.</p>
+  </header>
+  <section class="summary" id="summary" aria-label="Summary">
+    <div class="stat"><span>Sessions logged</span><b>—</b><span>Loading your log…</span></div>
+  </section>
+  <section>
+    <h2>Progress by lift</h2>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Lift</th><th>Last top set</th><th>e1RM / best</th><th>vs previous</th><th>Trend</th><th>Sessions</th></tr></thead>
+      <tbody id="prog"><tr><td colspan="6" class="note">Loading…</td></tr></tbody>
+    </table></div>
+    <p class="hint">e1RM uses the Epley formula (load × (1 + reps ÷ 30)) on the heaviest set. Bodyweight lifts track total reps; holds track total seconds.</p>
+  </section>
+  <section>
+    <h2>Sessions</h2>
+    <div class="sessions" id="sessions"><div class="empty">Loading…</div></div>
+  </section>
+  <section>
+    <h2>Log a session</h2>
+    <form id="logform" novalidate>
+      <div class="frow">
+        <label for="f-date">Date<input type="date" id="f-date" required></label>
+        <label for="f-label">Session<select id="f-label"><option>Strength A</option><option>Strength B</option><option>Other</option></select></label>
+        <label for="f-week" style="width:90px">Plan week<input type="number" id="f-week" min="1" max="35"></label>
+      </div>
+      <div class="exrows" id="exrows"></div>
+      <div class="frow"><button type="button" id="addrow">Add lift</button></div>
+      <p class="hint">Sets: <code>60x6, 70x6, 80x4</code> (kg × reps) · <code>15x8x2</code> (kg × reps × sets) · <code>bw 8x3</code> (bodyweight reps × sets) · <code>30s x3</code> (hold × sets).</p>
+      <label for="f-notes">Notes<input type="text" id="f-notes" placeholder="How it felt, any niggles"></label>
+      <div class="rowbtns"><span class="status" id="formstatus" role="status"></span><button type="submit" class="primary" id="save">Save session</button></div>
+    </form>
+  </section>
+</main>
+<datalist id="lifts"></datalist>
+<script>
+(function(){
+var DEFAULT_LIFTS=["Back Squat","Trap-bar Deadlift","Bulgarian Split Squat","Romanian Deadlift","Hip Thrust","Step-up","Seated Soleus Raise","Calf Raise","Single-leg Calf Raise","Tibialis Raise","Pogo Hops","Pull-up","DB Press","Push-up","Single-arm Row","Bicep Curl","Pallof Press","Dead Bug","Side Plank","Copenhagen Plank"];
+var sessions=[], db=null, confirmDel=null;
+var $=function(id){return document.getElementById(id)};
+function esc(t){return String(t==null?"":t).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function fmtDate(iso){var d=new Date(iso+"T00:00:00");return d.toLocaleDateString("en-AU",{weekday:"short",day:"numeric",month:"short",year:"numeric"})}
+function r1(x){return Math.round(x*10)/10}
+
+// ---- shorthand parsing ----
+var BW_RE=/pull|chin|push-?\s?up|dip|dead ?bug|hop|plank/i;
+function parseSets(str,name){
+  var out=[], unit=null, bad=false;
+  String(str||"").toLowerCase().split(/[,;]+/).forEach(function(tok){
+    tok=tok.trim(); if(!tok)return;
+    var isBw=/\bbw\b|body/.test(tok), isTime=/\d\s*(s|sec)\b/.test(tok), hasKg=/kg/.test(tok);
+    var n=(tok.match(/\d+(?:\.\d+)?/g)||[]).map(Number);
+    if(isTime){ var secs=n[0], sets=n[1]||1; if(!secs){bad=true;return} unit="s"; for(var i=0;i<sets;i++)out.push({secs:secs}); return; }
+    if(isBw || (!hasKg && n.length===2 && BW_RE.test(name||""))){ var reps=n[0], s2=n[1]||1; if(!reps){bad=true;return} unit=unit||"bw"; for(var j=0;j<s2;j++)out.push({load:0,reps:reps}); return; }
+    if(n.length>=2){ var load=n[0], rp=n[1], s3=n[2]||1; unit="kg"; for(var k=0;k<s3;k++)out.push({load:load,reps:rp}); return; }
+    bad=true;
+  });
+  return {unit:unit||"kg",sets:out,bad:bad||!out.length};
+}
+function setsText(ex){
+  // compact: group identical consecutive sets
+  var g=[]; ex.sets.forEach(function(s){var k=JSON.stringify(s); if(g.length&&g[g.length-1].k===k)g[g.length-1].n++; else g.push({k:k,s:s,n:1})});
+  return g.map(function(x){var s=x.s, t;
+    if(ex.unit==="s") t=s.secs+"s"; else if(ex.unit==="bw") t=s.reps+" reps"; else t=s.load+"kg × "+s.reps;
+    return x.n>1?t+" × "+x.n+" sets":t}).join(", ");
+}
+
+// ---- metrics ----
+function metric(ex){
+  if(ex.unit==="s") return {v:ex.sets.reduce(function(a,s){return a+(s.secs||0)},0),label:function(v){return v+"s total"}};
+  if(ex.unit==="bw") return {v:ex.sets.reduce(function(a,s){return a+(s.reps||0)},0),label:function(v){return v+" reps total"}};
+  var best=0; ex.sets.forEach(function(s){ if(s.reps>0&&s.reps<=15){var e=s.load*(1+s.reps/30); if(e>best)best=e} });
+  return {v:r1(best),label:function(v){return v+"kg e1RM"}};
+}
+function topSet(ex){
+  if(ex.unit==="s"){var m=0;ex.sets.forEach(function(s){if(s.secs>m)m=s.secs});return m+"s"}
+  if(ex.unit==="bw"){var mr=0;ex.sets.forEach(function(s){if(s.reps>mr)mr=s.reps});return mr+" reps"}
+  var t=ex.sets.slice().sort(function(a,b){return b.load-a.load||b.reps-a.reps})[0]; return t?t.load+"kg × "+t.reps:"—";
+}
+function spark(vals){
+  var w=110,h=28,p=3; if(!vals.length)return "";
+  var mn=Math.min.apply(null,vals), mx=Math.max.apply(null,vals); if(mx===mn){mn-=1;mx+=1}
+  var pts=vals.map(function(v,i){var x=vals.length===1?w/2:p+i*(w-2*p)/(vals.length-1); var y=h-p-(v-mn)/(mx-mn)*(h-2*p); return [r1(x),r1(y)]});
+  var line=pts.map(function(q){return q.join(",")}).join(" "), last=pts[pts.length-1];
+  return '<svg class="spark" width="'+w+'" height="'+h+'" viewBox="0 0 '+w+' '+h+'" aria-hidden="true">'+
+    (pts.length>1?'<polyline points="'+line+'" fill="none" stroke="var(--accent)" stroke-width="1.6" stroke-linejoin="round"/>':'')+
+    '<circle cx="'+last[0]+'" cy="'+last[1]+'" r="3" fill="var(--accent)"/></svg>';
+}
+
+function render(){
+  var asc=sessions.slice().sort(function(a,b){return a.date<b.date?-1:a.date>b.date?1:0});
+  // summary
+  var lifts={}, totalSets=0;
+  asc.forEach(function(s){(s.exercises||[]).forEach(function(ex){totalSets+=ex.sets.length;(lifts[ex.name]=lifts[ex.name]||[]).push({date:s.date,ex:ex})})});
+  var last=asc[asc.length-1];
+  var tonnage=last?(last.exercises||[]).reduce(function(a,ex){return a+(ex.unit==="kg"?ex.sets.reduce(function(b,s){return b+s.load*s.reps},0):0)},0):0;
+  $("summary").innerHTML=
+    '<div class="stat"><span>Sessions logged</span><b>'+sessions.length+'</b><span>'+(asc[0]?"Since "+fmtDate(asc[0].date):"None yet")+'</span></div>'+
+    '<div class="stat"><span>Last session</span><b>'+(last?esc(last.label):"—")+'</b><span>'+(last?fmtDate(last.date):"Log one below")+'</span></div>'+
+    '<div class="stat"><span>Last session tonnage</span><b>'+(last?Math.round(tonnage).toLocaleString("en-AU")+" kg":"—")+'</b><span>Load × reps, weighted lifts</span></div>'+
+    '<div class="stat"><span>Lifts tracked</span><b>'+Object.keys(lifts).length+'</b><span>'+totalSets+' sets in total</span></div>';
+  // progress
+  var names=Object.keys(lifts).sort(function(a,b){return lifts[b].length-lifts[a].length||a.localeCompare(b)});
+  $("prog").innerHTML=names.length?names.map(function(n){
+    var hist=lifts[n], cur=hist[hist.length-1], m=metric(cur.ex), prev=hist.length>1?metric(hist[hist.length-2].ex):null;
+    var best=Math.max.apply(null,hist.map(function(h){return metric(h.ex).v}));
+    var chip=!prev?'<span class="chip new">First log</span>':m.v>prev.v?'<span class="chip up">▲ '+r1(m.v-prev.v)+'</span>':m.v<prev.v?'<span class="chip down">▼ '+r1(prev.v-m.v)+'</span>':'<span class="chip same">Same</span>';
+    return '<tr><td class="ex">'+esc(n)+'</td><td class="num">'+esc(topSet(cur.ex))+'</td><td class="num">'+esc(m.label(m.v))+(best>m.v?' <span class="note">(best '+best+')</span>':'')+'</td><td>'+chip+'</td><td>'+spark(hist.map(function(h){return metric(h.ex).v}))+'</td><td class="num">'+hist.length+'</td></tr>';
+  }).join(""):'<tr><td colspan="6" class="note">No lifts yet. Log your first session below.</td></tr>';
+  // sessions
+  var desc=asc.slice().reverse();
+  $("sessions").innerHTML=desc.length?desc.map(function(s){
+    var rows=(s.exercises||[]).map(function(ex){return '<div>'+esc(ex.name)+'</div><div class="s">'+esc(setsText(ex))+'</div>'}).join("");
+    return '<article class="sess"><div class="sesshead"><div><b>'+esc(s.label)+'</b> <span>'+fmtDate(s.date)+(s.week?' · plan week '+esc(s.week):'')+'</span></div>'+
+      '<button type="button" class="link danger" data-del="'+esc(s._id)+'">'+(confirmDel===s._id?"Click again to delete":"Delete")+'</button></div>'+
+      '<div class="setlist">'+rows+'</div>'+(s.notes?'<div class="note">'+esc(s.notes)+'</div>':'')+'</article>';
+  }).join(""):'<div class="empty">No sessions yet. Log your first one below.</div>';
+  // datalist
+  var all=DEFAULT_LIFTS.slice(); names.forEach(function(n){if(all.indexOf(n)<0)all.push(n)});
+  document.getElementById("lifts").innerHTML=all.map(function(n){return '<option value="'+esc(n)+'">'}).join("");
+}
+
+// ---- form ----
+var rowN=0;
+function addRow(name,sets){
+  var i=rowN++, d=document.createElement("div"); d.className="exrow";
+  d.innerHTML='<label for="ex-n-'+i+'">Lift<input id="ex-n-'+i+'" list="lifts" value="'+esc(name||"")+'" placeholder="Back Squat"></label>'+
+    '<label for="ex-s-'+i+'">Sets<input id="ex-s-'+i+'" value="'+esc(sets||"")+'" placeholder="60x6, 70x6, 80x4"></label>'+
+    '<button type="button" class="link" data-rm>Remove</button><div class="parsed"></div>';
+  $("exrows").appendChild(d); preview(d);
+}
+function preview(row){
+  var v=row.querySelectorAll("input")[1].value, out=row.querySelector(".parsed");
+  if(!v.trim()){out.textContent="";out.classList.remove("bad");return}
+  var p=parseSets(v,row.querySelectorAll("input")[0].value); out.classList.toggle("bad",p.bad);
+  out.textContent=p.bad?"Can't read this. Try 60x6, 15x8x2, bw 8x3 or 30s x3.":"Reads as: "+setsText({unit:p.unit,sets:p.sets});
+}
+$("exrows").addEventListener("input",function(e){var r=e.target.closest(".exrow"); if(r)preview(r)});
+$("exrows").addEventListener("click",function(e){if(e.target.hasAttribute("data-rm")){e.target.closest(".exrow").remove()}});
+$("addrow").addEventListener("click",function(){addRow()});
+function resetForm(){
+  $("exrows").innerHTML=""; for(var i=0;i<4;i++)addRow();
+  var t=new Date(); $("f-date").value=t.getFullYear()+"-"+String(t.getMonth()+1).padStart(2,"0")+"-"+String(t.getDate()).padStart(2,"0");
+  $("f-notes").value="";
+}
+resetForm();
+$("logform").addEventListener("submit",function(e){
+  e.preventDefault();
+  var st=$("formstatus");
+  if(!db){st.textContent="Saving isn't available in this view.";return}
+  var exs=[], bad=false;
+  [].forEach.call($("exrows").children,function(r){var ins=r.querySelectorAll("input"), n=ins[0].value.trim(), s=ins[1].value.trim();
+    if(!n&&!s)return; var p=parseSets(s,n); if(!n||p.bad){bad=true;return} exs.push({name:n,unit:p.unit,sets:p.sets})});
+  if(bad){st.textContent="Fix the lifts marked in orange, or remove them.";return}
+  if(!exs.length){st.textContent="Add at least one lift.";return}
+  if(!$("f-date").value){st.textContent="Pick a date.";return}
+  var doc={date:$("f-date").value,label:$("f-label").value,exercises:exs,notes:$("f-notes").value.trim(),createdAt:new Date().toISOString()};
+  var wk=parseInt($("f-week").value,10); if(wk)doc.week=wk;
+  $("save").disabled=true; st.textContent="Saving…";
+  db.collection("sessions").add(doc).then(function(){st.textContent="Saved";resetForm()}).catch(function(err){
+    st.textContent=err&&err.code==="permission_denied"?"You don't have permission to save here.":"Couldn't save. Try again in a moment.";
+  }).then(function(){$("save").disabled=false});
+});
+$("sessions").addEventListener("click",function(e){
+  var id=e.target.getAttribute&&e.target.getAttribute("data-del"); if(!id||!db)return;
+  if(confirmDel!==id){confirmDel=id;render();setTimeout(function(){if(confirmDel===id){confirmDel=null;render()}},4000);return}
+  confirmDel=null; db.collection("sessions").doc(id).delete().catch(function(){alertStatus("Couldn't delete. Try again.")});
+});
+function alertStatus(t){$("formstatus").textContent=t}
+
+// ---- boot ----
+render();
+if(window.claude&&window.claude.use){
+  window.claude.use("db").then(function(d){
+    if(!d){$("sessions").innerHTML='<div class="empty">Sign in to claude.ai to see and save your lifts.</div>';$("save").disabled=true;return}
+    db=d;
+    db.collection("sessions").orderBy("date","asc").onSnapshot(function(snap){
+      sessions=snap.docs.map(function(x){var o=x.data()||{}; o._id=x.id; return o}); render();
+    },function(){$("sessions").innerHTML='<div class="empty">Lost connection to your log. Reload the page.</div>'});
+  });
+}
+})();
+</script>

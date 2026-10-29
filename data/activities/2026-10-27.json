@@ -1,0 +1,51 @@
+[
+  {
+    "id": "i202067496",
+    "name": "Zwift - W3 Tue - VO2 5x3'",
+    "type": "VirtualRide",
+    "start_date_local": "2026-10-27T05:42:40",
+    "moving_time": 3615,
+    "elapsed_time": 3615,
+    "distance": 34437.38,
+    "icu_average_watts": 169,
+    "icu_weighted_avg_watts": 198,
+    "icu_intensity": 81.818184,
+    "icu_training_load": 67,
+    "average_heartrate": 0,
+    "max_heartrate": 0,
+    "interval_summary": [
+      "5x 2m59s 269w"
+    ],
+    "icu_zone_times": [
+      {
+        "id": "Z1",
+        "secs": 1362
+      },
+      {
+        "id": "Z2",
+        "secs": 1349
+      },
+      {
+        "id": "Z3",
+        "secs": 13
+      },
+      {
+        "id": "Z4",
+        "secs": 12
+      },
+      {
+        "id": "Z5",
+        "secs": 880
+      }
+    ]
+  },
+  {
+    "id": "i202198848",
+    "name": "Strength Training",
+    "type": "WeightTraining",
+    "start_date_local": "2026-10-27T11:47:18",
+    "moving_time": 2623,
+    "average_heartrate": 91,
+    "icu_training_load": 9
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "i201732028",
+    "name": "Run",
+    "type": "Run",
+    "start_date_local": "2026-10-26T06:40:27",
+    "moving_time": 1201,
+    "elapsed_time": 1202,
+    "distance": 2109.45,
+    "average_heartrate": 86,
+    "max_heartrate": 110,
+    "icu_training_load": 3,
+    "icu_rpe": 2
+  },
+  {
+    "id": "i201732029",
+    "name": "Swim",
+    "type": "OpenWaterSwim",
+    "start_date_local": "2026-10-26T11:54:23",
+    "moving_time": 2406,
+    "elapsed_time": 2480,
+    "distance": 2200,
+    "average_heartrate": 143,
+    "max_heartrate": 157,
+    "icu_training_load": 42
+  }
+]

@@ -1,0 +1,121 @@
+{
+  "date": "2026-10-28",
+  "weekday": "Wed",
+  "plan_week": 3,
+  "phase": "Base 1",
+  "week_kind": "load",
+  "sessions": [
+    {
+      "activity_id": "i202483655",
+      "name": "Run",
+      "actual_date": "2026-10-28",
+      "planned_date": "2026-10-28",
+      "moved": false,
+      "kind": "walk_run",
+      "planned_min": 20,
+      "actual_min": 20.1,
+      "duration_ratio": 1.01,
+      "avg_hr": 90,
+      "max_hr": 113,
+      "load": 4,
+      "rpe": 2,
+      "feel": null,
+      "notes": null,
+      "distance_km": 2.23,
+      "pace_s_per_km": 541.0,
+      "flags": [],
+      "planned_id": "w03-wed-run-1",
+      "planned_title": "Walk-run (stage 1)",
+      "sport": "Run"
+    },
+    {
+      "activity_id": "i202576015",
+      "name": "Swim",
+      "actual_date": "2026-10-28",
+      "planned_date": "2026-10-28",
+      "moved": false,
+      "kind": "swim_css",
+      "planned_min": 50,
+      "actual_min": 46.2,
+      "duration_ratio": 0.92,
+      "avg_hr": 143,
+      "max_hr": 156,
+      "load": 53,
+      "rpe": 5,
+      "feel": null,
+      "notes": null,
+      "distance_m": 2600,
+      "pace_s_per_100m": 106.6,
+      "pace": "1:47",
+      "note_pool_as_ows": "Watch logged this as open water; pace includes rests.",
+      "flags": [],
+      "planned_id": "w03-wed-swim-1",
+      "planned_title": "CSS / threshold",
+      "sport": "Swim"
+    }
+  ],
+  "missed_so_far_this_week": [],
+  "still_to_do_this_week": [
+    {
+      "id": "w03-thu-bike-1",
+      "date": "2026-10-29",
+      "sport": "Bike",
+      "title": "Endurance ride",
+      "duration_min": 45
+    },
+    {
+      "id": "w03-thu-strength-1",
+      "date": "2026-10-29",
+      "sport": "Strength",
+      "title": "Strength B — base",
+      "duration_min": 35
+    },
+    {
+      "id": "w03-fri-swim-1",
+      "date": "2026-10-30",
+      "sport": "Swim",
+      "title": "Long aerobic swim",
+      "duration_min": 45
+    },
+    {
+      "id": "w03-fri-run-1",
+      "date": "2026-10-30",
+      "sport": "Run",
+      "title": "Walk-run (stage 1)",
+      "duration_min": 20
+    },
+    {
+      "id": "w03-sat-bike-1",
+      "date": "2026-10-31",
+      "sport": "Bike",
+      "title": "Long ride",
+      "duration_min": 90
+    }
+  ],
+  "week_to_date": {
+    "actual_hours": 3.84,
+    "planned_hours_to_date": 3.92,
+    "planned_hours_week": 7.83,
+    "by_sport_actual_h": {
+      "Run": 0.67,
+      "Swim": 1.44,
+      "Bike": 1.0,
+      "Strength": 0.73
+    },
+    "by_sport_planned_h": {
+      "Swim": 2.33,
+      "Run": 1.0,
+      "Bike": 3.25,
+      "Strength": 1.25
+    },
+    "run_km": 4.34,
+    "prev_week_run_km": 0.0,
+    "swims": 2
+  },
+  "wellness": {
+    "ctl": 46.9,
+    "atl": 48.6,
+    "tsb": -1.7
+  },
+  "flags": []
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "i202921191",
+    "name": "Zwift - W3 Thu - Endurance 45'",
+    "type": "VirtualRide",
+    "start_date_local": "2026-10-29T05:19:35",
+    "moving_time": 2780,
+    "distance": 26100.81,
+    "icu_average_watts": 151,
+    "icu_weighted_avg_watts": 158,
+    "icu_intensity": 65.28925,
+    "icu_training_load": 33,
+    "average_heartrate": 126,
+    "max_heartrate": 144,
+    "decoupling": -0.5047581,
+    "icu_zone_times": [
+      {
+        "id": "Z1",
+        "secs": 525
+      },
+      {
+        "id": "Z2",
+        "secs": 2243
+      },
+      {
+        "id": "Z3",
+        "secs": 12
+      }
+    ]
+  },
+  {
+    "id": "i202997156",
+    "name": "Strength Training",
+    "type": "WeightTraining",
+    "start_date_local": "2026-10-29T12:07:16",
+    "moving_time": 2379,
+    "average_heartrate": 105,
+    "icu_training_load": 14
+  }
+]

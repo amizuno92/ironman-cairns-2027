@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-29",
+  "weekday": "Thu",
+  "plan_week": 3,
+  "phase": "Base 1",
+  "week_kind": "load",
+  "sessions": [
+    {
+      "activity_id": "i202921191",
+      "name": "Zwift - W3 Thu - Endurance 45'",
+      "actual_date": "2026-10-29",
+      "planned_date": "2026-10-29",
+      "moved": false,
+      "kind": "bike_endurance",
+      "planned_min": 45,
+      "actual_min": 46.3,
+      "duration_ratio": 1.03,
+      "avg_hr": 126,
+      "max_hr": 144,
+      "load": 33,
+      "rpe": null,
+      "feel": null,
+      "notes": null,
+      "avg_w": 151,
+      "np_w": 158,
+      "if": 0.65,
+      "decoupling_pct": -0.5,
+      "zone_secs": {
+        "Z1": 525,
+        "Z2": 2243,
+        "Z3": 12
+      },
+      "flags": [],
+      "planned_id": "w03-thu-bike-1",
+      "planned_title": "Endurance ride",
+      "sport": "Bike"
+    },
+    {
+      "activity_id": "i202997156",
+      "name": "Strength Training",
+      "actual_date": "2026-10-29",
+      "planned_date": "2026-10-29",
+      "moved": false,
+      "kind": "strength",
+      "planned_min": 35,
+      "actual_min": 39.6,
+      "duration_ratio": 1.13,
+      "avg_hr": 105,
+      "max_hr": null,
+      "load": 14,
+      "rpe": null,
+      "feel": null,
+      "notes": null,
+      "flags": [],
+      "planned_id": "w03-thu-strength-1",
+      "planned_title": "Strength B — base",
+      "sport": "Strength"
+    }
+  ],
+  "missed_so_far_this_week": [],
+  "still_to_do_this_week": [
+    {
+      "id": "w03-fri-swim-1",
+      "date": "2026-10-30",
+      "sport": "Swim",
+      "title": "Long aerobic swim",
+      "duration_min": 45
+    },
+    {
+      "id": "w03-fri-run-1",
+      "date": "2026-10-30",
+      "sport": "Run",
+      "title": "Walk-run (stage 1)",
+      "duration_min": 20
+    },
+    {
+      "id": "w03-sat-bike-1",
+      "date": "2026-10-31",
+      "sport": "Bike",
+      "title": "Long ride",
+      "duration_min": 90
+    }
+  ],
+  "week_to_date": {
+    "actual_hours": 5.27,
+    "planned_hours_to_date": 5.25,
+    "planned_hours_week": 7.83,
+    "by_sport_actual_h": {
+      "Run": 0.67,
+      "Swim": 1.44,
+      "Bike": 1.78,
+      "Strength": 1.39
+    },
+    "by_sport_planned_h": {
+      "Swim": 2.33,
+      "Run": 1.0,
+      "Bike": 3.25,
+      "Strength": 1.25
+    },
+    "run_km": 4.34,
+    "prev_week_run_km": 0.0,
+    "swims": 2
+  },
+  "wellness": {
+    "ctl": 46.6,
+    "atl": 48.4,
+    "tsb": -1.8
+  },
+  "flags": []
+}

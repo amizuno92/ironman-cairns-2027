@@ -1,0 +1,11 @@
+<workout_file>
+    <author>Andrew Mizuno</author>
+    <name>W3 Sat - Long ride</name>
+    <description>IM Cairns plan week 3. Steady Z2. Fuel from minute 20. Target: Z2 150–175W (62–72%) · HR 130–143 · RPE 3–4; blocks IM power 160–172W (66–71%) · HR ≤143 · RPE 4. Long ride 1h30. First 20' Z1–low Z2, then Z2 150–175W. Smooth, steady, seated. Indoors until your outdoor kit is sorted; once outdoors, pick flat, low-traffic roads and keep the same power.</description>
+    <sportType>bike</sportType>
+    <workout>
+        <Warmup Duration="1200" PowerLow="0.500" PowerHigh="0.620" pace="0"/>
+        <SteadyState Duration="3600" Power="0.660" pace="0" Cadence="90"/>
+        <Cooldown Duration="600" PowerLow="0.600" PowerHigh="0.450" pace="0"/>
+    </workout>
+</workout_file>
