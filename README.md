@@ -37,3 +37,7 @@ Edit `plan/plan.py`, then:
 ```
 python scripts/export_plan.py && python scripts/check_plan.py && (cd plan && python build.py)
 ```
+
+## Zwift auto-sync on the Mac
+`tools/mac/` holds a tiny launchd job that copies new or changed `.zwo` files from this repo into Zwift every 30 minutes and at login.
+Install once in Terminal: `bash ~/Documents/Zwift/Workouts/.ironman-sync/install.sh` (the scripts live in that folder). Remove with `uninstall.sh`. Log: `~/Documents/Zwift/Workouts/.ironman-sync/sync.log`.
