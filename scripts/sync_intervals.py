@@ -1,7 +1,7 @@
 """Pull activities, intervals and wellness from intervals.icu into data/.
 
 Env: INTERVALS_API_KEY (Settings → Developer Settings on intervals.icu)
-     INTERVALS_ATHLETE_ID (e.g. i372665)
+     INTERVALS_ATHLETE_ID (e.g. i123456)
 Usage: python scripts/sync_intervals.py [--days 3] [--oldest YYYY-MM-DD --newest YYYY-MM-DD]
 """
 import argparse

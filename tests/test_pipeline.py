@@ -32,7 +32,11 @@ for s in load_plan()["sessions"]:
         fail += 1
 print(f"zwo: {n} files checked")
 
-# compliance on fixtures in a temp copy of the repo
+# compliance on fixtures in a temp copy of the repo (skipped where fixtures aren't shipped)
+if not (ROOT / "tests" / "fixtures" / "activities").exists():
+    print("compliance: fixtures not present, skipped")
+    print("OK" if not fail else f"{fail} failures")
+    sys.exit(1 if fail else 0)
 tmp = Path(tempfile.mkdtemp())
 shutil.copytree(ROOT, tmp / "repo", ignore=shutil.ignore_patterns(".git"))
 repo = tmp / "repo"
