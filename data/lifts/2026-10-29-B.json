@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-29",
+  "label": "Strength B",
+  "week": 3,
+  "source": "Lift Log artifact (doc k2st7omtu02f0f51kjb9)",
+  "notes": "",
+  "exercises": [
+    {
+      "name": "Hip Thrust",
+      "unit": "kg",
+      "sets": [
+        {
+          "load": 20,
+          "reps": 10
+        },
+        {
+          "load": 20,
+          "reps": 10
+        },
+        {
+          "load": 20,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "name": "Step-up",
+      "unit": "kg",
+      "sets": [
+        {
+          "load": 0,
+          "reps": 8
+        },
+        {
+          "load": 10,
+          "reps": 8
+        },
+        {
+          "load": 14,
+          "reps": 8
+        }
+      ]
+    },
+    {
+      "name": "Single-leg Romanian Deadlift",
+      "unit": "kg",
+      "sets": [
+        {
+          "load": 9,
+          "reps": 8
+        },
+        {
+          "load": 9,
+          "reps": 8
+        }
+      ]
+    },
+    {
+      "name": "Dumbbell Overhead Press",
+      "unit": "kg",
+      "sets": [
+        {
+          "load": 20,
+          "reps": 8
+        },
+        {
+          "load": 25,
+          "reps": 8
+        },
+        {
+          "load": 27.5,
+          "reps": 8
+        }
+      ]
+    },
+    {
+      "name": "Lateral Raises",
+      "unit": "kg",
+      "sets": [
+        {
+          "load": 10,
+          "reps": 12
+        },
+        {
+          "load": 12.5,
+          "reps": 12
+        },
+        {
+          "load": 12.5,
+          "reps": 12
+        }
+      ]
+    },
+    {
+      "name": "Tricep Pushdown",
+      "unit": "kg",
+      "sets": [
+        {
+          "load": 20.3,
+          "reps": 12
+        },
+        {
+          "load": 22.5,
+          "reps": 12
+        },
+        {
+          "load": 22.5,
+          "reps": 12
+        }
+      ]
+    },
+    {
+      "name": "Pallof Press",
+      "unit": "kg",
+      "sets": [
+        {
+          "load": 9,
+          "reps": 12
+        },
+        {
+          "load": 6.8,
+          "reps": 12
+        },
+        {
+          "load": 6.8,
+          "reps": 12
+        }
+      ]
+    }
+  ]
+}
