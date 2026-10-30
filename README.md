@@ -6,9 +6,9 @@ Andrew's 35-week plan (12 Oct 2026 → 13 Jun 2027), training data and automated
 
 | When (Brisbane) | What | How |
 |---|---|---|
-| Daily 7:15pm | Pull activities, intervals and wellness from intervals.icu; compare with the plan; build tomorrow's Zwift file and swim set | GitHub Action `daily.yml` |
+| Daily ~7:55pm (started by the review; 7:37pm backup timer) | Pull activities, intervals and wellness from intervals.icu; compare with the plan; build tomorrow's Zwift file and swim set | GitHub Action `daily.yml` |
 | Daily ~8pm | Coaching review → `reports/daily/`, push notification | Claude scheduled task |
-| Sunday 7:45pm | Weekly summary; next week's workouts | GitHub Action `weekly.yml` |
+| Sunday ~8:20pm (started by the review; 7:52pm backup timer) | Weekly summary; next week's workouts | GitHub Action `weekly.yml` |
 | Sunday ~8:20pm | Weekly review → `reports/weekly/`; plan changes as a pull request | Claude scheduled task |
 | Every plan PR | Rule checks (10% cap, swims, daily limits) and workout build tests | GitHub Action `checks.yml` |
 

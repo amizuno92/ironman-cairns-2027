@@ -1,9 +1,9 @@
 name: Weekly summary
 
-# Sunday 09:45 UTC = Sunday 7:45pm Brisbane (after the daily sync, before the Sunday review).
+# Backup timer: Sunday 09:52 UTC = 7:52pm Brisbane. The Sunday review also starts this workflow itself.
 on:
   schedule:
-    - cron: "45 9 * * 0"
+    - cron: "52 9 * * 0"
   workflow_dispatch:
 
 permissions:
