@@ -206,7 +206,7 @@ def main():
     ws = week_start(day)
     week = plan_week_of(plan, day)
     planned_week = [s for s in plan["sessions"] if ws.isoformat() <= s["date"] <= (ws + dt.timedelta(days=6)).isoformat()]
-    actual_wtd = [a for a in activities_between(ws, day) if act_sport(a) in ("Bike", "Run", "Swim", "Strength")]
+    actual_wtd = [a for a in activities_between(ws, day) if act_sport(a) in ("Bike", "Run", "Swim", "Strength", "HIIT")]
     pairs = match_week(planned_week, actual_wtd)
     by_pid = {p["id"]: p for p in planned_week}
 

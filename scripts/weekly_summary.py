@@ -22,7 +22,7 @@ def main():
     plan, rules = load_plan(), load_rules()
     wk = plan_week_of(plan, ws)
     planned = [s for s in plan["sessions"] if ws.isoformat() <= s["date"] <= we.isoformat()]
-    acts = [x for x in activities_between(ws, min(we, today_local())) if act_sport(x) in ("Bike", "Run", "Swim", "Strength")]
+    acts = [x for x in activities_between(ws, min(we, today_local())) if act_sport(x) in ("Bike", "Run", "Swim", "Strength", "HIIT")]
 
     def by_sport(rows, f):
         out = {}

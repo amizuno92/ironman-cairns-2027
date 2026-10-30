@@ -16,6 +16,7 @@ SPORT_MAP = {
     "Run": "Run", "VirtualRun": "Run", "TrailRun": "Run", "Walk": "Walk",
     "Swim": "Swim", "OpenWaterSwim": "Swim",
     "WeightTraining": "Strength", "Workout": "Strength", "Crossfit": "Strength",
+    "HighIntensityIntervalTraining": "HIIT", "HIIT": "HIIT", "Elliptical": "HIIT", "Rowing": "HIIT",
 }
 
 
