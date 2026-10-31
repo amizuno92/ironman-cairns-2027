@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-31",
+  "weekday": "Sat",
+  "plan_week": 3,
+  "phase": "Base 1",
+  "week_kind": "load",
+  "sessions": [
+    {
+      "activity_id": "i203719085",
+      "name": "HIIT",
+      "sport": "HIIT",
+      "unplanned": true,
+      "actual_min": 57.1,
+      "load": 34,
+      "flags": [
+        {
+          "level": "info",
+          "code": "unplanned",
+          "msg": "not in the plan for this week"
+        }
+      ]
+    }
+  ],
+  "missed_so_far_this_week": [
+    {
+      "id": "w03-fri-run-1",
+      "date": "2026-10-30",
+      "sport": "Run",
+      "title": "Walk-run (stage 1)",
+      "duration_min": 20
+    },
+    {
+      "id": "w03-sat-bike-1",
+      "date": "2026-10-31",
+      "sport": "Bike",
+      "title": "Long ride",
+      "duration_min": 90
+    }
+  ],
+  "still_to_do_this_week": [],
+  "week_to_date": {
+    "actual_hours": 7.8,
+    "planned_hours_to_date": 7.83,
+    "planned_hours_week": 7.83,
+    "by_sport_actual_h": {
+      "Run": 0.67,
+      "Swim": 2.07,
+      "Bike": 1.78,
+      "Strength": 2.34,
+      "HIIT": 0.95
+    },
+    "by_sport_planned_h": {
+      "Swim": 2.33,
+      "Run": 1.0,
+      "Bike": 3.25,
+      "Strength": 1.25
+    },
+    "run_km": 4.34,
+    "prev_week_run_km": 0.0,
+    "swims": 3
+  },
+  "wellness": {
+    "resting_hr_baseline": 54.0,
+    "resting_hr_recent": [
+      null,
+      54
+    ],
+    "hrv_baseline": 29.0,
+    "hrv_recent": [
+      null,
+      32.0
+    ],
+    "ctl": 46.3,
+    "atl": 49.1,
+    "tsb": -2.7
+  },
+  "flags": [
+    {
+      "level": "info",
+      "code": "unplanned",
+      "msg": "not in the plan for this week"
+    }
+  ]
+}

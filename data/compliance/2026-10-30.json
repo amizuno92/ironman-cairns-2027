@@ -85,14 +85,14 @@
     "swims": 3
   },
   "wellness": {
-    "resting_hr_baseline": 55.0,
+    "resting_hr_baseline": 55,
     "resting_hr_recent": [
-      null,
+      54,
       52
     ],
     "hrv_baseline": 29.0,
     "hrv_recent": [
-      null,
+      32.0,
       38.0
     ],
     "ctl": 46.6,

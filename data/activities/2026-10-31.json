@@ -1,0 +1,45 @@
+[
+  {
+    "id": "i203719085",
+    "name": "HIIT",
+    "type": "HighIntensityIntervalTraining",
+    "start_date_local": "2026-10-31T06:03:01",
+    "start_date": "2026-10-30T20:03:01Z",
+    "moving_time": 3425,
+    "elapsed_time": 3425,
+    "icu_intensity": 59.78935,
+    "icu_training_load": 34,
+    "average_heartrate": 119,
+    "max_heartrate": 151,
+    "icu_hr_zone_times": [
+      1998,
+      1259,
+      158,
+      11,
+      0,
+      0,
+      0
+    ],
+    "icu_hr_zones": [
+      129,
+      144,
+      149,
+      160,
+      165,
+      170,
+      175
+    ],
+    "icu_rpe": 4,
+    "session_rpe": 228,
+    "device_name": "Watch6,18",
+    "source": "OAUTH_CLIENT",
+    "calories": 627,
+    "icu_ctl": 46.338654,
+    "icu_atl": 49.06554,
+    "icu_weight": 80.4,
+    "icu_lap_count": 0,
+    "polarization_index": 0.0,
+    "lthr": 161,
+    "athlete_max_hr": 175
+  }
+]
