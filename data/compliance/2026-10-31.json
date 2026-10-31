@@ -19,16 +19,32 @@
           "msg": "not in the plan for this week"
         }
       ]
+    },
+    {
+      "activity_id": "i203898536",
+      "name": "Run",
+      "actual_date": "2026-10-31",
+      "planned_date": "2026-10-30",
+      "moved": true,
+      "kind": "walk_run",
+      "planned_min": 20,
+      "actual_min": 22.9,
+      "duration_ratio": 1.15,
+      "avg_hr": 91,
+      "max_hr": 116,
+      "load": 4,
+      "rpe": 2,
+      "feel": null,
+      "notes": null,
+      "distance_km": 2.26,
+      "pace_s_per_km": 609.0,
+      "flags": [],
+      "planned_id": "w03-fri-run-1",
+      "planned_title": "Walk-run (stage 1)",
+      "sport": "Run"
     }
   ],
   "missed_so_far_this_week": [
-    {
-      "id": "w03-fri-run-1",
-      "date": "2026-10-30",
-      "sport": "Run",
-      "title": "Walk-run (stage 1)",
-      "duration_min": 20
-    },
     {
       "id": "w03-sat-bike-1",
       "date": "2026-10-31",
@@ -39,11 +55,11 @@
   ],
   "still_to_do_this_week": [],
   "week_to_date": {
-    "actual_hours": 7.8,
+    "actual_hours": 8.18,
     "planned_hours_to_date": 7.83,
     "planned_hours_week": 7.83,
     "by_sport_actual_h": {
-      "Run": 0.67,
+      "Run": 1.05,
       "Swim": 2.07,
       "Bike": 1.78,
       "Strength": 2.34,
@@ -55,7 +71,7 @@
       "Bike": 3.25,
       "Strength": 1.25
     },
-    "run_km": 4.34,
+    "run_km": 6.6,
     "prev_week_run_km": 0.0,
     "swims": 3
   },
@@ -70,9 +86,9 @@
       null,
       32.0
     ],
-    "ctl": 46.3,
-    "atl": 49.1,
-    "tsb": -2.7
+    "ctl": 46.4,
+    "atl": 49.6,
+    "tsb": -3.2
   },
   "flags": [
     {

@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-01",
+  "weekday": "Sun",
+  "plan_week": 3,
+  "phase": "Base 1",
+  "week_kind": "load",
+  "sessions": [],
+  "missed_so_far_this_week": [
+    {
+      "id": "w03-sat-bike-1",
+      "date": "2026-10-31",
+      "sport": "Bike",
+      "title": "Long ride",
+      "duration_min": 90
+    }
+  ],
+  "still_to_do_this_week": [],
+  "week_to_date": {
+    "actual_hours": 8.18,
+    "planned_hours_to_date": 7.83,
+    "planned_hours_week": 7.83,
+    "by_sport_actual_h": {
+      "Run": 1.05,
+      "Swim": 2.07,
+      "Bike": 1.78,
+      "Strength": 2.34,
+      "HIIT": 0.95
+    },
+    "by_sport_planned_h": {
+      "Swim": 2.33,
+      "Run": 1.0,
+      "Bike": 3.25,
+      "Strength": 1.25
+    },
+    "run_km": 6.6,
+    "prev_week_run_km": 0.0,
+    "swims": 3
+  },
+  "wellness": {
+    "resting_hr_baseline": 53,
+    "resting_hr_recent": [
+      null,
+      null
+    ],
+    "hrv_baseline": 29.0,
+    "hrv_recent": [
+      null,
+      null
+    ],
+    "ctl": 45.3,
+    "atl": 43.0,
+    "tsb": 2.3
+  },
+  "flags": []
+}
