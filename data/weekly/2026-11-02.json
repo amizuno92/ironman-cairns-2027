@@ -1,0 +1,81 @@
+{
+  "week_start": "2026-11-02",
+  "plan_week": 4,
+  "phase": "Base 1",
+  "kind": "load",
+  "focus": "Walk-run stage 2.",
+  "planned_hours": 8.5,
+  "actual_hours": 0,
+  "planned_by_sport_h": {
+    "Swim": 2.49,
+    "Run": 1.26,
+    "Bike": 3.5,
+    "Strength": 1.25
+  },
+  "actual_by_sport_h": {},
+  "compliance_pct": 0.0,
+  "sessions_planned": 11,
+  "sessions_done": 0,
+  "missed": [
+    {
+      "id": "w04-mon-swim-1",
+      "date": "2026-11-02",
+      "sport": "Swim",
+      "title": "Aerobic endurance",
+      "duration_min": 50
+    },
+    {
+      "id": "w04-mon-run-1",
+      "date": "2026-11-02",
+      "sport": "Run",
+      "title": "Walk-run (stage 2)",
+      "duration_min": 25
+    }
+  ],
+  "intensity": {
+    "endurance_hours": 0.0,
+    "z4plus_min": 0,
+    "z4plus_pct": null,
+    "bike_power_zone_min": {},
+    "hr_zone_min": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "load": 0,
+  "run_km": 0.0,
+  "prev_week_run_km": 6.6,
+  "run_km_change_pct": -100.0,
+  "swims": 0,
+  "fitness": {
+    "resting_hr_baseline": 53,
+    "resting_hr_recent": [
+      null,
+      null
+    ],
+    "hrv_baseline": 29.0,
+    "hrv_recent": [
+      null,
+      null
+    ],
+    "ctl": 45.8,
+    "atl": 45.0,
+    "tsb": 0.8
+  },
+  "lift_sessions": [],
+  "tests": [],
+  "flags": [],
+  "next_week": {
+    "week": 5,
+    "start": "2026-11-09",
+    "phase": "Base 1",
+    "kind": "load",
+    "focus": "Walk-run stage 3. Biggest base-1 week.",
+    "planned_hours": 9.33
+  }
+}
