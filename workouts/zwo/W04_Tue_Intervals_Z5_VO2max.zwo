@@ -1,0 +1,14 @@
+<workout_file>
+    <author>Andrew Mizuno</author>
+    <name>W4 Tue - Intervals — Z5 VO2max</name>
+    <description>IM Cairns plan week 4. 6×3' @ 112% FTP (~272W at 242W). Target: Z5 VO2max: 266–281W (110–115% FTP) · easy between Z1 &lt;133W (&lt;55%) · HR &lt;130 · RPE 1–2. Zwift structured. WU 15' Z1→Z2 incl. 3×30s @ 100+rpm. MS 6×3' @ 266–281W (110–115% FTP) /3' easy. Remaining time Z2 (150–170W). CD 5–10' easy. Cadence 85–100 on efforts.</description>
+    <sportType>bike</sportType>
+    <workout>
+        <Warmup Duration="480" PowerLow="0.450" PowerHigh="0.650" pace="0"/>
+        <IntervalsT Repeat="3" OnDuration="30" OffDuration="30" OnPower="0.70" OffPower="0.55" pace="0" Cadence="105" CadenceResting="90"/>
+        <SteadyState Duration="240" Power="0.650" pace="0"/>
+        <IntervalsT Repeat="6" OnDuration="180" OffDuration="180" OnPower="1.125" OffPower="0.50" pace="0" Cadence="95" CadenceResting="90"/>
+        <SteadyState Duration="180" Power="0.650" pace="0" Cadence="90"/>
+        <Cooldown Duration="360" PowerLow="0.600" PowerHigh="0.450" pace="0"/>
+    </workout>
+</workout_file>
