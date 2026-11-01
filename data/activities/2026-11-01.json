@@ -1,0 +1,99 @@
+[
+  {
+    "id": "i204131945",
+    "name": "Zwift - W3 Sat - Long ride",
+    "type": "VirtualRide",
+    "start_date_local": "2026-11-01T06:03:59",
+    "start_date": "2026-10-31T20:03:59Z",
+    "moving_time": 5420,
+    "elapsed_time": 5463,
+    "distance": 50097.84,
+    "icu_average_watts": 159,
+    "icu_weighted_avg_watts": 162,
+    "icu_intensity": 66.94215,
+    "icu_ftp": 242,
+    "icu_training_load": 67,
+    "average_heartrate": 125,
+    "max_heartrate": 143,
+    "average_cadence": 88.66994,
+    "average_speed": 9.248,
+    "pace": 9.243144,
+    "decoupling": 3.2228377,
+    "icu_efficiency_factor": 1.296,
+    "icu_variability_index": 1.018868,
+    "icu_zone_times": [
+      {
+        "id": "Z1",
+        "secs": 678
+      },
+      {
+        "id": "Z2",
+        "secs": 4667
+      },
+      {
+        "id": "Z3",
+        "secs": 75
+      },
+      {
+        "id": "Z4",
+        "secs": 0
+      },
+      {
+        "id": "Z5",
+        "secs": 0
+      },
+      {
+        "id": "Z6",
+        "secs": 0
+      },
+      {
+        "id": "Z7",
+        "secs": 0
+      },
+      {
+        "id": "SS",
+        "secs": 0
+      }
+    ],
+    "icu_hr_zone_times": [
+      2633,
+      2787,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "icu_hr_zones": [
+      129,
+      144,
+      149,
+      160,
+      165,
+      170,
+      175
+    ],
+    "icu_power_zones": [
+      55,
+      75,
+      90,
+      105,
+      120,
+      150,
+      999
+    ],
+    "device_name": "ZWIFT H~",
+    "trainer": true,
+    "source": "ZWIFT",
+    "total_elevation_gain": 79.0,
+    "carbs_used": 181,
+    "calories": 825,
+    "icu_ctl": 46.91668,
+    "icu_atl": 51.91461,
+    "icu_weight": 80.4,
+    "icu_lap_count": 4,
+    "polarization_index": 0.0,
+    "lthr": 161,
+    "athlete_max_hr": 175
+  }
+]

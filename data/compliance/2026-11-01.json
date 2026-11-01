@@ -4,25 +4,53 @@
   "plan_week": 3,
   "phase": "Base 1",
   "week_kind": "load",
-  "sessions": [],
-  "missed_so_far_this_week": [
+  "sessions": [
     {
-      "id": "w03-sat-bike-1",
-      "date": "2026-10-31",
-      "sport": "Bike",
-      "title": "Long ride",
-      "duration_min": 90
+      "activity_id": "i204131945",
+      "name": "Zwift - W3 Sat - Long ride",
+      "actual_date": "2026-11-01",
+      "planned_date": "2026-10-31",
+      "moved": true,
+      "kind": "bike_long",
+      "planned_min": 90,
+      "actual_min": 90.3,
+      "duration_ratio": 1.0,
+      "avg_hr": 125,
+      "max_hr": 143,
+      "load": 67,
+      "rpe": null,
+      "feel": null,
+      "notes": null,
+      "avg_w": 159,
+      "np_w": 162,
+      "if": 0.67,
+      "decoupling_pct": 3.2,
+      "zone_secs": {
+        "Z1": 678,
+        "Z2": 4667,
+        "Z3": 75,
+        "Z4": 0,
+        "Z5": 0,
+        "Z6": 0,
+        "Z7": 0,
+        "SS": 0
+      },
+      "flags": [],
+      "planned_id": "w03-sat-bike-1",
+      "planned_title": "Long ride",
+      "sport": "Bike"
     }
   ],
+  "missed_so_far_this_week": [],
   "still_to_do_this_week": [],
   "week_to_date": {
-    "actual_hours": 8.18,
+    "actual_hours": 9.69,
     "planned_hours_to_date": 7.83,
     "planned_hours_week": 7.83,
     "by_sport_actual_h": {
       "Run": 1.05,
       "Swim": 2.07,
-      "Bike": 1.78,
+      "Bike": 3.28,
       "Strength": 2.34,
       "HIIT": 0.95
     },
@@ -37,19 +65,19 @@
     "swims": 3
   },
   "wellness": {
-    "resting_hr_baseline": 53,
+    "resting_hr_baseline": 52.5,
     "resting_hr_recent": [
       null,
-      null
+      58
     ],
     "hrv_baseline": 29.0,
     "hrv_recent": [
       null,
-      null
+      30.0
     ],
-    "ctl": 45.3,
-    "atl": 43.0,
-    "tsb": 2.3
+    "ctl": 46.9,
+    "atl": 51.9,
+    "tsb": -5.0
   },
   "flags": []
 }
