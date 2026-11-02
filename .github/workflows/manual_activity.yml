@@ -1,0 +1,71 @@
+name: Add manual activity
+
+# Creates an intervals.icu activity for a session recorded without the watch, then re-syncs.
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "Local start time (YYYY-MM-DDTHH:MM:SS)"
+        required: true
+      type:
+        description: "Swim, Run, Ride, VirtualRide, WeightTraining, ..."
+        required: true
+        default: "Swim"
+      minutes:
+        description: "Moving time in minutes"
+        required: true
+      distance_m:
+        description: "Distance in metres (0 if none)"
+        default: "0"
+      name:
+        description: "Activity name"
+        required: true
+      description:
+        description: "Notes"
+        default: ""
+      load:
+        description: "Training load (blank to let intervals.icu decide)"
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-writes
+  cancel-in-progress: false
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Create activity
+        id: create
+        continue-on-error: true
+        env:
+          INTERVALS_API_KEY: ${{ secrets.INTERVALS_API_KEY }}
+          INTERVALS_ATHLETE_ID: ${{ secrets.INTERVALS_ATHLETE_ID }}
+          LOAD: ${{ github.event.inputs.load }}
+        run: |
+          ARGS=(--start "${{ github.event.inputs.start }}" --type "${{ github.event.inputs.type }}" --minutes "${{ github.event.inputs.minutes }}" --distance-m "${{ github.event.inputs.distance_m }}" --name "${{ github.event.inputs.name }}" --description "${{ github.event.inputs.description }}")
+          if [ -n "$LOAD" ]; then ARGS+=(--load "$LOAD"); fi
+          python scripts/add_manual_activity.py "${ARGS[@]}"
+      - name: Re-sync and compare with plan
+        env:
+          INTERVALS_API_KEY: ${{ secrets.INTERVALS_API_KEY }}
+          INTERVALS_ATHLETE_ID: ${{ secrets.INTERVALS_ATHLETE_ID }}
+        run: |
+          python scripts/sync_intervals.py --days 3
+          python scripts/compliance.py --date "$(TZ=Australia/Brisbane date +%F)"
+      - name: Commit
+        run: |
+          git config user.name "training-bot"
+          git config user.email "training-bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || { git commit -m "Manual activity: ${{ github.event.inputs.name }}"; git pull --rebase; git push; }
+      - name: Fail if creation failed
+        if: steps.create.outcome == 'failure'
+        run: exit 1
