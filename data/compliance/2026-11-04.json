@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-04",
+  "weekday": "Wed",
+  "plan_week": 4,
+  "phase": "Base 1",
+  "week_kind": "load",
+  "sessions": [],
+  "missed_so_far_this_week": [
+    {
+      "id": "w04-wed-swim-1",
+      "date": "2026-11-04",
+      "sport": "Swim",
+      "title": "CSS / threshold",
+      "duration_min": 50
+    },
+    {
+      "id": "w04-wed-run-1",
+      "date": "2026-11-04",
+      "sport": "Run",
+      "title": "Walk-run (stage 2)",
+      "duration_min": 25
+    }
+  ],
+  "still_to_do_this_week": [
+    {
+      "id": "w04-thu-bike-1",
+      "date": "2026-11-05",
+      "sport": "Bike",
+      "title": "Endurance ride",
+      "duration_min": 50
+    },
+    {
+      "id": "w04-thu-strength-1",
+      "date": "2026-11-05",
+      "sport": "Strength",
+      "title": "Strength B — base",
+      "duration_min": 35
+    },
+    {
+      "id": "w04-fri-swim-1",
+      "date": "2026-11-06",
+      "sport": "Swim",
+      "title": "Long aerobic swim",
+      "duration_min": 50
+    },
+    {
+      "id": "w04-fri-run-1",
+      "date": "2026-11-06",
+      "sport": "Run",
+      "title": "Walk-run (stage 2)",
+      "duration_min": 25
+    },
+    {
+      "id": "w04-sat-bike-1",
+      "date": "2026-11-07",
+      "sport": "Bike",
+      "title": "Long ride",
+      "duration_min": 100
+    }
+  ],
+  "week_to_date": {
+    "actual_hours": 3.27,
+    "planned_hours_to_date": 4.17,
+    "planned_hours_week": 8.5,
+    "by_sport_actual_h": {
+      "Run": 0.45,
+      "Swim": 0.73,
+      "Bike": 1.0,
+      "Strength": 1.08
+    },
+    "by_sport_planned_h": {
+      "Swim": 2.5,
+      "Run": 1.25,
+      "Bike": 3.5,
+      "Strength": 1.25
+    },
+    "run_km": 3.22,
+    "prev_week_run_km": 6.6,
+    "swims": 1
+  },
+  "wellness": {
+    "resting_hr_baseline": 53.5,
+    "resting_hr_recent": [
+      null,
+      null
+    ],
+    "hrv_baseline": 29.0,
+    "hrv_recent": [
+      null,
+      null
+    ],
+    "ctl": 46.6,
+    "atl": 49.7,
+    "tsb": -3.1
+  },
+  "flags": []
+}
