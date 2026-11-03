@@ -276,17 +276,20 @@ def run_brick(mins, ph):
 
 # ---------------- STRENGTH ----------------
 STR = {
-    ("A", "base"): "Lower — max strength & bone loading: back squat or trap-bar DL 4×6, Bulgarian split squat 3×8/leg, "
-                   "seated soleus raise 3×12 heavy, single-leg calf raise 3×15, tibialis raise 3×15, pogo hops 3×20 (progress to "
-                   "single-leg hops from wk 8), Copenhagen plank 3×20s.",
-    ("B", "base"): "Posterior chain + upper: Romanian DL 3×8, hip thrust 3×10, step-ups 3×8/leg, pull-ups 4×6, "
-                   "push-ups or DB press 3×10, single-arm row 3×10, Pallof press 3×10, dead bug 3×10.",
-    ("A", "build"): "Lower — maintenance (heavy, low volume): trap-bar DL 3×5, split squat 2×6/leg, soleus raise 3×10 heavy, "
-                    "single-leg hops 3×10/leg, box jump 3×5, side plank 2×30s.",
-    ("B", "build"): "Upper/core/hips (light legs — long ride tomorrow): pull-ups 3×6, band pull-aparts 3×15, DB press 3×8, "
-                    "lateral band walks 2×15, single-leg RDL 2×8 (light), Pallof press 3×10, swimmer's Y-T-W 2×10.",
-    ("A", "peak"): "Short maintenance: trap-bar DL 2×5, soleus raise 2×10, single-leg hops 2×10/leg, side plank 2×30s.",
-    ("B", "peak"): "Upper/core & mobility: pull-ups 2×6, band work, Pallof press, hip mobility flow.",
+    # Andrew's own routine (from his Lift Log, wk 3) + the three tibia exercises in A.
+    ("A", "base"): "Lower + pull: back squat 4×6, Bulgarian split squat 3×8/leg, Romanian DL 3×6, pull-ups 3×8, "
+                   "calf raise 3×12, bicep curl 3×10, side plank 3×30s. TIBIA (keep): seated soleus raise 3×12 heavy, "
+                   "tibialis raise 3×15, pogo hops 3×20 (single-leg hops from wk 8 if pain-free).",
+    ("B", "base"): "Hips + push: hip thrust 3×10, step-ups 3×8/leg, single-leg RDL 3×8/leg, DB overhead press 3×8, "
+                   "lateral raise 3×12, tricep pushdown 3×12, Pallof press 3×12.",
+    ("A", "build"): "Lower + pull, maintenance (heavy, low volume): back squat 3×5, Bulgarian split squat 2×6/leg, Romanian DL 2×6, "
+                    "pull-ups 3×6, bicep curl 2×10, side plank 2×30s. TIBIA (keep): seated soleus raise 3×10 heavy, "
+                    "tibialis raise 2×15, single-leg hops 3×10/leg.",
+    ("B", "build"): "Hips + push, light legs (long ride tomorrow): hip thrust 2×10 moderate, step-ups 2×8/leg light, "
+                    "single-leg RDL 2×8 light, DB overhead press 3×8, lateral raise 3×12, tricep pushdown 3×12, Pallof press 3×10.",
+    ("A", "peak"): "Short maintenance: back squat 2×5, Romanian DL 2×5, pull-ups 2×6, side plank 2×30s. "
+                   "TIBIA (keep): seated soleus raise 2×10, single-leg hops 2×10/leg.",
+    ("B", "peak"): "Upper/core & mobility: DB overhead press 2×8, lateral raise 2×12, tricep pushdown 2×12, Pallof press 2×10, hip mobility flow.",
 }
 
 

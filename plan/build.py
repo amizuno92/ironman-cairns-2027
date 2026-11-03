@@ -241,12 +241,12 @@ st = wb.create_sheet("Strength")
 header(st, 1, ["Phase (weeks)", "Session", "Exercises (sets × reps)", "Load / notes"], [22, 14, 90, 45])
 from plan import STR
 rows = [
-    ("Base (1–14)", "A — Tue, after bike intervals", STR[("A", "base")], "Wks 1–5: 3×8–10 at RPE 7 to learn; wks 7–13: 4×5–6 heavy (2 reps in reserve). Hops: start double-leg pogos; single-leg from wk 8 only if pain-free."),
+    ("Base (1–14)", "A — Tue, after bike intervals", STR[("A", "base")], "Wks 1–5: 3×8–10 at RPE 7 to learn; wks 7–13: 4×5–6 heavy (2 reps in reserve). Your own exercises plus the three tibia ones (soleus, tibialis, hops): keep those even if time is short."),
     ("Base (1–14)", "B — Thu", STR[("B", "base")], "Moderate–heavy, 2 RIR. Keep 48h before Sat long ride."),
     ("Build (15–30)", "A — Tue, after bike intervals", STR[("A", "build")], "Maintain max strength in fewer sets. Explosive intent on hops/jumps."),
     ("Build (15–30)", "B — Fri", STR[("B", "build")], "Deliberately light on legs: big ride on Saturday."),
     ("Peak (31–33)", "A — Tue, after bike intervals", STR[("A", "peak")], "20–30 min. Nothing to failure."),
-    ("Peak (31–33)", "B — Fri", STR[("B", "peak")], "Mobility focus."),
+    ("Peak (31–33)", "B — Fri", STR[("B", "peak")], "Mobility focus; arms/shoulders light."),
     ("Taper (34)", "A — Tue only", "Short maintenance as Peak A at ~60% load.", "Last strength session: Tue 1 Jun. None in race week."),
     ("Recovery weeks", "A & B", "Same exercises, ~2/3 sets, 20–30% lighter.", "Leave feeling fresher than you started."),
 ]
