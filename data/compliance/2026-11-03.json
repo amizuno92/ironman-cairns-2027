@@ -4,23 +4,113 @@
   "plan_week": 4,
   "phase": "Base 1",
   "week_kind": "load",
-  "sessions": [],
-  "missed_so_far_this_week": [
+  "sessions": [
     {
-      "id": "w04-tue-bike-1",
-      "date": "2026-11-03",
-      "sport": "Bike",
-      "title": "Intervals — Z5 VO2max",
-      "duration_min": 60
+      "activity_id": "i204944707",
+      "name": "Zwift - W4 Tue - Intervals — Z5 VO2max",
+      "actual_date": "2026-11-03",
+      "planned_date": "2026-11-03",
+      "moved": false,
+      "kind": "bike_intervals",
+      "planned_min": 60,
+      "actual_min": 60.2,
+      "duration_ratio": 1.0,
+      "avg_hr": 135,
+      "max_hr": 164,
+      "load": 71,
+      "rpe": null,
+      "feel": null,
+      "notes": null,
+      "avg_w": 172,
+      "np_w": 204,
+      "if": 0.84,
+      "decoupling_pct": 17.3,
+      "zone_secs": {
+        "Z1": 1554,
+        "Z2": 980,
+        "Z3": 11,
+        "Z4": 14,
+        "Z5": 1055,
+        "Z6": 0,
+        "Z7": 0,
+        "SS": 10
+      },
+      "reps": {
+        "planned_reps": 6,
+        "planned_rep_min": 3,
+        "done_reps": 6,
+        "band_w": [
+          266,
+          281
+        ],
+        "reps": [
+          {
+            "secs": 179,
+            "watts": 269,
+            "hr": 136
+          },
+          {
+            "secs": 179,
+            "watts": 269,
+            "hr": 141
+          },
+          {
+            "secs": 177,
+            "watts": 269,
+            "hr": 144
+          },
+          {
+            "secs": 175,
+            "watts": 269,
+            "hr": 147
+          },
+          {
+            "secs": 178,
+            "watts": 270,
+            "hr": 152
+          },
+          {
+            "secs": 175,
+            "watts": 269,
+            "hr": 153
+          }
+        ],
+        "avg_rep_w": 269.2
+      },
+      "flags": [],
+      "planned_id": "w04-tue-bike-1",
+      "planned_title": "Intervals — Z5 VO2max",
+      "sport": "Bike"
     },
     {
-      "id": "w04-tue-strength-1",
-      "date": "2026-11-03",
-      "sport": "Strength",
-      "title": "Strength A — base",
-      "duration_min": 40
+      "activity_id": "i205054287",
+      "name": "Strength Training",
+      "actual_date": "2026-11-03",
+      "planned_date": "2026-11-03",
+      "moved": false,
+      "kind": "strength",
+      "planned_min": 40,
+      "actual_min": 64.6,
+      "duration_ratio": 1.61,
+      "avg_hr": 100,
+      "max_hr": 137,
+      "load": 18,
+      "rpe": null,
+      "feel": null,
+      "notes": null,
+      "flags": [
+        {
+          "level": "warn",
+          "code": "too_long",
+          "msg": "1h05 vs 40' planned (61% over)"
+        }
+      ],
+      "planned_id": "w04-tue-strength-1",
+      "planned_title": "Strength A — base",
+      "sport": "Strength"
     }
   ],
+  "missed_so_far_this_week": [],
   "still_to_do_this_week": [
     {
       "id": "w04-wed-swim-1",
@@ -73,12 +163,14 @@
     }
   ],
   "week_to_date": {
-    "actual_hours": 1.19,
+    "actual_hours": 3.27,
     "planned_hours_to_date": 2.92,
     "planned_hours_week": 8.5,
     "by_sport_actual_h": {
       "Run": 0.45,
-      "Swim": 0.73
+      "Swim": 0.73,
+      "Bike": 1.0,
+      "Strength": 1.08
     },
     "by_sport_planned_h": {
       "Swim": 2.5,
@@ -91,19 +183,25 @@
     "swims": 1
   },
   "wellness": {
-    "resting_hr_baseline": 54.0,
+    "resting_hr_baseline": 54,
     "resting_hr_recent": [
       null,
-      null
+      53
     ],
     "hrv_baseline": 29.0,
     "hrv_recent": [
       null,
-      null
+      26.0
     ],
-    "ctl": 46.0,
-    "atl": 45.5,
-    "tsb": 0.5
+    "ctl": 47.7,
+    "atl": 57.3,
+    "tsb": -9.6
   },
-  "flags": []
+  "flags": [
+    {
+      "level": "warn",
+      "code": "too_long",
+      "msg": "1h05 vs 40' planned (61% over)"
+    }
+  ]
 }
