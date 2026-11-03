@@ -1,0 +1,245 @@
+{
+  "date": "2026-11-03",
+  "label": "Strength A",
+  "week": 4,
+  "source": "Lift Log artifact",
+  "exercises": [
+    {
+      "name": "Back Squat",
+      "sets": [
+        {
+          "load": 72.5,
+          "reps": 6
+        },
+        {
+          "load": 72.5,
+          "reps": 6
+        },
+        {
+          "load": 72.5,
+          "reps": 6
+        },
+        {
+          "load": 72.5,
+          "reps": 6
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Bulgarian Split Squat",
+      "sets": [
+        {
+          "load": 15,
+          "reps": 12
+        },
+        {
+          "load": 15,
+          "reps": 8
+        },
+        {
+          "load": 15,
+          "reps": 8
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Romanian Deadlift",
+      "sets": [
+        {
+          "load": 70,
+          "reps": 6
+        },
+        {
+          "load": 80,
+          "reps": 6
+        },
+        {
+          "load": 80,
+          "reps": 6
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Pull-up",
+      "sets": [
+        {
+          "load": 0,
+          "reps": 8
+        },
+        {
+          "load": 0,
+          "reps": 10
+        },
+        {
+          "load": 0,
+          "reps": 10
+        },
+        {
+          "load": 0,
+          "reps": 10
+        },
+        {
+          "load": 0,
+          "reps": 10
+        },
+        {
+          "load": 0,
+          "reps": 10
+        },
+        {
+          "load": 0,
+          "reps": 10
+        },
+        {
+          "load": 0,
+          "reps": 10
+        },
+        {
+          "load": 0,
+          "reps": 10
+        },
+        {
+          "load": 0,
+          "reps": 15
+        },
+        {
+          "load": 0,
+          "reps": 15
+        },
+        {
+          "load": 0,
+          "reps": 15
+        },
+        {
+          "load": 0,
+          "reps": 15
+        },
+        {
+          "load": 0,
+          "reps": 15
+        },
+        {
+          "load": 0,
+          "reps": 15
+        },
+        {
+          "load": 0,
+          "reps": 15
+        },
+        {
+          "load": 0,
+          "reps": 15
+        }
+      ],
+      "unit": "bw"
+    },
+    {
+      "name": "Standing calf raise",
+      "sets": [
+        {
+          "load": 0,
+          "reps": 12
+        },
+        {
+          "load": 24,
+          "reps": 12
+        },
+        {
+          "load": 30,
+          "reps": 12
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Bicep Curl",
+      "sets": [
+        {
+          "load": 15,
+          "reps": 10
+        },
+        {
+          "load": 15,
+          "reps": 10
+        },
+        {
+          "load": 15,
+          "reps": 10
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Side Plank",
+      "sets": [
+        {
+          "secs": 30
+        },
+        {
+          "secs": 30
+        },
+        {
+          "secs": 30
+        }
+      ],
+      "unit": "s"
+    },
+    {
+      "name": "Seated Soleus Raise",
+      "sets": [
+        {
+          "load": 50,
+          "reps": 12
+        },
+        {
+          "load": 50,
+          "reps": 12
+        },
+        {
+          "load": 50,
+          "reps": 12
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Tibialis Raise",
+      "sets": [
+        {
+          "load": 0,
+          "reps": 12
+        },
+        {
+          "load": 0,
+          "reps": 12
+        },
+        {
+          "load": 0,
+          "reps": 12
+        }
+      ],
+      "unit": "bw"
+    },
+    {
+      "name": "Pogo Hops",
+      "sets": [
+        {
+          "load": 0,
+          "reps": 20
+        },
+        {
+          "load": 0,
+          "reps": 20
+        },
+        {
+          "load": 0,
+          "reps": 20
+        }
+      ],
+      "unit": "bw"
+    }
+  ]
+}
