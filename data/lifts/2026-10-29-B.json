@@ -3,22 +3,22 @@
   "label": "Strength B",
   "week": 3,
   "source": "Lift Log artifact (doc k2st7omtu02f0f51kjb9)",
-  "notes": "",
+  "notes": "Hip thrust: machine total (22.7 kg machine + plates).",
   "exercises": [
     {
       "name": "Hip Thrust",
       "unit": "kg",
       "sets": [
         {
-          "load": 20,
+          "load": 42.7,
           "reps": 10
         },
         {
-          "load": 20,
+          "load": 42.7,
           "reps": 10
         },
         {
-          "load": 20,
+          "load": 42.7,
           "reps": 10
         }
       ]
