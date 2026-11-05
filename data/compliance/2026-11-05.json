@@ -4,15 +4,44 @@
   "plan_week": 4,
   "phase": "Base 1",
   "week_kind": "load",
-  "sessions": [],
-  "missed_so_far_this_week": [
+  "sessions": [
     {
-      "id": "w04-thu-bike-1",
-      "date": "2026-11-05",
-      "sport": "Bike",
-      "title": "Endurance ride",
-      "duration_min": 50
-    },
+      "activity_id": "i205818981",
+      "name": "Zwift - W4 Thu - Endurance ride",
+      "actual_date": "2026-11-05",
+      "planned_date": "2026-11-05",
+      "moved": false,
+      "kind": "bike_endurance",
+      "planned_min": 50,
+      "actual_min": 50.2,
+      "duration_ratio": 1.0,
+      "avg_hr": 123,
+      "max_hr": 137,
+      "load": 33,
+      "rpe": null,
+      "feel": null,
+      "notes": null,
+      "avg_w": 151,
+      "np_w": 153,
+      "if": 0.63,
+      "decoupling_pct": 9.0,
+      "zone_secs": {
+        "Z1": 456,
+        "Z2": 2555,
+        "Z3": 0,
+        "Z4": 0,
+        "Z5": 0,
+        "Z6": 0,
+        "Z7": 0,
+        "SS": 0
+      },
+      "flags": [],
+      "planned_id": "w04-thu-bike-1",
+      "planned_title": "Endurance ride",
+      "sport": "Bike"
+    }
+  ],
+  "missed_so_far_this_week": [
     {
       "id": "w04-thu-strength-1",
       "date": "2026-11-05",
@@ -45,13 +74,13 @@
     }
   ],
   "week_to_date": {
-    "actual_hours": 4.48,
+    "actual_hours": 5.31,
     "planned_hours_to_date": 5.58,
     "planned_hours_week": 8.5,
     "by_sport_actual_h": {
       "Run": 0.89,
       "Swim": 1.51,
-      "Bike": 1.0,
+      "Bike": 1.84,
       "Strength": 1.08
     },
     "by_sport_planned_h": {
@@ -65,19 +94,19 @@
     "swims": 2
   },
   "wellness": {
-    "resting_hr_baseline": 53.5,
+    "resting_hr_baseline": 53,
     "resting_hr_recent": [
       null,
-      null
+      48
     ],
-    "hrv_baseline": 29.5,
+    "hrv_baseline": 29.0,
     "hrv_recent": [
       null,
-      null
+      30.0
     ],
-    "ctl": 46.8,
-    "atl": 49.9,
-    "tsb": -3.1
+    "ctl": 47.6,
+    "atl": 54.3,
+    "tsb": -6.7
   },
   "flags": []
 }
