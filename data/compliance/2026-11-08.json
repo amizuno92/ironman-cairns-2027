@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-08",
+  "weekday": "Sun",
+  "plan_week": 4,
+  "phase": "Base 1",
+  "week_kind": "load",
+  "sessions": [],
+  "missed_so_far_this_week": [
+    {
+      "id": "w04-thu-strength-1",
+      "date": "2026-11-05",
+      "sport": "Strength",
+      "title": "Strength B — base",
+      "duration_min": 35
+    },
+    {
+      "id": "w04-sat-bike-1",
+      "date": "2026-11-07",
+      "sport": "Bike",
+      "title": "Long ride",
+      "duration_min": 100
+    }
+  ],
+  "still_to_do_this_week": [],
+  "week_to_date": {
+    "actual_hours": 6.38,
+    "planned_hours_to_date": 8.5,
+    "planned_hours_week": 8.5,
+    "by_sport_actual_h": {
+      "Run": 1.22,
+      "Swim": 2.24,
+      "Bike": 1.84,
+      "Strength": 1.08
+    },
+    "by_sport_planned_h": {
+      "Swim": 2.5,
+      "Run": 1.25,
+      "Bike": 3.5,
+      "Strength": 1.25
+    },
+    "run_km": 8.98,
+    "prev_week_run_km": 6.6,
+    "swims": 3
+  },
+  "wellness": {
+    "resting_hr_baseline": 53,
+    "resting_hr_recent": [
+      null,
+      null
+    ],
+    "hrv_baseline": 29.5,
+    "hrv_recent": [
+      null,
+      null
+    ],
+    "ctl": 45.7,
+    "atl": 43.8,
+    "tsb": 1.9
+  },
+  "flags": []
+}
