@@ -4,7 +4,37 @@
   "plan_week": 5,
   "phase": "Base 1",
   "week_kind": "load",
-  "sessions": [],
+  "sessions": [
+    {
+      "activity_id": "i207938212",
+      "name": "Run",
+      "actual_date": "2026-11-09",
+      "planned_date": "2026-11-09",
+      "moved": false,
+      "kind": "walk_run",
+      "planned_min": 30,
+      "actual_min": 23.2,
+      "duration_ratio": 0.77,
+      "avg_hr": 122,
+      "max_hr": 143,
+      "load": 13,
+      "rpe": 3,
+      "feel": null,
+      "notes": null,
+      "distance_km": 3.95,
+      "pace_s_per_km": 353.0,
+      "flags": [
+        {
+          "level": "info",
+          "code": "short",
+          "msg": "23' vs 30' planned"
+        }
+      ],
+      "planned_id": "w05-mon-run-1",
+      "planned_title": "Walk-run (stage 3)",
+      "sport": "Run"
+    }
+  ],
   "missed_so_far_this_week": [
     {
       "id": "w05-mon-swim-1",
@@ -12,13 +42,6 @@
       "sport": "Swim",
       "title": "Aerobic endurance",
       "duration_min": 55
-    },
-    {
-      "id": "w05-mon-run-1",
-      "date": "2026-11-09",
-      "sport": "Run",
-      "title": "Walk-run (stage 3)",
-      "duration_min": 30
     }
   ],
   "still_to_do_this_week": [
@@ -87,34 +110,42 @@
     }
   ],
   "week_to_date": {
-    "actual_hours": 0.0,
+    "actual_hours": 0.39,
     "planned_hours_to_date": 1.42,
     "planned_hours_week": 9.33,
-    "by_sport_actual_h": {},
+    "by_sport_actual_h": {
+      "Run": 0.39
+    },
     "by_sport_planned_h": {
       "Swim": 2.75,
       "Run": 1.5,
       "Bike": 3.83,
       "Strength": 1.25
     },
-    "run_km": 0.0,
+    "run_km": 3.95,
     "prev_week_run_km": 8.98,
     "swims": 0
   },
   "wellness": {
-    "resting_hr_baseline": 53,
+    "resting_hr_baseline": 53.0,
     "resting_hr_recent": [
-      null,
+      54,
       null
     ],
     "hrv_baseline": 30.0,
     "hrv_recent": [
-      null,
+      19.0,
       null
     ],
-    "ctl": 46.2,
-    "atl": 45.7,
-    "tsb": 0.5
+    "ctl": 47.2,
+    "atl": 51.8,
+    "tsb": -4.5
   },
-  "flags": []
+  "flags": [
+    {
+      "level": "info",
+      "code": "short",
+      "msg": "23' vs 30' planned"
+    }
+  ]
 }
