@@ -1,0 +1,190 @@
+{
+  "date": "2026-11-10",
+  "label": "Strength A",
+  "week": 5,
+  "source": "Lift Log artifact",
+  "exercises": [
+    {
+      "name": "Back Squat",
+      "sets": [
+        {
+          "load": 75,
+          "reps": 6
+        },
+        {
+          "load": 75,
+          "reps": 6
+        },
+        {
+          "load": 75,
+          "reps": 6
+        },
+        {
+          "load": 75,
+          "reps": 6
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Bulgarian Split Squat",
+      "sets": [
+        {
+          "load": 17.5,
+          "reps": 8
+        },
+        {
+          "load": 17.5,
+          "reps": 8
+        },
+        {
+          "load": 17.5,
+          "reps": 8
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Romanian Deadlift",
+      "sets": [
+        {
+          "load": 80,
+          "reps": 6
+        },
+        {
+          "load": 80,
+          "reps": 6
+        },
+        {
+          "load": 80,
+          "reps": 6
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Pull-up",
+      "sets": [
+        {
+          "load": 15,
+          "reps": 8
+        },
+        {
+          "load": 15,
+          "reps": 8
+        },
+        {
+          "load": 15,
+          "reps": 8
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Standing calf raise",
+      "sets": [
+        {
+          "load": 30,
+          "reps": 12
+        },
+        {
+          "load": 30,
+          "reps": 12
+        },
+        {
+          "load": 30,
+          "reps": 12
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Bicep Curl",
+      "sets": [
+        {
+          "load": 15,
+          "reps": 12
+        },
+        {
+          "load": 15,
+          "reps": 10
+        },
+        {
+          "load": 15,
+          "reps": 8
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Side Plank",
+      "sets": [
+        {
+          "secs": 40
+        },
+        {
+          "secs": 40
+        },
+        {
+          "secs": 40
+        }
+      ],
+      "unit": "s"
+    },
+    {
+      "name": "Seated Soleus Raise",
+      "sets": [
+        {
+          "load": 55,
+          "reps": 12
+        },
+        {
+          "load": 55,
+          "reps": 12
+        },
+        {
+          "load": 55,
+          "reps": 12
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Tibialis Raise",
+      "sets": [
+        {
+          "load": 0,
+          "reps": 15
+        },
+        {
+          "load": 0,
+          "reps": 15
+        },
+        {
+          "load": 0,
+          "reps": 15
+        }
+      ],
+      "unit": "bw"
+    },
+    {
+      "name": "Pogo Hops",
+      "sets": [
+        {
+          "load": 0,
+          "reps": 20
+        },
+        {
+          "load": 0,
+          "reps": 20
+        },
+        {
+          "load": 0,
+          "reps": 20
+        }
+      ],
+      "unit": "bw"
+    }
+  ],
+  "notes": "All targets hit except curls (12/10/8). Pull-ups: kg = added weight."
+}
