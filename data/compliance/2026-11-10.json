@@ -4,7 +4,80 @@
   "plan_week": 5,
   "phase": "Base 1",
   "week_kind": "load",
-  "sessions": [],
+  "sessions": [
+    {
+      "activity_id": "i207970815",
+      "name": "Zwift - W5 Tue - Intervals — Z5 VO2max",
+      "actual_date": "2026-11-10",
+      "planned_date": "2026-11-10",
+      "moved": false,
+      "kind": "bike_intervals",
+      "planned_min": 60,
+      "actual_min": 60.1,
+      "duration_ratio": 1.0,
+      "avg_hr": 136,
+      "max_hr": 164,
+      "load": 73,
+      "rpe": null,
+      "feel": null,
+      "notes": null,
+      "avg_w": 177,
+      "np_w": 206,
+      "if": 0.85,
+      "decoupling_pct": 12.1,
+      "zone_secs": {
+        "Z1": 1371,
+        "Z2": 1034,
+        "Z3": 15,
+        "Z4": 12,
+        "Z5": 1178,
+        "Z6": 0,
+        "Z7": 0,
+        "SS": 12
+      },
+      "reps": {
+        "planned_reps": 5,
+        "planned_rep_min": 4,
+        "done_reps": 5,
+        "band_w": [
+          259,
+          273
+        ],
+        "reps": [
+          {
+            "secs": 236,
+            "watts": 265,
+            "hr": 139
+          },
+          {
+            "secs": 238,
+            "watts": 265,
+            "hr": 145
+          },
+          {
+            "secs": 239,
+            "watts": 265,
+            "hr": 149
+          },
+          {
+            "secs": 235,
+            "watts": 265,
+            "hr": 153
+          },
+          {
+            "secs": 236,
+            "watts": 265,
+            "hr": 154
+          }
+        ],
+        "avg_rep_w": 265
+      },
+      "flags": [],
+      "planned_id": "w05-tue-bike-1",
+      "planned_title": "Intervals — Z5 VO2max",
+      "sport": "Bike"
+    }
+  ],
   "missed_so_far_this_week": [
     {
       "id": "w05-mon-swim-1",
@@ -12,13 +85,6 @@
       "sport": "Swim",
       "title": "Aerobic endurance",
       "duration_min": 55
-    },
-    {
-      "id": "w05-tue-bike-1",
-      "date": "2026-11-10",
-      "sport": "Bike",
-      "title": "Intervals — Z5 VO2max",
-      "duration_min": 60
     },
     {
       "id": "w05-tue-strength-1",
@@ -80,11 +146,12 @@
     }
   ],
   "week_to_date": {
-    "actual_hours": 0.39,
+    "actual_hours": 1.39,
     "planned_hours_to_date": 3.08,
     "planned_hours_week": 9.33,
     "by_sport_actual_h": {
-      "Run": 0.39
+      "Run": 0.39,
+      "Bike": 1.0
     },
     "by_sport_planned_h": {
       "Swim": 2.75,
@@ -107,9 +174,9 @@
       null,
       19.0
     ],
-    "ctl": 46.1,
-    "atl": 44.9,
-    "tsb": 1.2
+    "ctl": 47.9,
+    "atl": 54.6,
+    "tsb": -6.8
   },
   "flags": []
 }
