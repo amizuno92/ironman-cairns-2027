@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-11",
+  "weekday": "Wed",
+  "plan_week": 5,
+  "phase": "Base 1",
+  "week_kind": "load",
+  "sessions": [],
+  "missed_so_far_this_week": [
+    {
+      "id": "w05-mon-swim-1",
+      "date": "2026-11-09",
+      "sport": "Swim",
+      "title": "Aerobic endurance",
+      "duration_min": 55
+    },
+    {
+      "id": "w05-tue-strength-1",
+      "date": "2026-11-10",
+      "sport": "Strength",
+      "title": "Strength A — base",
+      "duration_min": 40
+    },
+    {
+      "id": "w05-wed-swim-1",
+      "date": "2026-11-11",
+      "sport": "Swim",
+      "title": "CSS / threshold",
+      "duration_min": 55
+    },
+    {
+      "id": "w05-wed-run-1",
+      "date": "2026-11-11",
+      "sport": "Run",
+      "title": "Walk-run (stage 3)",
+      "duration_min": 30
+    }
+  ],
+  "still_to_do_this_week": [
+    {
+      "id": "w05-thu-bike-1",
+      "date": "2026-11-12",
+      "sport": "Bike",
+      "title": "Endurance ride",
+      "duration_min": 50
+    },
+    {
+      "id": "w05-thu-strength-1",
+      "date": "2026-11-12",
+      "sport": "Strength",
+      "title": "Strength B — base",
+      "duration_min": 35
+    },
+    {
+      "id": "w05-fri-swim-1",
+      "date": "2026-11-13",
+      "sport": "Swim",
+      "title": "Long aerobic swim",
+      "duration_min": 55
+    },
+    {
+      "id": "w05-fri-run-1",
+      "date": "2026-11-13",
+      "sport": "Run",
+      "title": "Walk-run (stage 3)",
+      "duration_min": 30
+    },
+    {
+      "id": "w05-sat-bike-1",
+      "date": "2026-11-14",
+      "sport": "Bike",
+      "title": "Long ride",
+      "duration_min": 120
+    }
+  ],
+  "week_to_date": {
+    "actual_hours": 1.39,
+    "planned_hours_to_date": 4.5,
+    "planned_hours_week": 9.33,
+    "by_sport_actual_h": {
+      "Run": 0.39,
+      "Bike": 1.0
+    },
+    "by_sport_planned_h": {
+      "Swim": 2.75,
+      "Run": 1.5,
+      "Bike": 3.83,
+      "Strength": 1.25
+    },
+    "run_km": 3.95,
+    "prev_week_run_km": 8.98,
+    "swims": 0
+  },
+  "wellness": {
+    "resting_hr_baseline": 53.5,
+    "resting_hr_recent": [
+      null,
+      null
+    ],
+    "hrv_baseline": 32.0,
+    "hrv_recent": [
+      null,
+      null
+    ],
+    "ctl": 46.7,
+    "atl": 47.3,
+    "tsb": -0.6
+  },
+  "flags": []
+}
