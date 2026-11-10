@@ -70,71 +70,15 @@
           "reps": 8
         },
         {
-          "load": 0,
-          "reps": 10
+          "load": 10,
+          "reps": 8
         },
         {
-          "load": 0,
-          "reps": 10
-        },
-        {
-          "load": 0,
-          "reps": 10
-        },
-        {
-          "load": 0,
-          "reps": 10
-        },
-        {
-          "load": 0,
-          "reps": 10
-        },
-        {
-          "load": 0,
-          "reps": 10
-        },
-        {
-          "load": 0,
-          "reps": 10
-        },
-        {
-          "load": 0,
-          "reps": 10
-        },
-        {
-          "load": 0,
-          "reps": 15
-        },
-        {
-          "load": 0,
-          "reps": 15
-        },
-        {
-          "load": 0,
-          "reps": 15
-        },
-        {
-          "load": 0,
-          "reps": 15
-        },
-        {
-          "load": 0,
-          "reps": 15
-        },
-        {
-          "load": 0,
-          "reps": 15
-        },
-        {
-          "load": 0,
-          "reps": 15
-        },
-        {
-          "load": 0,
-          "reps": 15
+          "load": 15,
+          "reps": 8
         }
       ],
-      "unit": "bw"
+      "unit": "kg"
     },
     {
       "name": "Standing calf raise",
@@ -241,5 +185,6 @@
       ],
       "unit": "bw"
     }
-  ]
+  ],
+  "notes": "Pull-ups: weighted (kg = added weight). Corrected from a Lift Log parsing bug."
 }
