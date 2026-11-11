@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-12",
+  "weekday": "Thu",
+  "plan_week": 5,
+  "phase": "Base 1",
+  "week_kind": "load",
+  "sessions": [],
+  "missed_so_far_this_week": [
+    {
+      "id": "w05-mon-swim-1",
+      "date": "2026-11-09",
+      "sport": "Swim",
+      "title": "Aerobic endurance",
+      "duration_min": 55
+    },
+    {
+      "id": "w05-thu-bike-1",
+      "date": "2026-11-12",
+      "sport": "Bike",
+      "title": "Endurance ride",
+      "duration_min": 50
+    },
+    {
+      "id": "w05-thu-strength-1",
+      "date": "2026-11-12",
+      "sport": "Strength",
+      "title": "Strength B — base",
+      "duration_min": 35
+    }
+  ],
+  "still_to_do_this_week": [
+    {
+      "id": "w05-fri-swim-1",
+      "date": "2026-11-13",
+      "sport": "Swim",
+      "title": "Long aerobic swim",
+      "duration_min": 55
+    },
+    {
+      "id": "w05-fri-run-1",
+      "date": "2026-11-13",
+      "sport": "Run",
+      "title": "Walk-run (stage 3)",
+      "duration_min": 30
+    },
+    {
+      "id": "w05-sat-bike-1",
+      "date": "2026-11-14",
+      "sport": "Bike",
+      "title": "Long ride",
+      "duration_min": 120
+    }
+  ],
+  "week_to_date": {
+    "actual_hours": 3.73,
+    "planned_hours_to_date": 5.92,
+    "planned_hours_week": 9.33,
+    "by_sport_actual_h": {
+      "Run": 0.77,
+      "Bike": 1.0,
+      "Strength": 1.1,
+      "Swim": 0.85
+    },
+    "by_sport_planned_h": {
+      "Swim": 2.75,
+      "Run": 1.5,
+      "Bike": 3.83,
+      "Strength": 1.25
+    },
+    "run_km": 7.91,
+    "prev_week_run_km": 8.98,
+    "swims": 1
+  },
+  "wellness": {
+    "resting_hr_baseline": 54.5,
+    "resting_hr_recent": [
+      null,
+      null
+    ],
+    "hrv_baseline": 31.0,
+    "hrv_recent": [
+      null,
+      null
+    ],
+    "ctl": 47.2,
+    "atl": 50.7,
+    "tsb": -3.5
+  },
+  "flags": []
+}
