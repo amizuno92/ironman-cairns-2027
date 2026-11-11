@@ -76,6 +76,33 @@
       "planned_id": "w05-tue-bike-1",
       "planned_title": "Intervals — Z5 VO2max",
       "sport": "Bike"
+    },
+    {
+      "activity_id": "i208527363",
+      "name": "Strength Training",
+      "actual_date": "2026-11-10",
+      "planned_date": "2026-11-10",
+      "moved": false,
+      "kind": "strength",
+      "planned_min": 40,
+      "actual_min": 66.2,
+      "duration_ratio": 1.66,
+      "avg_hr": 107,
+      "max_hr": 146,
+      "load": 19,
+      "rpe": null,
+      "feel": null,
+      "notes": null,
+      "flags": [
+        {
+          "level": "warn",
+          "code": "too_long",
+          "msg": "1h06 vs 40' planned (66% over)"
+        }
+      ],
+      "planned_id": "w05-tue-strength-1",
+      "planned_title": "Strength A — base",
+      "sport": "Strength"
     }
   ],
   "missed_so_far_this_week": [
@@ -85,13 +112,6 @@
       "sport": "Swim",
       "title": "Aerobic endurance",
       "duration_min": 55
-    },
-    {
-      "id": "w05-tue-strength-1",
-      "date": "2026-11-10",
-      "sport": "Strength",
-      "title": "Strength A — base",
-      "duration_min": 40
     }
   ],
   "still_to_do_this_week": [
@@ -146,12 +166,13 @@
     }
   ],
   "week_to_date": {
-    "actual_hours": 1.39,
+    "actual_hours": 2.49,
     "planned_hours_to_date": 3.08,
     "planned_hours_week": 9.33,
     "by_sport_actual_h": {
       "Run": 0.39,
-      "Bike": 1.0
+      "Bike": 1.0,
+      "Strength": 1.1
     },
     "by_sport_planned_h": {
       "Swim": 2.75,
@@ -164,9 +185,9 @@
     "swims": 0
   },
   "wellness": {
-    "resting_hr_baseline": 53,
+    "resting_hr_baseline": 53.5,
     "resting_hr_recent": [
-      null,
+      65,
       54
     ],
     "hrv_baseline": 31.0,
@@ -175,8 +196,14 @@
       19.0
     ],
     "ctl": 47.9,
-    "atl": 54.6,
-    "tsb": -6.8
+    "atl": 57.1,
+    "tsb": -9.3
   },
-  "flags": []
+  "flags": [
+    {
+      "level": "warn",
+      "code": "too_long",
+      "msg": "1h06 vs 40' planned (66% over)"
+    }
+  ]
 }

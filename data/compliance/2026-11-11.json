@@ -4,7 +4,62 @@
   "plan_week": 5,
   "phase": "Base 1",
   "week_kind": "load",
-  "sessions": [],
+  "sessions": [
+    {
+      "activity_id": "i208527356",
+      "name": "Run",
+      "actual_date": "2026-11-11",
+      "planned_date": "2026-11-11",
+      "moved": false,
+      "kind": "walk_run",
+      "planned_min": 30,
+      "actual_min": 23.2,
+      "duration_ratio": 0.77,
+      "avg_hr": 131,
+      "max_hr": 148,
+      "load": 13,
+      "rpe": 4,
+      "feel": null,
+      "notes": null,
+      "distance_km": 3.96,
+      "pace_s_per_km": 352.0,
+      "flags": [
+        {
+          "level": "info",
+          "code": "short",
+          "msg": "23' vs 30' planned"
+        }
+      ],
+      "planned_id": "w05-wed-run-1",
+      "planned_title": "Walk-run (stage 3)",
+      "sport": "Run"
+    },
+    {
+      "activity_id": "i208527397",
+      "name": "Swim",
+      "actual_date": "2026-11-11",
+      "planned_date": "2026-11-11",
+      "moved": false,
+      "kind": "swim_css",
+      "planned_min": 55,
+      "actual_min": 51.0,
+      "duration_ratio": 0.93,
+      "avg_hr": 136,
+      "max_hr": 153,
+      "load": 54,
+      "rpe": 4,
+      "feel": null,
+      "notes": null,
+      "distance_m": 2800.0,
+      "pace_s_per_100m": 109.4,
+      "pace": "1:49",
+      "note_pool_as_ows": "Watch logged this as open water; pace includes rests.",
+      "flags": [],
+      "planned_id": "w05-wed-swim-1",
+      "planned_title": "CSS / threshold",
+      "sport": "Swim"
+    }
+  ],
   "missed_so_far_this_week": [
     {
       "id": "w05-mon-swim-1",
@@ -12,27 +67,6 @@
       "sport": "Swim",
       "title": "Aerobic endurance",
       "duration_min": 55
-    },
-    {
-      "id": "w05-tue-strength-1",
-      "date": "2026-11-10",
-      "sport": "Strength",
-      "title": "Strength A — base",
-      "duration_min": 40
-    },
-    {
-      "id": "w05-wed-swim-1",
-      "date": "2026-11-11",
-      "sport": "Swim",
-      "title": "CSS / threshold",
-      "duration_min": 55
-    },
-    {
-      "id": "w05-wed-run-1",
-      "date": "2026-11-11",
-      "sport": "Run",
-      "title": "Walk-run (stage 3)",
-      "duration_min": 30
     }
   ],
   "still_to_do_this_week": [
@@ -73,12 +107,14 @@
     }
   ],
   "week_to_date": {
-    "actual_hours": 1.39,
+    "actual_hours": 3.73,
     "planned_hours_to_date": 4.5,
     "planned_hours_week": 9.33,
     "by_sport_actual_h": {
-      "Run": 0.39,
-      "Bike": 1.0
+      "Run": 0.77,
+      "Bike": 1.0,
+      "Strength": 1.1,
+      "Swim": 0.85
     },
     "by_sport_planned_h": {
       "Swim": 2.75,
@@ -86,24 +122,30 @@
       "Bike": 3.83,
       "Strength": 1.25
     },
-    "run_km": 3.95,
+    "run_km": 7.91,
     "prev_week_run_km": 8.98,
-    "swims": 0
+    "swims": 1
   },
   "wellness": {
-    "resting_hr_baseline": 53.5,
+    "resting_hr_baseline": 54,
     "resting_hr_recent": [
       null,
-      null
+      65
     ],
     "hrv_baseline": 32.0,
     "hrv_recent": [
       null,
       null
     ],
-    "ctl": 46.7,
-    "atl": 47.3,
-    "tsb": -0.6
+    "ctl": 48.3,
+    "atl": 58.5,
+    "tsb": -10.1
   },
-  "flags": []
+  "flags": [
+    {
+      "level": "info",
+      "code": "short",
+      "msg": "23' vs 30' planned"
+    }
+  ]
 }
