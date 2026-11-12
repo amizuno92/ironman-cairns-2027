@@ -132,9 +132,9 @@
       null,
       65
     ],
-    "hrv_baseline": 32.0,
+    "hrv_baseline": 31.0,
     "hrv_recent": [
-      null,
+      25.0,
       null
     ],
     "ctl": 48.3,

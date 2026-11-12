@@ -1,0 +1,143 @@
+[
+  {
+    "id": "i208883206",
+    "name": "Zwift - W5 Thu - Endurance ride",
+    "type": "VirtualRide",
+    "start_date_local": "2026-11-12T05:08:22",
+    "start_date": "2026-11-11T19:08:22Z",
+    "moving_time": 3010,
+    "elapsed_time": 3010,
+    "distance": 28431.15,
+    "icu_average_watts": 152,
+    "icu_weighted_avg_watts": 153,
+    "icu_intensity": 63.22314,
+    "icu_ftp": 242,
+    "icu_training_load": 33,
+    "average_heartrate": 120,
+    "max_heartrate": 133,
+    "average_cadence": 83.751,
+    "average_speed": 9.442,
+    "pace": 9.445565,
+    "decoupling": 4.427824,
+    "icu_efficiency_factor": 1.275,
+    "icu_variability_index": 1.0065789,
+    "icu_zone_times": [
+      {
+        "id": "Z1",
+        "secs": 453
+      },
+      {
+        "id": "Z2",
+        "secs": 2558
+      },
+      {
+        "id": "Z3",
+        "secs": 0
+      },
+      {
+        "id": "Z4",
+        "secs": 0
+      },
+      {
+        "id": "Z5",
+        "secs": 0
+      },
+      {
+        "id": "Z6",
+        "secs": 0
+      },
+      {
+        "id": "Z7",
+        "secs": 0
+      },
+      {
+        "id": "SS",
+        "secs": 0
+      }
+    ],
+    "icu_hr_zone_times": [
+      2899,
+      112,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "icu_hr_zones": [
+      129,
+      144,
+      149,
+      160,
+      165,
+      170,
+      175
+    ],
+    "icu_power_zones": [
+      55,
+      75,
+      90,
+      105,
+      120,
+      150,
+      999
+    ],
+    "device_name": "ZWIFT H~",
+    "trainer": true,
+    "source": "ZWIFT",
+    "total_elevation_gain": 46.0,
+    "carbs_used": 94,
+    "calories": 435,
+    "icu_ctl": 47.945293,
+    "icu_atl": 56.66247,
+    "icu_weight": 80.4,
+    "icu_lap_count": 4,
+    "polarization_index": 0.0,
+    "lthr": 161,
+    "athlete_max_hr": 175
+  },
+  {
+    "id": "i208970531",
+    "name": "Strength Training",
+    "type": "WeightTraining",
+    "start_date_local": "2026-11-12T11:54:17",
+    "start_date": "2026-11-12T01:54:17Z",
+    "moving_time": 2534,
+    "elapsed_time": 2534,
+    "icu_intensity": 41.29755,
+    "icu_training_load": 12,
+    "average_heartrate": 107,
+    "max_heartrate": 134,
+    "icu_hr_zone_times": [
+      2535,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "icu_hr_zones": [
+      140,
+      149,
+      157,
+      166,
+      171,
+      176,
+      184
+    ],
+    "interval_summary": [
+      "1x 42m15s 106bpm"
+    ],
+    "device_name": "Watch6,18",
+    "source": "OAUTH_CLIENT",
+    "calories": 230,
+    "icu_ctl": 47.945293,
+    "icu_atl": 56.66247,
+    "icu_weight": 80.4,
+    "icu_lap_count": 1,
+    "polarization_index": 0.0,
+    "lthr": 167,
+    "athlete_max_hr": 184
+  }
+]

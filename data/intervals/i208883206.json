@@ -1,0 +1,24 @@
+{
+  "id": "i208883206",
+  "icu_intervals": [
+    {
+      "start_index": 0,
+      "distance": 28430.81,
+      "moving_time": 3011,
+      "elapsed_time": 3011,
+      "average_watts": 151,
+      "intensity": 62,
+      "weighted_average_watts": 153,
+      "decoupling": 6.9881077,
+      "zone": 2,
+      "average_speed": 9.442315,
+      "average_heartrate": 119,
+      "max_heartrate": 133,
+      "average_cadence": 83.5563,
+      "type": "RECOVERY",
+      "end_index": 3011,
+      "group_id": null,
+      "label": null
+    }
+  ]
+}
