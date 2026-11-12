@@ -1,0 +1,135 @@
+{
+  "date": "2026-11-12",
+  "label": "Strength B",
+  "week": 5,
+  "source": "Lift Log artifact",
+  "exercises": [
+    {
+      "name": "Hip Thrust",
+      "sets": [
+        {
+          "load": 62.7,
+          "reps": 10
+        },
+        {
+          "load": 62.7,
+          "reps": 10
+        },
+        {
+          "load": 62.7,
+          "reps": 10
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Step-up",
+      "sets": [
+        {
+          "load": 25,
+          "reps": 8
+        },
+        {
+          "load": 25,
+          "reps": 8
+        },
+        {
+          "load": 25,
+          "reps": 8
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Single-leg Romanian Deadlift",
+      "sets": [
+        {
+          "load": 12,
+          "reps": 8
+        },
+        {
+          "load": 12,
+          "reps": 8
+        },
+        {
+          "load": 12,
+          "reps": 8
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Dumbbell Overhead Press",
+      "sets": [
+        {
+          "load": 27.5,
+          "reps": 8
+        },
+        {
+          "load": 27.5,
+          "reps": 8
+        },
+        {
+          "load": 27.5,
+          "reps": 8
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Lateral Raises",
+      "sets": [
+        {
+          "load": 12.5,
+          "reps": 14
+        },
+        {
+          "load": 12.5,
+          "reps": 14
+        },
+        {
+          "load": 12.5,
+          "reps": 14
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Tricep Pushdown",
+      "sets": [
+        {
+          "load": 24.9,
+          "reps": 12
+        },
+        {
+          "load": 24.9,
+          "reps": 12
+        },
+        {
+          "load": 24.9,
+          "reps": 12
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Pallof Press",
+      "sets": [
+        {
+          "load": 11.3,
+          "reps": 12
+        },
+        {
+          "load": 11.3,
+          "reps": 12
+        },
+        {
+          "load": 11.3,
+          "reps": 12
+        }
+      ],
+      "unit": "kg"
+    }
+  ],
+  "notes": "All targets hit. Hip thrust = machine total. SL RDL logged at 12 kg (target was 12\u201312.5)."
+}
