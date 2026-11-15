@@ -1,0 +1,120 @@
+{
+  "date": "2026-11-16",
+  "weekday": "Mon",
+  "plan_week": 6,
+  "phase": "Base 1",
+  "week_kind": "recovery",
+  "sessions": [],
+  "missed_so_far_this_week": [
+    {
+      "id": "w06-mon-swim-1",
+      "date": "2026-11-16",
+      "sport": "Swim",
+      "title": "Aerobic endurance",
+      "duration_min": 45
+    },
+    {
+      "id": "w06-mon-strength-1",
+      "date": "2026-11-16",
+      "sport": "Strength",
+      "title": "Strength A — base",
+      "duration_min": 30
+    }
+  ],
+  "still_to_do_this_week": [
+    {
+      "id": "w06-tue-bike-1",
+      "date": "2026-11-17",
+      "sport": "Bike",
+      "title": "Endurance ride",
+      "duration_min": 45
+    },
+    {
+      "id": "w06-tue-run-1",
+      "date": "2026-11-17",
+      "sport": "Run",
+      "title": "Walk-run (stage 3)",
+      "duration_min": 30
+    },
+    {
+      "id": "w06-wed-swim-1",
+      "date": "2026-11-18",
+      "sport": "Swim",
+      "title": "TEST: CSS 400/200",
+      "duration_min": 45
+    },
+    {
+      "id": "w06-thu-bike-1",
+      "date": "2026-11-19",
+      "sport": "Bike",
+      "title": "Recovery spin",
+      "duration_min": 40
+    },
+    {
+      "id": "w06-thu-run-1",
+      "date": "2026-11-19",
+      "sport": "Run",
+      "title": "Walk-run (stage 3)",
+      "duration_min": 30
+    },
+    {
+      "id": "w06-thu-strength-1",
+      "date": "2026-11-19",
+      "sport": "Strength",
+      "title": "Strength B — base",
+      "duration_min": 30
+    },
+    {
+      "id": "w06-fri-swim-1",
+      "date": "2026-11-20",
+      "sport": "Swim",
+      "title": "Recovery swim",
+      "duration_min": 40
+    },
+    {
+      "id": "w06-sat-bike-1",
+      "date": "2026-11-21",
+      "sport": "Bike",
+      "title": "TEST: FTP ramp",
+      "duration_min": 45
+    },
+    {
+      "id": "w06-sun-run-1",
+      "date": "2026-11-22",
+      "sport": "Run",
+      "title": "Walk-run (stage 3)",
+      "duration_min": 30
+    }
+  ],
+  "week_to_date": {
+    "actual_hours": 0.0,
+    "planned_hours_to_date": 1.25,
+    "planned_hours_week": 6.83,
+    "by_sport_actual_h": {},
+    "by_sport_planned_h": {
+      "Swim": 2.17,
+      "Strength": 1.0,
+      "Bike": 2.17,
+      "Run": 1.5
+    },
+    "run_km": 0.0,
+    "prev_week_run_km": 11.82,
+    "swims": 0
+  },
+  "wellness": {
+    "resting_hr_baseline": 55,
+    "resting_hr_recent": [
+      null,
+      null
+    ],
+    "hrv_baseline": 29.5,
+    "hrv_recent": [
+      null,
+      null
+    ],
+    "ctl": 47.6,
+    "atl": 50.2,
+    "tsb": -2.6
+  },
+  "flags": []
+}
