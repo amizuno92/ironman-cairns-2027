@@ -4,7 +4,49 @@
   "plan_week": 5,
   "phase": "Base 1",
   "week_kind": "load",
-  "sessions": [],
+  "sessions": [
+    {
+      "activity_id": "i210169693",
+      "name": "Early morning Ride",
+      "actual_date": "2026-11-15",
+      "planned_date": "2026-11-14",
+      "moved": true,
+      "kind": "bike_long",
+      "planned_min": 120,
+      "actual_min": 108.0,
+      "duration_ratio": 0.9,
+      "avg_hr": 136,
+      "max_hr": 154,
+      "load": 102,
+      "rpe": null,
+      "feel": null,
+      "notes": null,
+      "avg_w": 154,
+      "np_w": 182,
+      "if": 0.75,
+      "decoupling_pct": -2.6,
+      "zone_secs": {
+        "Z1": 1968,
+        "Z2": 2026,
+        "Z3": 1141,
+        "Z4": 590,
+        "Z5": 308,
+        "Z6": 321,
+        "Z7": 128,
+        "SS": 724
+      },
+      "flags": [
+        {
+          "level": "warn",
+          "code": "too_hard",
+          "msg": "NP 182W above the 175W ceiling for this ride"
+        }
+      ],
+      "planned_id": "w05-sat-bike-1",
+      "planned_title": "Long ride",
+      "sport": "Bike"
+    }
+  ],
   "missed_so_far_this_week": [
     {
       "id": "w05-mon-swim-1",
@@ -12,23 +54,16 @@
       "sport": "Swim",
       "title": "Aerobic endurance",
       "duration_min": 55
-    },
-    {
-      "id": "w05-sat-bike-1",
-      "date": "2026-11-14",
-      "sport": "Bike",
-      "title": "Long ride",
-      "duration_min": 120
     }
   ],
   "still_to_do_this_week": [],
   "week_to_date": {
-    "actual_hours": 6.46,
+    "actual_hours": 8.26,
     "planned_hours_to_date": 9.33,
     "planned_hours_week": 9.33,
     "by_sport_actual_h": {
       "Run": 1.16,
-      "Bike": 1.84,
+      "Bike": 3.64,
       "Strength": 1.81,
       "Swim": 1.65
     },
@@ -43,19 +78,25 @@
     "swims": 2
   },
   "wellness": {
-    "resting_hr_baseline": 54,
+    "resting_hr_baseline": 54.5,
     "resting_hr_recent": [
       null,
-      null
+      49
     ],
-    "hrv_baseline": 29.5,
+    "hrv_baseline": 29.0,
     "hrv_recent": [
       null,
-      null
+      21.0
     ],
-    "ctl": 46.3,
-    "atl": 44.3,
-    "tsb": 2.0
+    "ctl": 48.7,
+    "atl": 57.9,
+    "tsb": -9.2
   },
-  "flags": []
+  "flags": [
+    {
+      "level": "warn",
+      "code": "too_hard",
+      "msg": "NP 182W above the 175W ceiling for this ride"
+    }
+  ]
 }
