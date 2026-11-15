@@ -1,0 +1,151 @@
+{
+  "date": "2026-11-16",
+  "exercises": [
+    {
+      "name": "Back Squat",
+      "sets": [
+        {
+          "load": 57.5,
+          "reps": 6
+        },
+        {
+          "load": 57.5,
+          "reps": 6
+        },
+        {
+          "load": 57.5,
+          "reps": 6
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Bulgarian Split Squat",
+      "sets": [
+        {
+          "load": 12.5,
+          "reps": 8
+        },
+        {
+          "load": 12.5,
+          "reps": 8
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Romanian Deadlift",
+      "sets": [
+        {
+          "load": 60,
+          "reps": 6
+        },
+        {
+          "load": 60,
+          "reps": 6
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Pull-up",
+      "sets": [
+        {
+          "load": 5,
+          "reps": 8
+        },
+        {
+          "load": 5,
+          "reps": 8
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Leg press calf raise",
+      "sets": [
+        {
+          "load": 10,
+          "reps": 12
+        },
+        {
+          "load": 10,
+          "reps": 12
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Bicep Curl",
+      "sets": [
+        {
+          "load": 12.5,
+          "reps": 10
+        },
+        {
+          "load": 12.5,
+          "reps": 10
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Side Plank",
+      "sets": [
+        {
+          "secs": 30
+        },
+        {
+          "secs": 30
+        }
+      ],
+      "unit": "s"
+    },
+    {
+      "name": "Seated Soleus Raise",
+      "sets": [
+        {
+          "load": 40,
+          "reps": 12
+        },
+        {
+          "load": 40,
+          "reps": 12
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Tibialis Raise",
+      "sets": [
+        {
+          "load": 0,
+          "reps": 15
+        },
+        {
+          "load": 0,
+          "reps": 15
+        }
+      ],
+      "unit": "bw"
+    },
+    {
+      "name": "Pogo Hops",
+      "sets": [
+        {
+          "load": 0,
+          "reps": 20
+        },
+        {
+          "load": 0,
+          "reps": 20
+        }
+      ],
+      "unit": "bw"
+    }
+  ],
+  "label": "Strength A",
+  "week": 6,
+  "notes": "Recovery week, all targets hit. Pull-ups: kg = added weight. Calf raise switched to leg press machine from this session; kg = plates added (sled not included).",
+  "source": "Lift Log artifact"
+}
