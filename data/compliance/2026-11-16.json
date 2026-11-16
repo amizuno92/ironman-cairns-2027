@@ -4,23 +4,54 @@
   "plan_week": 6,
   "phase": "Base 1",
   "week_kind": "recovery",
-  "sessions": [],
-  "missed_so_far_this_week": [
+  "sessions": [
     {
-      "id": "w06-mon-swim-1",
-      "date": "2026-11-16",
-      "sport": "Swim",
-      "title": "Aerobic endurance",
-      "duration_min": 45
+      "activity_id": "i210522353",
+      "name": "Strength Training",
+      "actual_date": "2026-11-16",
+      "planned_date": "2026-11-16",
+      "moved": false,
+      "kind": "strength",
+      "planned_min": 30,
+      "actual_min": 35.0,
+      "duration_ratio": 1.17,
+      "avg_hr": 81,
+      "max_hr": 109,
+      "load": 5,
+      "rpe": null,
+      "feel": null,
+      "notes": null,
+      "flags": [],
+      "planned_id": "w06-mon-strength-1",
+      "planned_title": "Strength A — base",
+      "sport": "Strength"
     },
     {
-      "id": "w06-mon-strength-1",
-      "date": "2026-11-16",
-      "sport": "Strength",
-      "title": "Strength A — base",
-      "duration_min": 30
+      "activity_id": "i210585764",
+      "name": "Swim",
+      "actual_date": "2026-11-16",
+      "planned_date": "2026-11-16",
+      "moved": false,
+      "kind": "swim_aerobic",
+      "planned_min": 45,
+      "actual_min": 38.6,
+      "duration_ratio": 0.86,
+      "avg_hr": 127,
+      "max_hr": 148,
+      "load": 46,
+      "rpe": 4,
+      "feel": null,
+      "notes": null,
+      "distance_m": 2200.0,
+      "pace_s_per_100m": 105.3,
+      "pace": "1:45",
+      "flags": [],
+      "planned_id": "w06-mon-swim-1",
+      "planned_title": "Aerobic endurance",
+      "sport": "Swim"
     }
   ],
+  "missed_so_far_this_week": [],
   "still_to_do_this_week": [
     {
       "id": "w06-tue-bike-1",
@@ -87,10 +118,13 @@
     }
   ],
   "week_to_date": {
-    "actual_hours": 0.0,
+    "actual_hours": 1.23,
     "planned_hours_to_date": 1.25,
     "planned_hours_week": 6.83,
-    "by_sport_actual_h": {},
+    "by_sport_actual_h": {
+      "Strength": 0.58,
+      "Swim": 0.64
+    },
     "by_sport_planned_h": {
       "Swim": 2.17,
       "Strength": 1.0,
@@ -99,7 +133,7 @@
     },
     "run_km": 0.0,
     "prev_week_run_km": 11.82,
-    "swims": 0
+    "swims": 1
   },
   "wellness": {
     "resting_hr_baseline": 55,
@@ -112,9 +146,9 @@
       null,
       null
     ],
-    "ctl": 47.6,
-    "atl": 50.2,
-    "tsb": -2.6
+    "ctl": 48.6,
+    "atl": 57.0,
+    "tsb": -8.3
   },
   "flags": []
 }
