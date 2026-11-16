@@ -1,0 +1,151 @@
+{
+  "date": "2026-11-17",
+  "weekday": "Tue",
+  "plan_week": 6,
+  "phase": "Base 1",
+  "week_kind": "recovery",
+  "sessions": [
+    {
+      "activity_id": "i210919007",
+      "name": "Gold Coast Road Cycling",
+      "actual_date": "2026-11-17",
+      "planned_date": "2026-11-17",
+      "moved": false,
+      "kind": "bike_endurance",
+      "planned_min": 45,
+      "actual_min": 46.5,
+      "duration_ratio": 1.03,
+      "avg_hr": 125,
+      "max_hr": 142,
+      "load": 41,
+      "rpe": null,
+      "feel": null,
+      "notes": null,
+      "avg_w": 148,
+      "np_w": 177,
+      "if": 0.73,
+      "decoupling_pct": 10.4,
+      "zone_secs": {
+        "Z1": 1022,
+        "Z2": 930,
+        "Z3": 415,
+        "Z4": 215,
+        "Z5": 86,
+        "Z6": 75,
+        "Z7": 47,
+        "SS": 255
+      },
+      "flags": [
+        {
+          "level": "info",
+          "code": "z4plus",
+          "msg": "7' at Z4+ in an easy ride"
+        }
+      ],
+      "planned_id": "w06-tue-bike-1",
+      "planned_title": "Endurance ride",
+      "sport": "Bike"
+    }
+  ],
+  "missed_so_far_this_week": [
+    {
+      "id": "w06-tue-run-1",
+      "date": "2026-11-17",
+      "sport": "Run",
+      "title": "Walk-run (stage 3)",
+      "duration_min": 30
+    }
+  ],
+  "still_to_do_this_week": [
+    {
+      "id": "w06-wed-swim-1",
+      "date": "2026-11-18",
+      "sport": "Swim",
+      "title": "TEST: CSS 400/200",
+      "duration_min": 45
+    },
+    {
+      "id": "w06-thu-bike-1",
+      "date": "2026-11-19",
+      "sport": "Bike",
+      "title": "Recovery spin",
+      "duration_min": 40
+    },
+    {
+      "id": "w06-thu-run-1",
+      "date": "2026-11-19",
+      "sport": "Run",
+      "title": "Walk-run (stage 3)",
+      "duration_min": 30
+    },
+    {
+      "id": "w06-thu-strength-1",
+      "date": "2026-11-19",
+      "sport": "Strength",
+      "title": "Strength B — base",
+      "duration_min": 30
+    },
+    {
+      "id": "w06-fri-swim-1",
+      "date": "2026-11-20",
+      "sport": "Swim",
+      "title": "Recovery swim",
+      "duration_min": 40
+    },
+    {
+      "id": "w06-sat-bike-1",
+      "date": "2026-11-21",
+      "sport": "Bike",
+      "title": "TEST: FTP ramp",
+      "duration_min": 45
+    },
+    {
+      "id": "w06-sun-run-1",
+      "date": "2026-11-22",
+      "sport": "Run",
+      "title": "Walk-run (stage 3)",
+      "duration_min": 30
+    }
+  ],
+  "week_to_date": {
+    "actual_hours": 2.0,
+    "planned_hours_to_date": 2.5,
+    "planned_hours_week": 6.83,
+    "by_sport_actual_h": {
+      "Strength": 0.58,
+      "Swim": 0.64,
+      "Bike": 0.78
+    },
+    "by_sport_planned_h": {
+      "Swim": 2.17,
+      "Strength": 1.0,
+      "Bike": 2.17,
+      "Run": 1.5
+    },
+    "run_km": 0.0,
+    "prev_week_run_km": 11.82,
+    "swims": 1
+  },
+  "wellness": {
+    "resting_hr_baseline": 56,
+    "resting_hr_recent": [
+      null,
+      52
+    ],
+    "hrv_baseline": 27.0,
+    "hrv_recent": [
+      null,
+      43.0
+    ],
+    "ctl": 48.5,
+    "atl": 54.8,
+    "tsb": -6.4
+  },
+  "flags": [
+    {
+      "level": "info",
+      "code": "z4plus",
+      "msg": "7' at Z4+ in an easy ride"
+    }
+  ]
+}
