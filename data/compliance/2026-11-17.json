@@ -45,17 +45,32 @@
       "planned_id": "w06-tue-bike-1",
       "planned_title": "Endurance ride",
       "sport": "Bike"
-    }
-  ],
-  "missed_so_far_this_week": [
+    },
     {
-      "id": "w06-tue-run-1",
-      "date": "2026-11-17",
-      "sport": "Run",
-      "title": "Walk-run (stage 3)",
-      "duration_min": 30
+      "activity_id": "i211121904",
+      "name": "Run",
+      "actual_date": "2026-11-17",
+      "planned_date": "2026-11-17",
+      "moved": false,
+      "kind": "walk_run",
+      "planned_min": 30,
+      "actual_min": 24.1,
+      "duration_ratio": 0.8,
+      "avg_hr": 130,
+      "max_hr": 147,
+      "load": 17,
+      "rpe": 4,
+      "feel": null,
+      "notes": null,
+      "distance_km": 4.47,
+      "pace_s_per_km": 323.0,
+      "flags": [],
+      "planned_id": "w06-tue-run-1",
+      "planned_title": "Walk-run (stage 3)",
+      "sport": "Run"
     }
   ],
+  "missed_so_far_this_week": [],
   "still_to_do_this_week": [
     {
       "id": "w06-wed-swim-1",
@@ -108,13 +123,14 @@
     }
   ],
   "week_to_date": {
-    "actual_hours": 2.0,
+    "actual_hours": 2.4,
     "planned_hours_to_date": 2.5,
     "planned_hours_week": 6.83,
     "by_sport_actual_h": {
       "Strength": 0.58,
       "Swim": 0.64,
-      "Bike": 0.78
+      "Bike": 0.78,
+      "Run": 0.4
     },
     "by_sport_planned_h": {
       "Swim": 2.17,
@@ -122,7 +138,7 @@
       "Bike": 2.17,
       "Run": 1.5
     },
-    "run_km": 0.0,
+    "run_km": 4.47,
     "prev_week_run_km": 11.82,
     "swims": 1
   },
@@ -137,9 +153,9 @@
       null,
       43.0
     ],
-    "ctl": 48.5,
-    "atl": 54.8,
-    "tsb": -6.4
+    "ctl": 48.9,
+    "atl": 57.1,
+    "tsb": -8.3
   },
   "flags": [
     {
