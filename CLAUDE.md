@@ -18,6 +18,7 @@ You are reviewing Andrew Mizuno's training for IRONMAN Cairns (13 June 2027) as 
 - `data/weekly/<monday>.json`: weekly summary (Sunday).
 - `data/lifts/`: strength sessions. `data/tests/`: FTP/CSS results.
 - `workouts/zwo/`, `workouts/swim/`: generated sessions.
+- Plan page (read-only, pinned): https://claude.ai/artifact/UEh6H4w31yJsSz3WMLjYAk, built by `tools/make_plan_page.py` into `boards/plan.html`.
 - Lift Log artifact (strength sessions Andrew logs himself): https://claude.ai/artifact/Hif8tiRF3hJv6LHMPsM1jq. If the `ArtifactData` tool is available, read collection `sessions` and mirror any new documents into `data/lifts/<date>-<label>.json`.
 
 ## Hard rules (never break, never trade off)
@@ -46,6 +47,7 @@ Tone: concise, specific, numbers first, like a coach's text message. Praise only
 1. Start the Weekly summary yourself (`gh api -X POST repos/amizuno92/ironman-cairns-2027/actions/workflows/weekly.yml/dispatches -f ref=main`), poll its latest run until `completed` (max 10 min), `git pull`, then read `data/weekly/<monday>.json`, the week's compliance files and daily reports.
 2. Write `reports/weekly/<monday>.md`: planned vs actual by sport, Z4+ share (target ≈10–20% of endurance time), load and CTL/ATL/TSB, run km vs cap, walk-run stage reached, strength done and lift trends, FTP checkpoint status (from `rules.json` → `ftp_checkpoints` and `data/tests/`), and the 3 key sessions of next week.
 3. If next week needs changing (missed key work, fatigue flags, pain, travel Andrew mentioned, a new test result), open a **pull request** on branch `review/<monday>` that edits `plan/plan.py`, re-runs `python scripts/export_plan.py`, `python scripts/check_plan.py` and `python plan/build.py` (from `plan/`), and lists each change with its reason. Otherwise state "no plan changes".
+   Whenever `plan/plan.json` on `main` has changed since the last rebuild, run `python tools/make_plan_page.py` and republish `boards/plan.html` to the pinned plan page https://claude.ai/artifact/UEh6H4w31yJsSz3WMLjYAk (Artifact tool, pass that `url`), then commit `boards/plan.html`.
 4. Final message (push notification): week verdict in 2–3 lines and whether a PR is waiting.
 
 ## Test weeks (6, 10, 14, 18, 22, …)
