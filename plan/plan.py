@@ -5,7 +5,7 @@ import datetime as dt
 START = dt.date(2026, 10, 12)  # Monday, week 1
 DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
-FTP, BIKE_LTHR, RUN_LTHR, SWIM_LTHR, CSS = 242, 161, 167, 152, 92  # CSS sec/100m
+FTP, BIKE_LTHR, RUN_LTHR, SWIM_LTHR, CSS = 242, 161, 167, 152, 90  # CSS sec/100m
 
 
 def W(lo, hi):
