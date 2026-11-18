@@ -3,7 +3,7 @@
   "race": "IRONMAN Cairns",
   "race_date": "2027-06-13",
   "ftp_w": 242,
-  "css_sec_per_100m": 94,
+  "css_sec_per_100m": 90,
   "run_lthr": 167,
   "bike_lthr": 161,
   "weeks": [
@@ -300,8 +300,8 @@
       "when": "Midday",
       "duration_min": 50,
       "distance_km": 2.5,
-      "details": "WU 300 easy + 4×50 build /15s. MS 4×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy) + 200 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 4×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 200 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -352,10 +352,10 @@
       "duration_min": 50,
       "distance_km": 2.4,
       "details": "WU 400 + 4×50 build /15s. MS 14×100 @ CSS 1:32–1:36 /15s + 4×50 @ ≤1:30 /20s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 23
+      "high_min": 22
     },
     {
       "id": "w01-thu-bike-1",
@@ -402,8 +402,8 @@
       "when": "Midday",
       "duration_min": 45,
       "distance_km": 2.2,
-      "details": "WU 400 easy. MS 3×500 @ 1:42–1:48/100m /30s + 100 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 400 easy. MS 3×500 @ 1:38–1:44/100m /30s + 100 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -453,8 +453,8 @@
       "when": "Midday",
       "duration_min": 45,
       "distance_km": 2.2,
-      "details": "WU 300 easy + 4×50 build /15s. MS 3×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 3×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -505,7 +505,7 @@
       "duration_min": 45,
       "distance_km": 2.1,
       "details": "WU 400 + 4×50 build /15s. MS 11×100 @ CSS 1:32–1:36 /15s + 4×50 @ ≤1:30 /20s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
       "high_min": 19
@@ -555,8 +555,8 @@
       "when": "Midday",
       "duration_min": 45,
       "distance_km": 2.2,
-      "details": "WU 300 easy + 4×50 build /15s. MS 3×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 3×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -624,10 +624,10 @@
       "duration_min": 50,
       "distance_km": 2.4,
       "details": "WU 400 + 4×50 build /15s. MS 14×100 @ CSS 1:32–1:36 /15s + 4×50 @ ≤1:30 /20s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 23
+      "high_min": 22
     },
     {
       "id": "w03-wed-run-1",
@@ -691,8 +691,8 @@
       "when": "Midday",
       "duration_min": 45,
       "distance_km": 2.2,
-      "details": "WU 400 easy. MS 3×500 @ 1:42–1:48/100m /30s + 100 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 400 easy. MS 3×500 @ 1:38–1:44/100m /30s + 100 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -742,8 +742,8 @@
       "when": "Midday",
       "duration_min": 50,
       "distance_km": 2.5,
-      "details": "WU 300 easy + 4×50 build /15s. MS 4×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy) + 200 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 4×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 200 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -811,10 +811,10 @@
       "duration_min": 50,
       "distance_km": 2.4,
       "details": "WU 400 + 4×50 build /15s. MS 14×100 @ CSS 1:32–1:36 /15s + 4×50 @ ≤1:30 /20s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 23
+      "high_min": 22
     },
     {
       "id": "w04-wed-run-1",
@@ -878,8 +878,8 @@
       "when": "Midday",
       "duration_min": 50,
       "distance_km": 2.5,
-      "details": "WU 400 easy. MS 3×500 @ 1:42–1:48/100m /30s + 400 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 400 easy. MS 3×500 @ 1:38–1:44/100m /30s + 400 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -929,8 +929,8 @@
       "when": "Midday",
       "duration_min": 55,
       "distance_km": 2.8,
-      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy) + 100 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 100 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -998,10 +998,10 @@
       "duration_min": 55,
       "distance_km": 2.6,
       "details": "WU 400 + 4×50 build /15s. MS 16×100 @ CSS 1:32–1:36 /15s + 4×50 @ ≤1:30 /20s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 26
+      "high_min": 25
     },
     {
       "id": "w05-wed-run-1",
@@ -1065,8 +1065,8 @@
       "when": "Midday",
       "duration_min": 55,
       "distance_km": 2.8,
-      "details": "WU 400 easy. MS 4×500 @ 1:42–1:48/100m /30s + 200 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 400 easy. MS 4×500 @ 1:38–1:44/100m /30s + 200 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -1116,8 +1116,8 @@
       "when": "Midday",
       "duration_min": 45,
       "distance_km": 2.2,
-      "details": "WU 300 easy + 4×50 build /15s. MS 3×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 3×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -1253,7 +1253,7 @@
       "duration_min": 40,
       "distance_km": 1.8,
       "details": "Easy 1800m: 200s & 400s, mix free/pull, 20s rest. Long, smooth strokes.",
-      "target": "Z1 ≥1:52/100m · RPE 2",
+      "target": "Z1 ≥1:48/100m · RPE 2",
       "rpe": "2",
       "fuel": "",
       "high_min": 0
@@ -1303,8 +1303,8 @@
       "when": "Midday",
       "duration_min": 55,
       "distance_km": 2.8,
-      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy) + 100 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 100 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -1372,10 +1372,10 @@
       "duration_min": 55,
       "distance_km": 2.6,
       "details": "WU 400 + 4×50 build /15s. MS 15×100 @ CSS 1:32–1:36 /12s + 6×50 @ ≤1:28 /20s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 26
+      "high_min": 25
     },
     {
       "id": "w07-wed-run-1",
@@ -1439,8 +1439,8 @@
       "when": "Midday",
       "duration_min": 55,
       "distance_km": 2.8,
-      "details": "WU 400 easy. MS 4×500 @ 1:42–1:48/100m /30s + 200 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 400 easy. MS 4×500 @ 1:38–1:44/100m /30s + 200 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -1507,8 +1507,8 @@
       "when": "Midday",
       "duration_min": 60,
       "distance_km": 3.0,
-      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -1576,10 +1576,10 @@
       "duration_min": 60,
       "distance_km": 2.8,
       "details": "WU 400 + 4×50 build /15s. MS 17×100 @ CSS 1:32–1:36 /12s + 6×50 @ ≤1:28 /20s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 29
+      "high_min": 28
     },
     {
       "id": "w08-thu-bike-1",
@@ -1643,8 +1643,8 @@
       "when": "Midday",
       "duration_min": 60,
       "distance_km": 3.0,
-      "details": "WU 400 easy. MS 4×500 @ 1:42–1:48/100m /30s + 400 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 400 easy. MS 4×500 @ 1:38–1:44/100m /30s + 400 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -1711,8 +1711,8 @@
       "when": "Midday",
       "duration_min": 60,
       "distance_km": 3.0,
-      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -1780,10 +1780,10 @@
       "duration_min": 60,
       "distance_km": 2.8,
       "details": "WU 400 + 4×50 build /15s. MS 17×100 @ CSS 1:32–1:36 /12s + 6×50 @ ≤1:28 /20s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 29
+      "high_min": 28
     },
     {
       "id": "w09-thu-bike-1",
@@ -1847,8 +1847,8 @@
       "when": "Midday",
       "duration_min": 60,
       "distance_km": 3.0,
-      "details": "WU 400 easy. MS 4×500 @ 1:42–1:48/100m /30s + 400 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 400 easy. MS 4×500 @ 1:38–1:44/100m /30s + 400 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -1932,8 +1932,8 @@
       "when": "Midday",
       "duration_min": 45,
       "distance_km": 2.2,
-      "details": "WU 300 easy + 4×50 build /15s. MS 3×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 3×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -2001,7 +2001,7 @@
       "duration_min": 45,
       "distance_km": 2.1,
       "details": "WU 400 + 4×50 build /15s. MS 10×100 @ CSS 1:32–1:36 /12s + 6×50 @ ≤1:28 /20s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
       "high_min": 19
@@ -2069,7 +2069,7 @@
       "duration_min": 40,
       "distance_km": 1.8,
       "details": "Easy 1800m: 200s & 400s, mix free/pull, 20s rest. Long, smooth strokes.",
-      "target": "Z1 ≥1:52/100m · RPE 2",
+      "target": "Z1 ≥1:48/100m · RPE 2",
       "rpe": "2",
       "fuel": "",
       "high_min": 0
@@ -2119,8 +2119,8 @@
       "when": "Midday",
       "duration_min": 60,
       "distance_km": 3.0,
-      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -2188,10 +2188,10 @@
       "duration_min": 60,
       "distance_km": 2.8,
       "details": "WU 400 + 4×50 build /15s. MS 5×200 @ 1:33–1:36 /20s + 10×100 @ 1:31–1:34 /15s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 29
+      "high_min": 28
     },
     {
       "id": "w11-thu-bike-1",
@@ -2289,8 +2289,8 @@
       "when": "Midday / any",
       "duration_min": 45,
       "distance_km": 2.2,
-      "details": "WU 400 easy. MS 3×500 @ 1:42–1:48/100m /30s + 100 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 400 easy. MS 3×500 @ 1:38–1:44/100m /30s + 100 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -2323,8 +2323,8 @@
       "when": "Midday",
       "duration_min": 60,
       "distance_km": 3.0,
-      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -2392,10 +2392,10 @@
       "duration_min": 60,
       "distance_km": 2.8,
       "details": "WU 400 + 4×50 build /15s. MS 5×200 @ 1:33–1:36 /20s + 10×100 @ 1:31–1:34 /15s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 29
+      "high_min": 28
     },
     {
       "id": "w12-wed-run-1",
@@ -2459,8 +2459,8 @@
       "when": "Midday",
       "duration_min": 60,
       "distance_km": 3.0,
-      "details": "WU 400 easy. MS 4×500 @ 1:42–1:48/100m /30s + 400 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 400 easy. MS 4×500 @ 1:38–1:44/100m /30s + 400 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -2544,8 +2544,8 @@
       "when": "Midday",
       "duration_min": 60,
       "distance_km": 3.0,
-      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -2613,10 +2613,10 @@
       "duration_min": 65,
       "distance_km": 3.1,
       "details": "WU 400 + 4×50 build /15s. MS 5×200 @ 1:33–1:36 /20s + 13×100 @ 1:31–1:34 /15s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 33
+      "high_min": 31
     },
     {
       "id": "w13-wed-run-1",
@@ -2680,8 +2680,8 @@
       "when": "Midday",
       "duration_min": 65,
       "distance_km": 3.2,
-      "details": "WU 400 easy. MS 5×500 @ 1:42–1:48/100m /30s + 100 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 400 easy. MS 5×500 @ 1:38–1:44/100m /30s + 100 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -2765,8 +2765,8 @@
       "when": "Midday",
       "duration_min": 45,
       "distance_km": 2.2,
-      "details": "WU 300 easy + 4×50 build /15s. MS 3×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 3×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -2902,7 +2902,7 @@
       "duration_min": 40,
       "distance_km": 1.8,
       "details": "Easy 1800m: 200s & 400s, mix free/pull, 20s rest. Long, smooth strokes.",
-      "target": "Z1 ≥1:52/100m · RPE 2",
+      "target": "Z1 ≥1:48/100m · RPE 2",
       "rpe": "2",
       "fuel": "",
       "high_min": 0
@@ -2952,8 +2952,8 @@
       "when": "Midday",
       "duration_min": 60,
       "distance_km": 3.0,
-      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -3021,10 +3021,10 @@
       "duration_min": 60,
       "distance_km": 2.8,
       "details": "WU 400 + 4×50 build /15s. MS 4×300 @ 1:34–1:36 /20s + 8×100 @ 1:30–1:33 /15s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 29
+      "high_min": 28
     },
     {
       "id": "w15-wed-run-1",
@@ -3072,7 +3072,7 @@
       "duration_min": 65,
       "distance_km": 3.2,
       "details": "WU 400 easy. MS 2×1000 @ IM pace 1:42–1:46/100m /30s + 600 pull. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -3173,8 +3173,8 @@
       "when": "Midday",
       "duration_min": 60,
       "distance_km": 3.0,
-      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -3242,10 +3242,10 @@
       "duration_min": 65,
       "distance_km": 3.1,
       "details": "WU 400 + 4×50 build /15s. MS 4×300 @ 1:34–1:36 /20s + 11×100 @ 1:30–1:33 /15s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 33
+      "high_min": 31
     },
     {
       "id": "w16-wed-run-1",
@@ -3293,7 +3293,7 @@
       "duration_min": 65,
       "distance_km": 3.2,
       "details": "WU 400 easy. MS 2×1000 @ IM pace 1:42–1:46/100m /30s + 600 pull. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -3463,10 +3463,10 @@
       "duration_min": 65,
       "distance_km": 3.1,
       "details": "WU 400 + 4×50 build /15s. MS 4×300 @ 1:34–1:36 /20s + 11×100 @ 1:30–1:33 /15s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 33
+      "high_min": 31
     },
     {
       "id": "w17-wed-run-1",
@@ -3514,7 +3514,7 @@
       "duration_min": 70,
       "distance_km": 3.5,
       "details": "WU 400 easy. MS 2×1000 @ IM pace 1:42–1:46/100m /30s + 900 pull. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -3582,7 +3582,7 @@
       "duration_min": 40,
       "distance_km": 1.8,
       "details": "Open water (wetsuit once you own one; do some non-wetsuit swims too). 10' easy + sighting every 6–9 strokes; 4×20 hard strokes then settle (mass-start rehearsal); 3×(8' @ IM effort / 2' easy); practise drafting/turning at a marker; 5' easy. Swim with a buddy/group.",
-      "target": "RPE 3–4 at IM effort (≈1:44/100m pool equiv.)",
+      "target": "RPE 3–4 at IM effort (≈1:40/100m pool equiv.)",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 4
@@ -3735,7 +3735,7 @@
       "duration_min": 45,
       "distance_km": 2.0,
       "details": "Easy 2000m: 200s & 400s, mix free/pull, 20s rest. Long, smooth strokes.",
-      "target": "Z1 ≥1:52/100m · RPE 2",
+      "target": "Z1 ≥1:48/100m · RPE 2",
       "rpe": "2",
       "fuel": "",
       "high_min": 0
@@ -3803,7 +3803,7 @@
       "duration_min": 30,
       "distance_km": 1.4,
       "details": "Open water (wetsuit once you own one; do some non-wetsuit swims too). 10' easy + sighting every 6–9 strokes; 4×20 hard strokes then settle (mass-start rehearsal); 3×(8' @ IM effort / 2' easy); practise drafting/turning at a marker; 5' easy. Swim with a buddy/group.",
-      "target": "RPE 3–4 at IM effort (≈1:44/100m pool equiv.)",
+      "target": "RPE 3–4 at IM effort (≈1:40/100m pool equiv.)",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 3
@@ -3888,10 +3888,10 @@
       "duration_min": 65,
       "distance_km": 3.1,
       "details": "WU 400 + 4×50 build /15s. MS 4×300 @ 1:34–1:36 /20s + 11×100 @ 1:30–1:33 /15s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 33
+      "high_min": 31
     },
     {
       "id": "w19-wed-run-1",
@@ -3956,7 +3956,7 @@
       "duration_min": 70,
       "distance_km": 3.5,
       "details": "WU 400 easy. MS 2×1000 @ IM pace 1:42–1:46/100m /30s + 900 pull. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -4024,7 +4024,7 @@
       "duration_min": 40,
       "distance_km": 1.8,
       "details": "Open water (wetsuit once you own one; do some non-wetsuit swims too). 10' easy + sighting every 6–9 strokes; 4×20 hard strokes then settle (mass-start rehearsal); 3×(8' @ IM effort / 2' easy); practise drafting/turning at a marker; 5' easy. Swim with a buddy/group.",
-      "target": "RPE 3–4 at IM effort (≈1:44/100m pool equiv.)",
+      "target": "RPE 3–4 at IM effort (≈1:40/100m pool equiv.)",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 4
@@ -4109,10 +4109,10 @@
       "duration_min": 70,
       "distance_km": 3.3,
       "details": "WU 400 + 4×50 build /15s. MS 4×300 @ 1:34–1:36 /20s + 13×100 @ 1:30–1:33 /15s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 35
+      "high_min": 34
     },
     {
       "id": "w20-wed-run-1",
@@ -4177,7 +4177,7 @@
       "duration_min": 75,
       "distance_km": 3.8,
       "details": "WU 400 easy. MS 3×1000 @ IM pace 1:42–1:46/100m /30s + 200 pull. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -4245,7 +4245,7 @@
       "duration_min": 45,
       "distance_km": 2.0,
       "details": "Open water (wetsuit once you own one; do some non-wetsuit swims too). 10' easy + sighting every 6–9 strokes; 4×20 hard strokes then settle (mass-start rehearsal); 3×(8' @ IM effort / 2' easy); practise drafting/turning at a marker; 5' easy. Swim with a buddy/group.",
-      "target": "RPE 3–4 at IM effort (≈1:44/100m pool equiv.)",
+      "target": "RPE 3–4 at IM effort (≈1:40/100m pool equiv.)",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 4
@@ -4330,10 +4330,10 @@
       "duration_min": 70,
       "distance_km": 3.3,
       "details": "WU 400 + 4×50 build /15s. MS 4×300 @ 1:34–1:36 /20s + 13×100 @ 1:30–1:33 /15s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 35
+      "high_min": 34
     },
     {
       "id": "w21-wed-run-1",
@@ -4398,7 +4398,7 @@
       "duration_min": 75,
       "distance_km": 3.8,
       "details": "WU 400 easy. MS 3×1000 @ IM pace 1:42–1:46/100m /30s + 200 pull. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -4466,7 +4466,7 @@
       "duration_min": 45,
       "distance_km": 2.0,
       "details": "Open water (wetsuit once you own one; do some non-wetsuit swims too). 10' easy + sighting every 6–9 strokes; 4×20 hard strokes then settle (mass-start rehearsal); 3×(8' @ IM effort / 2' easy); practise drafting/turning at a marker; 5' easy. Swim with a buddy/group.",
-      "target": "RPE 3–4 at IM effort (≈1:44/100m pool equiv.)",
+      "target": "RPE 3–4 at IM effort (≈1:40/100m pool equiv.)",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 4
@@ -4568,10 +4568,10 @@
       "duration_min": 55,
       "distance_km": 2.6,
       "details": "WU 400 + 4×50 build /15s. MS 4×300 @ 1:34–1:36 /20s + 6×100 @ 1:30–1:33 /15s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 26
+      "high_min": 25
     },
     {
       "id": "w22-wed-run-1",
@@ -4636,7 +4636,7 @@
       "duration_min": 45,
       "distance_km": 2.0,
       "details": "Easy 2000m: 200s & 400s, mix free/pull, 20s rest. Long, smooth strokes.",
-      "target": "Z1 ≥1:52/100m · RPE 2",
+      "target": "Z1 ≥1:48/100m · RPE 2",
       "rpe": "2",
       "fuel": "",
       "high_min": 0
@@ -4704,7 +4704,7 @@
       "duration_min": 40,
       "distance_km": 1.8,
       "details": "Open water (wetsuit once you own one; do some non-wetsuit swims too). 10' easy + sighting every 6–9 strokes; 4×20 hard strokes then settle (mass-start rehearsal); 3×(8' @ IM effort / 2' easy); practise drafting/turning at a marker; 5' easy. Swim with a buddy/group.",
-      "target": "RPE 3–4 at IM effort (≈1:44/100m pool equiv.)",
+      "target": "RPE 3–4 at IM effort (≈1:40/100m pool equiv.)",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 4
@@ -4737,8 +4737,8 @@
       "when": "Midday",
       "duration_min": 50,
       "distance_km": 2.5,
-      "details": "WU 300 easy + 4×50 build /15s. MS 4×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 200 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 4×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 200 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -4806,7 +4806,7 @@
       "duration_min": 45,
       "distance_km": 2.1,
       "details": "WU 400 + 4×50 build /15s. MS 6×100 @ 1:32–1:35 /20s + 4×50 fast/easy. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
       "high_min": 19
@@ -4840,7 +4840,7 @@
       "duration_min": 30,
       "distance_km": 1.4,
       "details": "Open water (wetsuit once you own one; do some non-wetsuit swims too). 10' easy + sighting every 6–9 strokes; 4×20 hard strokes then settle (mass-start rehearsal); 3×(8' @ IM effort / 2' easy); practise drafting/turning at a marker; 5' easy. Swim with a buddy/group.",
-      "target": "RPE 3–4 at IM effort (≈1:44/100m pool equiv.)",
+      "target": "RPE 3–4 at IM effort (≈1:40/100m pool equiv.)",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 3
@@ -4941,8 +4941,8 @@
       "when": "Midday",
       "duration_min": 50,
       "distance_km": 2.5,
-      "details": "WU 300 easy + 4×50 build /15s. MS 4×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 200 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 4×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 200 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -5010,7 +5010,7 @@
       "duration_min": 60,
       "distance_km": 3.0,
       "details": "WU 400 easy. MS 2×1000 @ IM pace 1:42–1:46/100m /30s + 400 pull. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -5078,7 +5078,7 @@
       "duration_min": 35,
       "distance_km": 1.6,
       "details": "Open water (wetsuit once you own one; do some non-wetsuit swims too). 10' easy + sighting every 6–9 strokes; 4×20 hard strokes then settle (mass-start rehearsal); 3×(8' @ IM effort / 2' easy); practise drafting/turning at a marker; 5' easy. Swim with a buddy/group.",
-      "target": "RPE 3–4 at IM effort (≈1:44/100m pool equiv.)",
+      "target": "RPE 3–4 at IM effort (≈1:40/100m pool equiv.)",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 3
@@ -5163,10 +5163,10 @@
       "duration_min": 70,
       "distance_km": 3.3,
       "details": "WU 400 + 4×50 build /15s. MS 2×(4×200 @ 1:33–1:35 /20s), 100 easy between + 14×50 @ ≤1:28 /15s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 35
+      "high_min": 34
     },
     {
       "id": "w25-wed-run-1",
@@ -5231,7 +5231,7 @@
       "duration_min": 75,
       "distance_km": 3.8,
       "details": "WU 400 easy. MS 3×1000 @ IM pace 1:42–1:46/100m /30s + 200 pull. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -5299,7 +5299,7 @@
       "duration_min": 40,
       "distance_km": 1.8,
       "details": "Open water (wetsuit once you own one; do some non-wetsuit swims too). 10' easy + sighting every 6–9 strokes; 4×20 hard strokes then settle (mass-start rehearsal); 3×(8' @ IM effort / 2' easy); practise drafting/turning at a marker; 5' easy. Swim with a buddy/group.",
-      "target": "RPE 3–4 at IM effort (≈1:44/100m pool equiv.)",
+      "target": "RPE 3–4 at IM effort (≈1:40/100m pool equiv.)",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 4
@@ -5384,10 +5384,10 @@
       "duration_min": 70,
       "distance_km": 3.3,
       "details": "WU 400 + 4×50 build /15s. MS 2×(4×200 @ 1:33–1:35 /20s), 100 easy between + 14×50 @ ≤1:28 /15s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 35
+      "high_min": 34
     },
     {
       "id": "w26-wed-run-1",
@@ -5452,7 +5452,7 @@
       "duration_min": 80,
       "distance_km": 4.0,
       "details": "WU 400 easy. MS 3×1000 @ IM pace 1:42–1:46/100m /30s + 400 pull. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -5520,7 +5520,7 @@
       "duration_min": 40,
       "distance_km": 1.8,
       "details": "Open water (wetsuit once you own one; do some non-wetsuit swims too). 10' easy + sighting every 6–9 strokes; 4×20 hard strokes then settle (mass-start rehearsal); 3×(8' @ IM effort / 2' easy); practise drafting/turning at a marker; 5' easy. Swim with a buddy/group.",
-      "target": "RPE 3–4 at IM effort (≈1:44/100m pool equiv.)",
+      "target": "RPE 3–4 at IM effort (≈1:40/100m pool equiv.)",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 4
@@ -5553,8 +5553,8 @@
       "when": "Midday",
       "duration_min": 60,
       "distance_km": 3.0,
-      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -5622,10 +5622,10 @@
       "duration_min": 60,
       "distance_km": 2.8,
       "details": "WU 400 + 4×50 build /15s. MS 2×(4×200 @ 1:33–1:35 /20s), 100 easy between + 4×50 @ ≤1:28 /15s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 29
+      "high_min": 28
     },
     {
       "id": "w27-wed-run-1",
@@ -5690,7 +5690,7 @@
       "duration_min": 60,
       "distance_km": 3.0,
       "details": "WU 400 easy. MS 2×1000 @ IM pace 1:42–1:46/100m /30s + 400 pull. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -5775,7 +5775,7 @@
       "duration_min": 40,
       "distance_km": 1.8,
       "details": "Easy 1800m: 200s & 400s, mix free/pull, 20s rest. Long, smooth strokes.",
-      "target": "Z1 ≥1:52/100m · RPE 2",
+      "target": "Z1 ≥1:48/100m · RPE 2",
       "rpe": "2",
       "fuel": "",
       "high_min": 0
@@ -5860,7 +5860,7 @@
       "duration_min": 30,
       "distance_km": 1.4,
       "details": "Easy 1400m: 200s & 400s, mix free/pull, 20s rest. Long, smooth strokes.",
-      "target": "Z1 ≥1:52/100m · RPE 2",
+      "target": "Z1 ≥1:48/100m · RPE 2",
       "rpe": "2",
       "fuel": "",
       "high_min": 0
@@ -5945,7 +5945,7 @@
       "duration_min": 40,
       "distance_km": 1.8,
       "details": "Easy 1800m: 200s & 400s, mix free/pull, 20s rest. Long, smooth strokes.",
-      "target": "Z1 ≥1:52/100m · RPE 2",
+      "target": "Z1 ≥1:48/100m · RPE 2",
       "rpe": "2",
       "fuel": "",
       "high_min": 0
@@ -5979,7 +5979,7 @@
       "duration_min": 40,
       "distance_km": 1.8,
       "details": "Easy 1800m: 200s & 400s, mix free/pull, 20s rest. Long, smooth strokes.",
-      "target": "Z1 ≥1:52/100m · RPE 2",
+      "target": "Z1 ≥1:48/100m · RPE 2",
       "rpe": "2",
       "fuel": "",
       "high_min": 0
@@ -6012,8 +6012,8 @@
       "when": "Midday / any",
       "duration_min": 45,
       "distance_km": 2.2,
-      "details": "WU 300 easy + 4×50 build /15s. MS 3×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 3×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -6029,8 +6029,8 @@
       "when": "Midday",
       "duration_min": 55,
       "distance_km": 2.8,
-      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 100 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 100 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -6098,10 +6098,10 @@
       "duration_min": 55,
       "distance_km": 2.6,
       "details": "WU 400 + 4×50 build /15s. MS 4×300 @ 1:34–1:36 /20s + 6×100 @ 1:30–1:33 /15s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 26
+      "high_min": 25
     },
     {
       "id": "w30-wed-run-1",
@@ -6166,7 +6166,7 @@
       "duration_min": 60,
       "distance_km": 3.0,
       "details": "WU 400 easy. MS 2×1000 @ IM pace 1:42–1:46/100m /30s + 400 pull. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -6319,10 +6319,10 @@
       "duration_min": 65,
       "distance_km": 3.1,
       "details": "WU 400 + 4×50 build /15s. MS 2×(4×200 @ 1:33–1:35 /20s), 100 easy between + 10×50 @ ≤1:28 /15s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 33
+      "high_min": 31
     },
     {
       "id": "w31-wed-run-1",
@@ -6387,7 +6387,7 @@
       "duration_min": 75,
       "distance_km": 3.8,
       "details": "WU 400 easy. MS 3×1000 @ IM pace 1:42–1:46/100m /30s + 200 pull. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -6455,7 +6455,7 @@
       "duration_min": 40,
       "distance_km": 1.8,
       "details": "Open water (wetsuit once you own one; do some non-wetsuit swims too). 10' easy + sighting every 6–9 strokes; 4×20 hard strokes then settle (mass-start rehearsal); 3×(8' @ IM effort / 2' easy); practise drafting/turning at a marker; 5' easy. Swim with a buddy/group.",
-      "target": "RPE 3–4 at IM effort (≈1:44/100m pool equiv.)",
+      "target": "RPE 3–4 at IM effort (≈1:40/100m pool equiv.)",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 4
@@ -6557,10 +6557,10 @@
       "duration_min": 65,
       "distance_km": 3.1,
       "details": "WU 400 + 4×50 build /15s. MS 2×(4×200 @ 1:33–1:35 /20s), 100 easy between + 10×50 @ ≤1:28 /15s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 33
+      "high_min": 31
     },
     {
       "id": "w32-wed-run-1",
@@ -6625,7 +6625,7 @@
       "duration_min": 95,
       "distance_km": 4.4,
       "details": "WU 400 easy. MS 3800 CONTINUOUS @ IM pace 1:44/100m — clock checks: 1000 @17:20, 2000 @34:40, 3000 @52:00, 3800 @65:52. CD 200. Sight every 6th stroke (head-up) to rehearse.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "4",
       "fuel": "",
       "high_min": 0
@@ -6693,7 +6693,7 @@
       "duration_min": 45,
       "distance_km": 2.0,
       "details": "Open water (wetsuit once you own one; do some non-wetsuit swims too). 10' easy + sighting every 6–9 strokes; 4×20 hard strokes then settle (mass-start rehearsal); 3×(8' @ IM effort / 2' easy); practise drafting/turning at a marker; 5' easy. Swim with a buddy/group.",
-      "target": "RPE 3–4 at IM effort (≈1:44/100m pool equiv.)",
+      "target": "RPE 3–4 at IM effort (≈1:40/100m pool equiv.)",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 4
@@ -6795,10 +6795,10 @@
       "duration_min": 60,
       "distance_km": 2.8,
       "details": "WU 400 + 4×50 build /15s. MS 2×(4×200 @ 1:33–1:35 /20s), 100 easy between + 4×50 @ ≤1:28 /15s. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 29
+      "high_min": 28
     },
     {
       "id": "w33-wed-run-1",
@@ -6863,7 +6863,7 @@
       "duration_min": 70,
       "distance_km": 3.5,
       "details": "WU 400 easy. MS 2×1000 @ IM pace 1:42–1:46/100m /30s + 900 pull. CD 200. Hold pace — the goal is aerobic durability, not speed.",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -6931,7 +6931,7 @@
       "duration_min": 40,
       "distance_km": 1.8,
       "details": "Open water (wetsuit once you own one; do some non-wetsuit swims too). 10' easy + sighting every 6–9 strokes; 4×20 hard strokes then settle (mass-start rehearsal); 3×(8' @ IM effort / 2' easy); practise drafting/turning at a marker; 5' easy. Swim with a buddy/group.",
-      "target": "RPE 3–4 at IM effort (≈1:44/100m pool equiv.)",
+      "target": "RPE 3–4 at IM effort (≈1:40/100m pool equiv.)",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 4
@@ -6964,8 +6964,8 @@
       "when": "Midday",
       "duration_min": 45,
       "distance_km": 2.2,
-      "details": "WU 300 easy + 4×50 build /15s. MS 3×400 @ 1:42–1:48/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:42–1:48/100m (IM pace 1:44) · RPE 3–4",
+      "details": "WU 300 easy + 4×50 build /15s. MS 3×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 0
@@ -7033,10 +7033,10 @@
       "duration_min": 50,
       "distance_km": 2.4,
       "details": "WU 400 + 4×50 build /15s. MS 6×100 @ 1:32–1:35 /20s + 4×50 fast/easy. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 23
+      "high_min": 22
     },
     {
       "id": "w34-wed-run-1",
@@ -7084,7 +7084,7 @@
       "duration_min": 40,
       "distance_km": 1.8,
       "details": "Open water (wetsuit once you own one; do some non-wetsuit swims too). 10' easy + sighting every 6–9 strokes; 4×20 hard strokes then settle (mass-start rehearsal); 3×(8' @ IM effort / 2' easy); practise drafting/turning at a marker; 5' easy. Swim with a buddy/group.",
-      "target": "RPE 3–4 at IM effort (≈1:44/100m pool equiv.)",
+      "target": "RPE 3–4 at IM effort (≈1:40/100m pool equiv.)",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 4
@@ -7169,7 +7169,7 @@
       "duration_min": 35,
       "distance_km": 1.6,
       "details": "Easy 1600m: 200s & 400s, mix free/pull, 20s rest. Long, smooth strokes.",
-      "target": "Z1 ≥1:52/100m · RPE 2",
+      "target": "Z1 ≥1:48/100m · RPE 2",
       "rpe": "2",
       "fuel": "",
       "high_min": 0
@@ -7220,10 +7220,10 @@
       "duration_min": 35,
       "distance_km": 1.6,
       "details": "WU 400 + 4×50 build /15s. MS 6×100 @ 1:32–1:35 /20s + 4×50 fast/easy. CD 200 easy (+200 pull if time).",
-      "target": "Z4 CSS 1:32–1:36/100m · RPE 7; 50s Z5 ≤1:30/100m · RPE 8–9",
+      "target": "Z4 CSS 1:28–1:32/100m · RPE 7; 50s Z5 ≤1:26/100m · RPE 8–9",
       "rpe": "7–8",
       "fuel": "",
-      "high_min": 13
+      "high_min": 12
     },
     {
       "id": "w35-wed-run-1",
@@ -7271,7 +7271,7 @@
       "duration_min": 25,
       "distance_km": 1.1,
       "details": "Open water (wetsuit once you own one; do some non-wetsuit swims too). 10' easy + sighting every 6–9 strokes; 4×20 hard strokes then settle (mass-start rehearsal); 3×(8' @ IM effort / 2' easy); practise drafting/turning at a marker; 5' easy. Swim with a buddy/group.",
-      "target": "RPE 3–4 at IM effort (≈1:44/100m pool equiv.)",
+      "target": "RPE 3–4 at IM effort (≈1:40/100m pool equiv.)",
       "rpe": "3–4",
       "fuel": "",
       "high_min": 2
