@@ -1,0 +1,112 @@
+[
+  {
+    "id": "i211479827",
+    "name": "Swim",
+    "type": "Swim",
+    "start_date_local": "2026-11-18T12:07:39",
+    "start_date": "2026-11-18T02:07:39Z",
+    "moving_time": 1644,
+    "elapsed_time": 2442,
+    "distance": 1700.0,
+    "icu_intensity": 78.70313,
+    "icu_training_load": 42,
+    "average_heartrate": 126,
+    "max_heartrate": 163,
+    "average_speed": 0.706,
+    "pace": 1.0340632,
+    "icu_hr_zone_times": [
+      1139,
+      638,
+      189,
+      139,
+      182,
+      117,
+      11
+    ],
+    "icu_hr_zones": [
+      127,
+      136,
+      143,
+      151,
+      156,
+      160,
+      168
+    ],
+    "pace_zone_times": [
+      138,
+      81,
+      506,
+      156,
+      88,
+      407,
+      292
+    ],
+    "interval_summary": [
+      "1x 0m 14:39",
+      "1x 50m 1:09",
+      "5x 49m 1:35",
+      "4x 50m 2:08",
+      "1x 50m 2:51",
+      "1x 49m 9:26",
+      "19x 49m 1:31",
+      "1x 49m 3:28",
+      "1x 49m 13:58",
+      "1x 50m 3:48"
+    ],
+    "icu_rpe": 5,
+    "session_rpe": 137,
+    "device_name": "Watch6,18",
+    "source": "OAUTH_CLIENT",
+    "calories": 354,
+    "icu_ctl": 48.69554,
+    "icu_atl": 56.165333,
+    "icu_weight": 80.4,
+    "icu_lap_count": 35,
+    "lthr": 152,
+    "athlete_max_hr": 168
+  },
+  {
+    "id": "i211517049",
+    "name": "Strength Training",
+    "type": "WeightTraining",
+    "start_date_local": "2026-11-18T16:38:09",
+    "start_date": "2026-11-18T06:38:09Z",
+    "moving_time": 1850,
+    "elapsed_time": 1850,
+    "icu_intensity": 39.466427,
+    "icu_training_load": 8,
+    "average_heartrate": 99,
+    "max_heartrate": 125,
+    "icu_hr_zone_times": [
+      1851,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "icu_hr_zones": [
+      140,
+      149,
+      157,
+      166,
+      171,
+      176,
+      184
+    ],
+    "interval_summary": [
+      "1x 30m51s 99bpm"
+    ],
+    "device_name": "Watch6,18",
+    "source": "OAUTH_CLIENT",
+    "calories": 141,
+    "icu_ctl": 48.69554,
+    "icu_atl": 56.165333,
+    "icu_weight": 80.4,
+    "icu_lap_count": 1,
+    "polarization_index": 0.0,
+    "lthr": 167,
+    "athlete_max_hr": 184
+  }
+]
