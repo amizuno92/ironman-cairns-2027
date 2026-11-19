@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-20",
+  "weekday": "Fri",
+  "plan_week": 6,
+  "phase": "Base 1",
+  "week_kind": "recovery",
+  "sessions": [],
+  "missed_so_far_this_week": [
+    {
+      "id": "w06-fri-swim-1",
+      "date": "2026-11-20",
+      "sport": "Swim",
+      "title": "Recovery swim",
+      "duration_min": 40
+    }
+  ],
+  "still_to_do_this_week": [
+    {
+      "id": "w06-sat-bike-1",
+      "date": "2026-11-21",
+      "sport": "Bike",
+      "title": "TEST: FTP ramp",
+      "duration_min": 45
+    },
+    {
+      "id": "w06-sun-run-1",
+      "date": "2026-11-22",
+      "sport": "Run",
+      "title": "Walk-run (stage 3)",
+      "duration_min": 30
+    }
+  ],
+  "week_to_date": {
+    "actual_hours": 4.59,
+    "planned_hours_to_date": 5.58,
+    "planned_hours_week": 6.83,
+    "by_sport_actual_h": {
+      "Strength": 1.1,
+      "Swim": 1.1,
+      "Bike": 1.59,
+      "Run": 0.8
+    },
+    "by_sport_planned_h": {
+      "Swim": 2.17,
+      "Strength": 1.0,
+      "Bike": 2.17,
+      "Run": 1.5
+    },
+    "run_km": 9.13,
+    "prev_week_run_km": 11.82,
+    "swims": 2
+  },
+  "wellness": {
+    "resting_hr_baseline": 55.0,
+    "resting_hr_recent": [
+      null,
+      null
+    ],
+    "hrv_baseline": 25.0,
+    "hrv_recent": [
+      null,
+      null
+    ],
+    "ctl": 47.8,
+    "atl": 49.0,
+    "tsb": -1.2
+  },
+  "flags": []
+}
