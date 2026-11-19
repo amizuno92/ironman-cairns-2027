@@ -1,0 +1,153 @@
+[
+  {
+    "id": "i211802261",
+    "name": "Gold Coast Road Cycling",
+    "type": "Ride",
+    "start_date_local": "2026-11-19T04:29:58",
+    "start_date": "2026-11-18T18:29:58Z",
+    "moving_time": 2921,
+    "elapsed_time": 3111,
+    "distance": 22783.27,
+    "icu_average_watts": 156,
+    "icu_weighted_avg_watts": 170,
+    "icu_intensity": 70.24793,
+    "icu_ftp": 242,
+    "icu_training_load": 40,
+    "average_heartrate": 128,
+    "max_heartrate": 144,
+    "average_cadence": 86.43062,
+    "average_speed": 7.795,
+    "pace": 7.7998185,
+    "decoupling": 5.4911675,
+    "icu_efficiency_factor": 1.328125,
+    "icu_variability_index": 1.0897436,
+    "icu_zone_times": [
+      {
+        "id": "Z1",
+        "secs": 797
+      },
+      {
+        "id": "Z2",
+        "secs": 996
+      },
+      {
+        "id": "Z3",
+        "secs": 604
+      },
+      {
+        "id": "Z4",
+        "secs": 296
+      },
+      {
+        "id": "Z5",
+        "secs": 115
+      },
+      {
+        "id": "Z6",
+        "secs": 90
+      },
+      {
+        "id": "Z7",
+        "secs": 23
+      },
+      {
+        "id": "SS",
+        "secs": 363
+      }
+    ],
+    "icu_hr_zone_times": [
+      1299,
+      1624,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "icu_hr_zones": [
+      129,
+      144,
+      149,
+      160,
+      165,
+      170,
+      175
+    ],
+    "icu_power_zones": [
+      55,
+      75,
+      90,
+      105,
+      120,
+      150,
+      999
+    ],
+    "device_name": "Garmin Edge 840",
+    "source": "GARMIN_CONNECT",
+    "total_elevation_gain": 49.0,
+    "carbs_used": 118,
+    "calories": 534,
+    "icu_ctl": 48.93799,
+    "icu_atl": 56.54269,
+    "icu_weight": 80.4,
+    "icu_lap_count": 1,
+    "polarization_index": 1.19,
+    "lthr": 161,
+    "athlete_max_hr": 175
+  },
+  {
+    "id": "i211936022",
+    "name": "Run",
+    "type": "Run",
+    "start_date_local": "2026-11-19T17:01:09",
+    "start_date": "2026-11-19T07:01:09Z",
+    "moving_time": 1445,
+    "elapsed_time": 1446,
+    "distance": 4660.5,
+    "icu_intensity": 68.8009,
+    "icu_training_load": 19,
+    "average_heartrate": 133,
+    "max_heartrate": 154,
+    "average_cadence": 79.60124,
+    "average_speed": 3.314,
+    "pace": 3.2252595,
+    "icu_hr_zone_times": [
+      822,
+      532,
+      93,
+      0,
+      0,
+      0,
+      0
+    ],
+    "icu_hr_zones": [
+      140,
+      149,
+      157,
+      166,
+      171,
+      176,
+      184
+    ],
+    "interval_summary": [
+      "1x 3s 79bpm",
+      "1x 4m 114bpm",
+      "4x 60s 130bpm",
+      "4x 4m 138bpm",
+      "1x 3s 153bpm"
+    ],
+    "icu_rpe": 4,
+    "session_rpe": 96,
+    "device_name": "Watch6,18",
+    "source": "OAUTH_CLIENT",
+    "total_elevation_gain": 41.627743,
+    "calories": 343,
+    "icu_ctl": 48.93799,
+    "icu_atl": 56.54269,
+    "icu_weight": 80.4,
+    "icu_lap_count": 11,
+    "polarization_index": 0.0,
+    "lthr": 167,
+    "athlete_max_hr": 184
+  }
+]
