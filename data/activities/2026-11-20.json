@@ -1,0 +1,64 @@
+[
+  {
+    "id": "i212324546",
+    "name": "Swim",
+    "type": "Swim",
+    "start_date_local": "2026-11-20T12:08:08",
+    "start_date": "2026-11-20T02:08:08Z",
+    "moving_time": 1852,
+    "elapsed_time": 1863,
+    "distance": 1800.0,
+    "icu_intensity": 86.83478,
+    "icu_training_load": 39,
+    "average_heartrate": 129,
+    "max_heartrate": 145,
+    "average_speed": 0.969,
+    "pace": 0.9719222,
+    "icu_hr_zone_times": [
+      450,
+      1069,
+      299,
+      45,
+      0,
+      0,
+      0
+    ],
+    "icu_hr_zones": [
+      127,
+      136,
+      143,
+      151,
+      156,
+      160,
+      168
+    ],
+    "pace_zone_times": [
+      120,
+      103,
+      485,
+      685,
+      145,
+      287,
+      32
+    ],
+    "interval_summary": [
+      "1x 1m 8:04",
+      "1x 49m 1:11",
+      "1x 49m 1:31",
+      "1x 50m 1:25",
+      "5x 50m 2:29",
+      "28x 49m 1:37"
+    ],
+    "icu_rpe": 4,
+    "session_rpe": 123,
+    "device_name": "Watch6,18",
+    "source": "OAUTH_CLIENT",
+    "calories": 373,
+    "icu_ctl": 48.704163,
+    "icu_atl": 54.20737,
+    "icu_weight": 80.4,
+    "icu_lap_count": 37,
+    "lthr": 152,
+    "athlete_max_hr": 168
+  }
+]
