@@ -5,11 +5,21 @@ import datetime as dt
 START = dt.date(2026, 10, 12)  # Monday, week 1
 DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
-FTP, BIKE_LTHR, RUN_LTHR, SWIM_LTHR, CSS = 242, 161, 167, 152, 90  # CSS sec/100m
+FTP, BIKE_LTHR, RUN_LTHR, SWIM_LTHR, CSS = 259, 161, 167, 152, 90  # CSS sec/100m
 
 
 def W(lo, hi):
     return f"{round(FTP*lo)}–{round(FTP*hi)}W ({int(lo*100)}–{int(hi*100)}% FTP)"
+
+
+def w(p):
+    return round(FTP * p)
+
+
+Z2W = f"{w(.62)}–{w(.72)}W"          # Z2 band
+IMW = f"{w(.66)}–{w(.71)}W"          # base IM power
+IMW_SUB11 = f"{w(.70)}–{w(.75)}W"    # sub-11 IM power (from wk 15)
+T100W = f"{w(.74)}–{w(.78)}W"        # T100 bike power
 
 
 def pace(s):
@@ -21,9 +31,9 @@ SW_Z1 = f"Z1 ≥{pace(CSS+18)}/100m · RPE 2"
 SW_Z2 = f"Z2 {pace(CSS+8)}–{pace(CSS+14)}/100m (IM pace {pace(CSS+10)}) · RPE 3–4"
 SW_Z4 = f"Z4 CSS {pace(CSS-2)}–{pace(CSS+2)}/100m · RPE 7"
 SW_Z5 = f"Z5 ≤{pace(CSS-4)}/100m · RPE 8–9"
-BK_Z1 = f"Z1 <133W (<55%) · HR <130 · RPE 1–2"
-BK_Z2 = f"Z2 150–175W (62–72%) · HR 130–143 · RPE 3–4"
-BK_IM = f"IM power 160–172W (66–71%) · HR ≤143 · RPE 4"
+BK_Z1 = f"Z1 <{w(.55)}W (<55%) · HR <130 · RPE 1–2"
+BK_Z2 = f"Z2 {Z2W} (62–72%) · HR 130–143 · RPE 3–4"
+BK_IM = f"IM power {IMW} (66–71%) · HR ≤143 · RPE 4"
 RN_Z1 = "Z1 HR ≤141 · RPE 2–3"
 RN_Z2 = "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4"
 RN_Z4 = "Z4 HR 159–165 · RPE 7"
@@ -158,7 +168,7 @@ def bike_q(mins, wk):
     fmt, (lo, hi), work = Q_BIKE[wk]
     ms = fmt.format(W(lo, hi))
     zone = "Z5 VO2max" if lo >= 1.05 else "Z4 threshold"
-    det = (f"Zwift structured. WU 15' Z1→Z2 incl. 3×30s @ 100+rpm. MS {ms}. Remaining time Z2 (150–170W). "
+    det = (f"Zwift structured. WU 15' Z1→Z2 incl. 3×30s @ 100+rpm. MS {ms}. Remaining time Z2 ({w(.62)}–{w(.70)}W). "
            f"CD 5–10' easy. Cadence 85–100 on efforts.")
     return S("Bike", f"Intervals — {zone}", mins, det, f"{zone}: {W(lo, hi)} · easy between {BK_Z1}",
              "8–9" if lo >= 1.05 else "7–8", work, round(mins / 60 * 30, 0))
@@ -170,9 +180,9 @@ def bike_z2(mins, im_blocks=None, heat=False, gym=False):
                f"{mins-15}' Z2 HR 130–143" + (f" incl. {im_blocks} at top of Z2 (HR 140–143) to touch IM effort" if im_blocks else "") +
                ", 5' easy. If no bike available, swap for an extra 45' aerobic swim.")
         return S("Bike", "Gym bike endurance", mins, det, "Z2 HR 130–143 · RPE 3–4", "3–4", 0, None)
-    det = f"Zwift endurance. 10' WU 120→150W, {mins-15}' steady @ 150–175W, cadence 85–95, 5' easy."
+    det = f"Zwift endurance. 10' WU {w(.50)}→{w(.62)}W, {mins-15}' steady @ {Z2W}, cadence 85–95, 5' easy."
     if im_blocks:
-        det += f" Include {im_blocks} @ IM power 160–172W in aero position."
+        det += f" Include {im_blocks} @ IM power {IMW} in aero position."
     if heat:
         det += " HEAT ACCLIMATION: no fan / one extra layer, drink to thirst + 1g sodium/L; stop if HR >150 or you feel unwell."
     return S("Bike", "Endurance ride" + (" (heat)" if heat else ""), mins, det, BK_Z2, "3–4", 0, round(mins / 60 * 30, 0))
@@ -181,18 +191,18 @@ def bike_z2(mins, im_blocks=None, heat=False, gym=False):
 def bike_long(mins, wk, ph):
     hrs = mins / 60
     if ph == "base":
-        extra = "Last 20' @ IM power 160–172W." if wk >= 9 else "Smooth, steady, seated."
+        extra = f"Last 20' @ IM power {IMW}." if wk >= 9 else "Smooth, steady, seated."
         g = "60–70" if wk < 9 else "70–80"
     elif ph == "build":
         n = 3 if mins < 290 else 2
         blk = 30 if mins < 270 else (40 if mins < 300 else 60)
-        extra = f"Include {n}×{blk}' @ IM power 160–172W in aero, 10' Z2 between."
+        extra = f"Include {n}×{blk}' @ IM power {IMW} in aero, 10' Z2 between."
         g = "80–90"
     else:  # peak
         imh = min(int((hrs - 1.5) * 2) / 2, 4.0)
-        extra = f"Middle {imh:g}h continuous @ IM power 160–172W in aero (race rehearsal: kit, bottles, nutrition)."
+        extra = f"Middle {imh:g}h continuous @ IM power {IMW} in aero (race rehearsal: kit, bottles, nutrition)."
         g = "90–100"
-    det = (f"Long ride {mins//60}h{mins%60:02d}. First 20' Z1–low Z2, then Z2 150–175W. {extra} "
+    det = (f"Long ride {mins//60}h{mins%60:02d}. First 20' Z1–low Z2, then Z2 {Z2W}. {extra} "
            "Indoors until your outdoor kit is sorted; once outdoors, pick flat, low-traffic roads and keep the same power.")
     return S("Bike", "Long ride", mins, det, f"{BK_Z2}; blocks {BK_IM}", "3–4", 0, round(hrs * 30, 0),
              fuel=f"{g} g carbs/h from minute 20 · 500–800mg sodium/h · 500–750ml fluid/h (gut training)")
@@ -210,7 +220,7 @@ def bike_test():
 
 
 def bike_openers(mins):
-    det = f"{mins}' easy with 3×2' @ IM power (165W) and 3×30s @ 250W, full recovery. Check gears/brakes."
+    det = f"{mins}' easy with 3×2' @ IM power ({w(.685)}W) and 3×30s @ {w(1.03)}W, full recovery. Check gears/brakes."
     return S("Bike", "Openers", mins, det, f"{BK_Z2}; efforts as listed", "3–5", 5, round(mins / 60 * 30))
 
 
@@ -420,15 +430,15 @@ week(22, "Build 2", "recovery", "Recovery + FTP retest. Set T100 race targets fr
     "Sun": [run_long(80, BL), swim_ows(40)]})
 week(23, "Race: T100", "race", "Gold Coast T100 (2km/80km/18km) Sun 21 Mar — controlled IM-rehearsal effort, not all-out (London in 5 weeks).", {
     "Mon": [swim_aero(50, BL), strength("A", PK, 25)],
-    "Tue": [misc("Bike", "Race-pace touch", 60, "15' WU; 3×8' @ T100 power 178–190W (74–78%) /4'; rest Z2.",
-                 "T100 power 178–190W · HR ≤150", "5–6", 24, 30), run_easy(30, strides=True)],
+    "Tue": [misc("Bike", "Race-pace touch", 60, f"15' WU; 3×8' @ T100 power {T100W} (74–78%) /4'; rest Z2.",
+                 f"T100 power {T100W} · HR ≤150", "5–6", 24, 30), run_easy(30, strides=True)],
     "Wed": [swim_css(45, "taper"), run_easy(25)],
     "Thu": [bike_openers(50), swim_ows(30)], "Fri": [swim_easy(25)],
     "Sat": [bike_openers(30), misc("Run", "Shakeout", 15, "15' easy jog + 4 strides. Rack bike, check gear.", RN_Z1, "2", 1, 2.5)],
     "Sun": [race("RACE — Gold Coast T100 (2/80/18)", 300,
-                 "Swim 2km steady (1:40–1:44/100m). Bike 80km @ 175–190W (72–78% FTP), HR ≤150, aero. Run 18km: HR 142–149 for 12km, "
+                 "Swim 2km steady (1:40–1:44/100m). " f"Bike 80km @ {T100W} (74–78% FTP), HR ≤150, aero. Run 18km: HR 142–149 for 12km, "
                  "may float to ≤155 last 6km only if tibia + legs feel great. Rehearse IM nutrition. Practise transitions.",
-                 "Swim Z2–Z3 · Bike 175–190W · Run HR ≤149 then ≤155", "90 g carbs/h on bike, 60–90 g/h on run, 800mg sodium/h", 100, 60)]})
+                 f"Swim Z2–Z3 · Bike {T100W} · Run HR ≤149 then ≤155", "90 g carbs/h on bike, 60–90 g/h on run, 800mg sodium/h", 100, 60)]})
 week(24, "Build 3", "recovery", "Post-race recovery; rebuild by Saturday.", {
     "Mon": [swim_easy(40)], "Tue": [bike_easy(45)], "Wed": [swim_aero(50, BL), strength("A", BL, 30)],
     "Thu": [bike_z2(60), run_easy(30)], "Fri": [swim_end(60, BL), strength("B", BL, 25), run_easy(30)],
@@ -495,7 +505,8 @@ week(35, "Taper", "race", "Race week — travel to Cairns, sleep, carb-load Fri�
     "Fri": [swim_ows(25), misc("Run", "Shakeout", 15, "15' easy on part of the run course.", RN_Z1, "2", 0, 2.5)],
     "Sat": [bike_openers(25), swim_easy(15), rest("Bike check-in. Feet up.")],
     "Sun": [race("RACE — IRONMAN Cairns 🏁", 735,
-                 "Swim 3.8km @ 1:42–1:46/100m (~66'). Bike 180km @ 70–75% FTP NP (170–182W at 242W; ~188–200W if FTP reaches 268W), HR ≤145, cap 220W on rises. Set the final number from the wk-22 FTP test and T100. "
+                 f"Swim 3.8km @ {pace(CSS+10)}–{pace(CSS+14)}/100m (~{round((CSS+12)*38/60)}'). Bike 180km @ 70–75% FTP NP "
+                 f"({IMW_SUB11} at {FTP}W; ~188–201W if FTP reaches 268W), HR ≤145, cap {w(.88)}W on rises. Set the final number from the wk-22 FTP test and T100. "
                  "Run 42.2km: HR 140–149 first 30km (≈5:50–6:15/km), walk aid stations from km 1, then empty the tank. See Race Day tab.",
                  "Swim Z2 · Bike 70–75% FTP · Run HR ≤149", "Bike 90–100 g carbs/h, Run 60–90 g/h, 700–1000mg sodium/h", 226, 0)]})
 
@@ -595,9 +606,9 @@ def sub11_bike():
     for s in SESSIONS:
         if s["sport"] == "Bike" and s["wk"] >= 15:
             for k in ("details", "target"):
-                s[k] = (s[k].replace("IM power 160–172W (66–71%) · HR ≤143", "IM power 170–182W (70–75% FTP) · HR ≤145")
-                            .replace("IM power 160–172W", "IM power 170–182W (70–75% FTP)")
-                            .replace("@ IM power (165W)", "@ IM power (176W)"))
+                s[k] = (s[k].replace(f"IM power {IMW} (66–71%) · HR ≤143", f"IM power {IMW_SUB11} (70–75% FTP) · HR ≤145")
+                            .replace(f"IM power {IMW}", f"IM power {IMW_SUB11} (70–75% FTP)")
+                            .replace(f"@ IM power ({w(.685)}W)", f"@ IM power ({w(.725)}W)"))
 
 
 sub11_bike()
