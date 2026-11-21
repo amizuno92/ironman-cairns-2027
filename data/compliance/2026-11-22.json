@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-22",
+  "weekday": "Sun",
+  "plan_week": 6,
+  "phase": "Base 1",
+  "week_kind": "recovery",
+  "sessions": [],
+  "missed_so_far_this_week": [],
+  "still_to_do_this_week": [],
+  "week_to_date": {
+    "actual_hours": 5.98,
+    "planned_hours_to_date": 6.83,
+    "planned_hours_week": 6.83,
+    "by_sport_actual_h": {
+      "Strength": 1.1,
+      "Swim": 1.61,
+      "Bike": 2.07,
+      "Run": 1.2
+    },
+    "by_sport_planned_h": {
+      "Swim": 2.17,
+      "Strength": 1.0,
+      "Bike": 2.17,
+      "Run": 1.5
+    },
+    "run_km": 13.4,
+    "prev_week_run_km": 11.82,
+    "swims": 3
+  },
+  "wellness": {
+    "resting_hr_baseline": 54.0,
+    "resting_hr_recent": [
+      null,
+      null
+    ],
+    "hrv_baseline": 23.0,
+    "hrv_recent": [
+      null,
+      null
+    ],
+    "ctl": 47.6,
+    "atl": 46.6,
+    "tsb": 1.0
+  },
+  "flags": []
+}
