@@ -1,0 +1,159 @@
+[
+  {
+    "id": "i212617666",
+    "name": "Zwift - FTP Ramp Test",
+    "type": "VirtualRide",
+    "start_date_local": "2026-11-21T06:36:44",
+    "start_date": "2026-11-20T20:36:44Z",
+    "moving_time": 1724,
+    "elapsed_time": 1724,
+    "distance": 14501.65,
+    "icu_average_watts": 145,
+    "icu_weighted_avg_watts": 209,
+    "icu_intensity": 86.36364,
+    "icu_ftp": 242,
+    "icu_training_load": 36,
+    "average_heartrate": 125,
+    "max_heartrate": 167,
+    "average_cadence": 89.05984,
+    "average_speed": 8.406,
+    "pace": 8.411631,
+    "decoupling": 7.026193,
+    "icu_efficiency_factor": 1.672,
+    "icu_variability_index": 1.4413793,
+    "icu_zone_times": [
+      {
+        "id": "Z1",
+        "secs": 1032
+      },
+      {
+        "id": "Z2",
+        "secs": 183
+      },
+      {
+        "id": "Z3",
+        "secs": 73
+      },
+      {
+        "id": "Z4",
+        "secs": 124
+      },
+      {
+        "id": "Z5",
+        "secs": 121
+      },
+      {
+        "id": "Z6",
+        "secs": 192
+      },
+      {
+        "id": "Z7",
+        "secs": 0
+      },
+      {
+        "id": "SS",
+        "secs": 66
+      }
+    ],
+    "icu_hr_zone_times": [
+      1046,
+      220,
+      128,
+      223,
+      101,
+      7,
+      0
+    ],
+    "icu_hr_zones": [
+      129,
+      144,
+      149,
+      160,
+      165,
+      170,
+      175
+    ],
+    "icu_power_zones": [
+      55,
+      75,
+      90,
+      105,
+      120,
+      150,
+      999
+    ],
+    "interval_summary": [
+      "1x 1m58s 270w",
+      "1x 1m58s 310w",
+      "1x 73s 342w"
+    ],
+    "device_name": "ZWIFT H~",
+    "trainer": true,
+    "source": "ZWIFT",
+    "total_elevation_gain": 23.0,
+    "carbs_used": 147,
+    "calories": 237,
+    "icu_ctl": 48.75818,
+    "icu_atl": 53.7804,
+    "icu_weight": 80.4,
+    "icu_lap_count": 17,
+    "polarization_index": 2.05,
+    "lthr": 161,
+    "athlete_max_hr": 175
+  },
+  {
+    "id": "i212661185",
+    "name": "Run",
+    "type": "Run",
+    "start_date_local": "2026-11-21T10:07:10",
+    "start_date": "2026-11-21T00:07:10Z",
+    "moving_time": 1445,
+    "elapsed_time": 1446,
+    "distance": 4266.08,
+    "icu_intensity": 61.131207,
+    "icu_training_load": 15,
+    "average_heartrate": 126,
+    "max_heartrate": 143,
+    "average_cadence": 76.36075,
+    "average_speed": 2.99,
+    "pace": 2.9523046,
+    "icu_hr_zone_times": [
+      1242,
+      205,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "icu_hr_zones": [
+      140,
+      149,
+      157,
+      166,
+      171,
+      176,
+      184
+    ],
+    "interval_summary": [
+      "1x 2s 85bpm",
+      "1x 4m 106bpm",
+      "4x 60s 124bpm",
+      "4x 4m 131bpm",
+      "1x 4s 140bpm"
+    ],
+    "icu_rpe": 4,
+    "session_rpe": 96,
+    "device_name": "Watch6,18",
+    "source": "OAUTH_CLIENT",
+    "total_elevation_gain": 56.791946,
+    "calories": 310,
+    "icu_ctl": 48.75818,
+    "icu_atl": 53.7804,
+    "icu_weight": 80.4,
+    "icu_lap_count": 11,
+    "polarization_index": 0.0,
+    "lthr": 167,
+    "athlete_max_hr": 184
+  }
+]
