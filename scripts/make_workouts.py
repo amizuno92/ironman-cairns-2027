@@ -14,7 +14,7 @@ from xml.sax.saxutils import escape
 sys.path.insert(0, os.path.dirname(__file__))
 from common import ROOT, load_plan, today_local, week_start  # noqa: E402
 
-FTP_HINT = 242  # only used in descriptions; Zwift uses its own FTP setting
+FTP_HINT = load_plan().get("ftp_w", 242)  # only used in descriptions; Zwift uses its own FTP setting
 
 
 def pct_band(text):
