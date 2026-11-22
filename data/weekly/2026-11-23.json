@@ -1,0 +1,81 @@
+{
+  "week_start": "2026-11-23",
+  "plan_week": 7,
+  "phase": "Base 2",
+  "kind": "load",
+  "focus": "Walk-run stage 4, then continuous running next week.",
+  "planned_hours": 10.27,
+  "actual_hours": 0,
+  "planned_by_sport_h": {
+    "Swim": 2.76,
+    "Run": 1.5,
+    "Bike": 4.59,
+    "Strength": 1.42
+  },
+  "actual_by_sport_h": {},
+  "compliance_pct": 0.0,
+  "sessions_planned": 12,
+  "sessions_done": 0,
+  "missed": [
+    {
+      "id": "w07-mon-swim-1",
+      "date": "2026-11-23",
+      "sport": "Swim",
+      "title": "Aerobic endurance",
+      "duration_min": 55
+    },
+    {
+      "id": "w07-mon-run-1",
+      "date": "2026-11-23",
+      "sport": "Run",
+      "title": "Walk-run (stage 4)",
+      "duration_min": 30
+    }
+  ],
+  "intensity": {
+    "endurance_hours": 0.0,
+    "z4plus_min": 0,
+    "z4plus_pct": null,
+    "bike_power_zone_min": {},
+    "hr_zone_min": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "load": 0,
+  "run_km": 0.0,
+  "prev_week_run_km": 13.4,
+  "run_km_change_pct": -100.0,
+  "swims": 0,
+  "fitness": {
+    "resting_hr_baseline": 53.0,
+    "resting_hr_recent": [
+      null,
+      null
+    ],
+    "hrv_baseline": 25.0,
+    "hrv_recent": [
+      null,
+      null
+    ],
+    "ctl": 46.5,
+    "atl": 40.4,
+    "tsb": 6.1
+  },
+  "lift_sessions": [],
+  "tests": [],
+  "flags": [],
+  "next_week": {
+    "week": 8,
+    "start": "2026-11-30",
+    "phase": "Base 2",
+    "kind": "load",
+    "focus": "First continuous runs (25–30'). Long ride 2h45.",
+    "planned_hours": 11.17
+  }
+}
