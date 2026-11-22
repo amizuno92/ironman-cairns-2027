@@ -5,71 +5,138 @@
   "kind": "recovery",
   "focus": "Recovery + tests (CSS Wed, FTP ramp Sat). Hold walk-run stage 3.",
   "planned_hours": 6.84,
-  "actual_hours": 0,
+  "actual_hours": 5.97,
   "planned_by_sport_h": {
     "Swim": 2.17,
     "Strength": 1.0,
     "Bike": 2.17,
     "Run": 1.5
   },
-  "actual_by_sport_h": {},
-  "compliance_pct": 0.0,
+  "actual_by_sport_h": {
+    "Strength": 1.09,
+    "Swim": 1.61,
+    "Bike": 2.07,
+    "Run": 1.2
+  },
+  "compliance_pct": 87.0,
   "sessions_planned": 11,
-  "sessions_done": 0,
-  "missed": [
-    {
-      "id": "w06-mon-swim-1",
-      "date": "2026-11-16",
-      "sport": "Swim",
-      "title": "Aerobic endurance",
-      "duration_min": 45
-    },
-    {
-      "id": "w06-mon-strength-1",
-      "date": "2026-11-16",
-      "sport": "Strength",
-      "title": "Strength A — base",
-      "duration_min": 30
-    }
-  ],
+  "sessions_done": 11,
+  "missed": [],
   "intensity": {
-    "endurance_hours": 0.0,
-    "z4plus_min": 0,
-    "z4plus_pct": null,
-    "bike_power_zone_min": {},
+    "endurance_hours": 4.88,
+    "z4plus_min": 34,
+    "z4plus_pct": 11.5,
+    "bike_power_zone_min": {
+      "Z1": 48,
+      "Z2": 35,
+      "Z3": 18,
+      "Z4": 11,
+      "Z5": 5,
+      "Z6": 6,
+      "Z7": 1
+    },
     "hr_zone_min": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      232,
+      106,
+      19,
+      9,
+      5,
+      2,
       0
     ]
   },
-  "load": 0,
-  "run_km": 0.0,
+  "load": 308,
+  "run_km": 13.4,
   "prev_week_run_km": 11.82,
-  "run_km_change_pct": -100.0,
-  "swims": 0,
+  "run_km_change_pct": 13.4,
+  "swims": 3,
   "fitness": {
-    "resting_hr_baseline": 55,
+    "resting_hr_baseline": 54,
     "resting_hr_recent": [
       null,
-      null
+      55
     ],
-    "hrv_baseline": 29.5,
+    "hrv_baseline": 25.0,
     "hrv_recent": [
       null,
-      null
+      20.0
     ],
     "ctl": 47.6,
-    "atl": 50.2,
-    "tsb": -2.6
+    "atl": 46.6,
+    "tsb": 1.0
   },
-  "lift_sessions": [],
-  "tests": [],
-  "flags": [],
+  "lift_sessions": [
+    "2026-11-16-A.json"
+  ],
+  "tests": [
+    {
+      "date": "2026-11-18",
+      "type": "CSS",
+      "t400_s": 338,
+      "t200_s": 158,
+      "raw_s_per_100m": 90,
+      "value_s_per_100m": 90,
+      "protocol": "400/200 test, push starts, 50m pool",
+      "note": "400 in 5:38, 200 in 2:38. CSS 1:30 used (raw value, Andrew's choice). The 200 was under-paced, so verify in week 7's CSS set; fall back to 1:32 if 1:30 reps fade. Previous 1:34 (Sep 2026)."
+    },
+    {
+      "date": "2026-11-21",
+      "type": "FTP",
+      "value_w": 259,
+      "protocol": "Zwift ramp test",
+      "note": "259 W (3.24 W/kg at 80 kg), up from 242 W in Sep 2026 (+17 W, +7%). Week-6 checkpoint 252 W: beaten by 7 W. Already within 1 W of the week-14 checkpoint (260 W)."
+    }
+  ],
+  "flags": [
+    {
+      "level": "info",
+      "code": "z4plus",
+      "msg": "7' at Z4+ in an easy ride",
+      "date": "2026-11-17"
+    },
+    {
+      "level": "info",
+      "code": "short",
+      "msg": "27' vs 45' planned",
+      "date": "2026-11-18"
+    },
+    {
+      "level": "warn",
+      "code": "too_long",
+      "msg": "49' vs 40' planned (22% over)",
+      "date": "2026-11-19"
+    },
+    {
+      "level": "warn",
+      "code": "too_hard",
+      "msg": "NP 170W above the 133W ceiling for this ride",
+      "date": "2026-11-19"
+    },
+    {
+      "level": "info",
+      "code": "z4plus",
+      "msg": "9' at Z4+ in an easy ride",
+      "date": "2026-11-19"
+    },
+    {
+      "level": "info",
+      "code": "short",
+      "msg": "31' vs 40' planned",
+      "date": "2026-11-20"
+    },
+    {
+      "level": "info",
+      "code": "swim_fast",
+      "msg": "averaged 1:43/100m, faster than the 1:48– aerobic band",
+      "date": "2026-11-20"
+    },
+    {
+      "level": "info",
+      "code": "short",
+      "msg": "29' vs 45' planned",
+      "date": "2026-11-21"
+    }
+  ],
   "next_week": {
     "week": 7,
     "start": "2026-11-23",
