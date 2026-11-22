@@ -237,10 +237,10 @@ STAGES = {
 }
 
 
-def run_wr(stage):
+def run_wr(stage, note=""):
     reps, dur, runm = STAGES[stage]
     det = (f"RETURN-TO-RUN stage {stage}: 5' brisk walk, {reps}, finish with walk. Flat, soft surface (grass/path), "
-           f"short quick steps (cadence +5%). Alternate days only. {BONE}")
+           f"short quick steps (cadence +5%). Alternate days only. {BONE}" + (f" {note}" if note else ""))
     return S("Run", f"Walk-run (stage {stage})", dur, det, RN_Z1, "2–3", 0, km(runm))
 
 
@@ -356,10 +356,10 @@ week(6, "Base 1", "recovery", "Recovery + tests (CSS Wed, FTP ramp Sat). Hold wa
     "Mon": [swim_aero(45), strength("A", B, 30)], "Tue": [bike_z2(45), run_wr(3)], "Wed": [swim_test()],
     "Thu": [bike_easy(40), strength("B", B, 30), run_wr(3)], "Fri": [swim_easy(40)], "Sat": [bike_test()],
     "Sun": [run_wr(3)]})
-week(7, "Base 2", "load", "Walk-run stage 4, then continuous running next week.", {
-    "Mon": [swim_aero(55), strength("A", B, 45)], "Tue": [bike_q(70, 7), run_wr(4)], "Wed": [swim_css(55, "base2")],
-    "Thu": [bike_z2(50), strength("B", B, 40), run_wr(4)], "Fri": [swim_end(55)], "Sat": [bike_long(130, 7, B)],
-    "Sun": [run_wr(4), swim_easy(25)]})
+week(7, "Base 2", "load", "Stage-3 gate run Mon, then walk-run stage 4 (Wed, Fri) if clean. Continuous running next week.", {
+    "Mon": [swim_aero(55), strength("A", B, 45)], "Tue": [bike_q(70, 7), run_wr(3, "GATE RUN: repeat of stage 3, done exactly as written: full 30' incl. the 5' walk, reps at 5:45–6:00/km or slower, walk if HR hits 141, and log 'pain X/10 during / next AM'.")], "Wed": [swim_css(55, "base2")],
+    "Thu": [bike_z2(50), strength("B", B, 40), run_wr(4, "Only if Monday's stage-3 gate run was done as written with pain ≤2/10 during and 0/10 next morning logged; otherwise run stage 3 again. Reps at 5:45–6:00/km or slower.")], "Fri": [swim_end(55)], "Sat": [bike_long(130, 7, B)],
+    "Sun": [run_wr(4, "Only if Monday's stage-3 gate run was done as written with pain ≤2/10 during and 0/10 next morning logged; otherwise run stage 3 again. Reps at 5:45–6:00/km or slower."), swim_easy(25)]})
 week(8, "Base 2", "load", "First continuous runs (25–30'). Long ride 2h45.", {
     "Mon": [swim_aero(60), strength("A", B, 45)], "Tue": [bike_q(70, 8), run_easy(25, cont_first=True)],
     "Wed": [swim_css(60, "base2")], "Thu": [bike_z2(50), strength("B", B, 40), run_easy(30)], "Fri": [swim_end(60)],
