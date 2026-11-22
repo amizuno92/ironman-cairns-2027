@@ -84,6 +84,17 @@ CSS_SETS = {
     "peak":  ("2×(4×200 @ 1:33–1:35 /20s), 100 easy between + {n}×50 @ ≤1:28 /15s", 1.0),
     "taper": ("6×100 @ 1:32–1:35 /20s + 4×50 fast/easy", 1.0),
 }
+CSS_SETS_BASE = 94  # CSS_SETS paces are written for CSS 1:34; _css_shift rescales them to the current CSS
+
+
+def _css_shift(txt):
+    import re
+    def f(m):
+        t = int(m.group(1)) * 60 + int(m.group(2)) + (CSS - CSS_SETS_BASE)
+        return f"{t // 60}:{t % 60:02d}"
+    return re.sub(r"(\d):(\d\d)", f, txt)
+
+
 CSS_FIXED = {"base1": 200, "base2": 300, "base3": 1000, "build": 1200, "peak": 1700, "taper": 0}
 
 
@@ -93,7 +104,7 @@ def swim_css(mins, key):
     n = max(4, (d - 800 - fixed) // 100) if key != "taper" else 0
     if key == "peak":
         n = max(4, (d - 800 - fixed - 100) // 50)
-    ms = CSS_SETS[key][0].format(n=n)
+    ms = _css_shift(CSS_SETS[key][0].format(n=n))
     det = f"WU 400 + 4×50 build /15s. MS {ms}. CD 200 easy (+200 pull if time)."
     work = (d - 600) * CSS / 100 / 60
     return S("Swim", "CSS / threshold", mins, det, f"{SW_Z4}; 50s {SW_Z5}", "7–8", work * 0.85, d / 1000)
