@@ -381,14 +381,14 @@ week(10, "Base 2", "load", "Load week (was recovery). Longest VO2 reps so far. W
     "Mon": [swim_aero(60), strength("A", B, 45)], "Tue": [bike_q(75, 10), run_easy(30)], "Wed": [swim_css(60, "base2")],
     "Thu": [bike_z2(55), strength("B", B, 40), run_easy(30)], "Fri": [swim_end(60)],
     "Sat": [bike_long(185, 10, B), run_brick(10, B)], "Sun": [run_long(44, B), swim_easy(40)]})
-week(11, "Base 3", "load", "Christmas week — Fri is optional/easy. Threshold work begins on the bike.", {
-    "Mon": [swim_aero(60), strength("A", B, 45)], "Tue": [bike_q(75, 11), run_easy(30)], "Wed": [swim_css(60, "base3")],
-    "Thu": [bike_z2(60), strength("B", B, 40)], "Fri": [run_easy(30, strides=True)],
-    "Sat": [bike_long(190, 11, B), run_brick(10, B)], "Sun": [run_long(48, B), swim_end(45)]})
-week(12, "Base 3", "load", "Strides added. Long ride 3h15.", {
+week(11, "Base 3", "load", "Christmas week — Fri is optional/easy. Threshold work begins on the bike. Bumped (Andrew has time): long ride 3h45.", {
+    "Mon": [swim_aero(60), strength("A", B, 45)], "Tue": [bike_q(75, 11), run_easy(30)], "Wed": [swim_css(65, "base3")],
+    "Thu": [bike_z2(80), strength("B", B, 40)], "Fri": [run_easy(30, strides=True)],
+    "Sat": [bike_long(225, 11, B), run_brick(10, B)], "Sun": [run_long(48, B), swim_end(45)]})
+week(12, "Base 3", "load", "Strides added. Long ride 3h55 (bumped with week 11).", {
     "Mon": [swim_aero(60), strength("A", B, 45)], "Tue": [bike_q(75, 12), run_easy(35)],
-    "Wed": [swim_css(60, "base3"), run_easy(30, strides=True)], "Thu": [bike_z2(60), strength("B", B, 40)],
-    "Fri": [swim_end(60)], "Sat": [bike_long(195, 12, B), run_brick(10, B)], "Sun": [run_long(54, B), swim_easy(30)]})
+    "Wed": [swim_css(60, "base3"), run_easy(30, strides=True)], "Thu": [bike_z2(80), strength("B", B, 40)],
+    "Fri": [swim_end(60)], "Sat": [bike_long(235, 12, B), run_brick(10, B)], "Sun": [run_long(54, B), swim_easy(30)]})
 week(13, "Base 3", "load", "Biggest base week.", {
     "Mon": [swim_aero(60), strength("A", B, 45)], "Tue": [bike_q(75, 13), run_easy(35)],
     "Wed": [swim_css(65, "base3"), run_easy(35, strides=True)], "Thu": [bike_z2(70), strength("B", B, 40)],
