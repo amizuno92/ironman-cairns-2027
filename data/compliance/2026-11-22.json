@@ -28,19 +28,19 @@
     "swims": 3
   },
   "wellness": {
-    "resting_hr_baseline": 54,
+    "resting_hr_baseline": 53.0,
     "resting_hr_recent": [
-      null,
+      53,
       55
     ],
-    "hrv_baseline": 25.0,
+    "hrv_baseline": 24.0,
     "hrv_recent": [
-      null,
+      42.0,
       20.0
     ],
-    "ctl": 47.6,
-    "atl": 46.6,
-    "tsb": 1.0
+    "ctl": 48.7,
+    "atl": 52.9,
+    "tsb": -4.2
   },
   "flags": []
 }
