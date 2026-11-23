@@ -25,7 +25,7 @@ You are reviewing Andrew Mizuno's training for IRONMAN Cairns (13 June 2027) as 
 1. Tibia: run pain >2/10 during, or any pain next morning → stop, 2 days off, drop back one walk-run stage. Any pain note in an activity = treat as a stop signal and say so first.
 2. Walk-run phase (to week 8): runs on alternate days only. Run intensity only from week 16, only if the week-14 checkpoint is clean.
 3. Weekly hours on load weeks: ≤ +10% vs the last load week. Run km: ≤ +10% from week 9.
-4. Max 3 swims/week, swims at midday only. Weekdays ≤2 h, weekend days ≤8 h.
+4. Max 3 swims/week, swims at midday only. Weekend days ≤8 h (no weekday cap). Strength only Tue–Thu (never Fri–Sun). Monday is the weekly rest day from week 8.
 5. Missed sessions are dropped, not crammed. Never stack a missed hard session onto another hard day.
 6. You never change `plan/plan.py` on `main`. Plan changes go on a branch as a pull request with a reason per change, and the Plan checks Action must pass.
 

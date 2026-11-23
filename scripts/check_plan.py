@@ -38,7 +38,7 @@ def main():
         if date in race_days:
             continue
         cap = r["weekend_max_min"] if day in ("Sat", "Sun") else r["weekday_max_min"]
-        if m > cap:
+        if cap is not None and m > cap:
             errors.append(f"{date} ({day}): {m} min planned, limit {cap}")
     for date, n in day_swims.items():
         if n > 1:

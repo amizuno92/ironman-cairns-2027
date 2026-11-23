@@ -10,7 +10,7 @@ Numbers live in `rules.json`; `scripts/check_plan.py` enforces the hard ones on 
 | Run intensity | from week 16, only if week-14 checkpoint clean | Bone first |
 | Tibia stop rule | pain >2/10 during or any next morning → stop, 2 days off, regress one stage | Non-negotiable |
 | Swims | max 3/week, midday only | Athlete schedule |
-| Daily time | weekdays ≤2 h, weekend days ≤8 h | Availability |
+| Daily time | weekend days ≤8 h (no weekday cap since 23 Nov 2026) | Availability |
 | Intensity split | ~80/20 by time; Z3 kept minimal | Polarized method |
 | IM power | 66–71% FTP to wk 14; 70–75% from wk 15 | Sub-11 target |
 | Missed sessions | drop, don't cram | Fatigue control |

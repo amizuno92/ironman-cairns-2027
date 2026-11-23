@@ -265,7 +265,7 @@ def main():
     for dstr, mins in daily_min.items():
         wd = dt.date.fromisoformat(dstr).weekday()
         cap = rules["weekend_max_min"] if wd >= 5 else rules["weekday_max_min"]
-        if mins > cap + 10:
+        if cap is not None and mins > cap + 10:
             week_flags.append({"level": "info", "code": "day_over_cap", "msg": f"{dstr}: {fmt_min(mins * 60)} trained vs {cap // 60}h limit"})
 
     info, wflags = wellness_flags(day, rules)
