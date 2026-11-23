@@ -562,6 +562,10 @@ def _place(s, day, w):
     s["date"] = WEEKS[w]["start"] + dt.timedelta(days=DAYS.index(day))
 
 
+# Athlete removed the 2 h weekday cap on 23 Nov 2026 (weekend days stay <= 8 h).
+WEEKDAY_CAP = 24 * 60
+
+
 def _mins(w, d):
     return sum(x["dur"] for x in SESSIONS if x["wk"] == w and x["day"] == d)
 
@@ -583,7 +587,7 @@ def stack_strength():
         if wr:
             for x, d in zip(sorted(wr, key=lambda x: x["date"]), ["Mon", "Wed", "Fri"]):
                 _place(x, d, w)
-        elif _mins(w, qday) > 120:
+        elif _mins(w, qday) > WEEKDAY_CAP:
             runs = [x for x in wk if x["sport"] == "Run" and x["day"] == qday]
             for r in runs:
                 if r["title"] == "Cruise intervals":
@@ -609,7 +613,7 @@ stack_strength()
 # ---------------- one full rest day a week (athlete request, 23 Nov 2026) ----------------
 # Week 7: Sunday's recovery spin is dropped (Sunday rest). From week 8, Monday is the rest day in any week
 # that has none: recovery sessions are dropped, everything else moves to the best day that keeps the rules
-# (max 3 swims, swims midday, weekdays <= 120 min, one run a day).
+# (max 3 swims, swims midday, one run a day).
 REST_LOG = []
 
 
@@ -637,24 +641,24 @@ def _place_run(s, w, drop):
     near = lambda d, other: abs(DAYS.index(d) - DAYS.index(other)) <= 1
     cands = [d for d in days if spaced(d)] + ([] if w <= 8 else [d for d in days if not spaced(d)])
     for d in cands:
-        if _load(w, d, drop) + s["dur"] <= 120:
+        if _load(w, d, drop) + s["dur"] <= WEEKDAY_CAP:
             _move(s, d, w); REST_LOG.append((w, s["title"], d)); return True
         st = [x for x in _day(w, d) if x["sport"] == "Strength"]
-        if st and _load(w, d, drop) - st[0]["dur"] + s["dur"] <= 120:
+        if st and _load(w, d, drop) - st[0]["dur"] + s["dur"] <= WEEKDAY_CAP:
             for d2 in ("Tue", "Wed", "Thu", "Fri"):
                 others = [o for o in str_days() if o != d]
-                if (d2 != d and not any(x["sport"] == "Strength" for x in _day(w, d2)) and _load(w, d2, drop) + st[0]["dur"] <= 120
+                if (d2 != d and not any(x["sport"] == "Strength" for x in _day(w, d2)) and _load(w, d2, drop) + st[0]["dur"] <= WEEKDAY_CAP
                         and not any(near(d2, o) for o in others)):
                     _move(st[0], d2, w); _move(s, d, w)
                     REST_LOG.append((w, s["title"], f"{d} ({st[0]['title']} → {d2})")); return True
         # last resort: also move the other strength session so the two stay a day apart
-        if w < 20 and st and _load(w, d, drop) - st[0]["dur"] + s["dur"] <= 120:
+        if w < 20 and st and _load(w, d, drop) - st[0]["dur"] + s["dur"] <= WEEKDAY_CAP:
             other = [x for x in SESSIONS if x["wk"] == w and x["sport"] == "Strength" and x is not st[0] and id(x) not in drop]
             for d2 in ("Tue", "Wed", "Thu", "Fri"):
                 for d3 in ("Tue", "Wed", "Thu", "Fri", "Sun"):
                     if (other and d2 not in (d, d3) and d3 != d and not near(d2, d3)
-                            and _load(w, d2, drop) + st[0]["dur"] <= 120
-                            and (d3 == other[0]["day"] or _load(w, d3, drop) + other[0]["dur"] <= (480 if d3 == "Sun" else 120))
+                            and _load(w, d2, drop) + st[0]["dur"] <= WEEKDAY_CAP
+                            and (d3 == other[0]["day"] or _load(w, d3, drop) + other[0]["dur"] <= (480 if d3 == "Sun" else WEEKDAY_CAP))
                             and not any(x["sport"] == "Strength" for x in _day(w, d2))):
                         if d3 != other[0]["day"]:
                             _move(other[0], d3, w)
@@ -694,7 +698,7 @@ def rest_day():
                 order = ["Tue", "Wed", "Thu", "Fri", "Sun"]
                 ok = lambda d: not any(x["sport"] in ("Strength", "Race") for x in _day(w, d))
             for d in order:
-                cap = 480 if d in ("Sat", "Sun") else 120
+                cap = 480 if d in ("Sat", "Sun") else WEEKDAY_CAP
                 if ok(d) and _load(w, d, drop) + s["dur"] <= cap:
                     _move(s, d, w); REST_LOG.append((w, s["title"], d)); break
             else:
@@ -709,6 +713,53 @@ def rest_day():
 
 
 rest_day()
+
+# ---------------- strength midweek only (athlete request, 23 Nov 2026) ----------------
+# No gym on Fri/Sat/Sun: legs stay fresh for the weekend long ride and long run.
+# From week 7: Strength A on the bike-interval day (normally Tue), Strength B on Thu.
+def strength_midweek():
+    global SESSIONS
+    for w in WEEKS:
+        if w < 7:
+            continue
+        st = [x for x in SESSIONS if x["wk"] == w and x["sport"] == "Strength"]
+        a = [x for x in st if x["title"].startswith("Strength A")]
+        b = [x for x in st if x["title"].startswith("Strength B")]
+        q = [x["day"] for x in SESSIONS if x["wk"] == w and x["sport"] == "Bike" and x["title"].startswith(("Intervals", "TEST"))]
+        aday = q[0] if q and q[0] in ("Tue", "Wed") else "Tue"
+        for x in a:
+            if x["day"] != aday:
+                _move(x, aday, w)
+        for x in b:
+            if x["day"] != "Thu":
+                _move(x, "Thu", w)
+        # rest placeholders: drop where training landed, add where a day emptied
+        SESSIONS = [x for x in SESSIONS if not (x["sport"] == "Rest" and x["wk"] == w and any(
+            y["wk"] == w and y["day"] == x["day"] and y["sport"] != "Rest" for y in SESSIONS))]
+        for d in DAYS:
+            if not _day(w, d) and not any(x["wk"] == w and x["day"] == d for x in SESSIONS):
+                r = rest("Rest day."); r.update(wk=w, day=d, phase=WEEKS[w]["phase"],
+                                               date=WEEKS[w]["start"] + dt.timedelta(days=DAYS.index(d)))
+                SESSIONS.append(r)
+
+
+strength_midweek()
+
+
+def spread_runs():
+    """With no weekday cap, easy runs stay on the interval day (Tue). Where that leaves easy runs on Tue and Wed
+    back to back, move Wednesday's easy run to Thursday so weekday runs stay a day apart."""
+    for w in WEEKS:
+        if w < 9:
+            continue
+        r = lambda d: [x for x in _day(w, d) if x["sport"] == "Run"]
+        if r("Tue") and r("Wed") and not r("Thu") and all(x["title"].startswith("Easy") for x in r("Wed")):
+            for x in r("Wed"):
+                _move(x, "Thu", w)
+                REST_LOG.append((w, x["title"], "Thu (spaced from Tue run)"))
+
+
+spread_runs()
 
 # ---------------- sub-11 bike targets (from Build 1, wk 15) ----------------
 def sub11_bike():

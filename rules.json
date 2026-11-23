@@ -1,6 +1,6 @@
 {
   "_about": "Thresholds the pipeline checks every day. Human-readable versions are in RULES.md. Change numbers here, not in code.",
-  "weekday_max_min": 120,
+  "weekday_max_min": null,
   "weekend_max_min": 480,
   "weekly_hours_increase_max": 0.10,
   "weekly_run_km_increase_max": 0.10,
