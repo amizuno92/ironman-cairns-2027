@@ -76,13 +76,17 @@ def swim_aero(mins, ph="base"):
     return S("Swim", "Aerobic endurance", mins, det, SW_Z2, "3–4", 0, d / 1000)
 
 
+def P(o):  # pace at CSS + o seconds
+    return pace(CSS + o)
+
+
 CSS_SETS = {
-    "base1": ("{n}×100 @ CSS 1:32–1:36 /15s + 4×50 @ ≤1:30 /20s", 1.0),
-    "base2": ("{n}×100 @ CSS 1:32–1:36 /12s + 6×50 @ ≤1:28 /20s", 1.0),
-    "base3": ("5×200 @ 1:33–1:36 /20s + {n}×100 @ 1:31–1:34 /15s", 1.0),
-    "build": ("4×300 @ 1:34–1:36 /20s + {n}×100 @ 1:30–1:33 /15s", 1.0),
-    "peak":  ("2×(4×200 @ 1:33–1:35 /20s), 100 easy between + {n}×50 @ ≤1:28 /15s", 1.0),
-    "taper": ("6×100 @ 1:32–1:35 /20s + 4×50 fast/easy", 1.0),
+    "base1": (f"{{n}}×100 @ CSS {P(-2)}–{P(2)} /15s + 4×50 @ ≤{P(-4)} /20s", 1.0),
+    "base2": (f"{{n}}×100 @ CSS {P(-2)}–{P(2)} /12s + 6×50 @ ≤{P(-6)} /20s", 1.0),
+    "base3": (f"5×200 @ {P(-1)}–{P(2)} /20s + {{n}}×100 @ {P(-3)}–{P(0)} /15s", 1.0),
+    "build": (f"4×300 @ {P(0)}–{P(2)} /20s + {{n}}×100 @ {P(-4)}–{P(-1)} /15s", 1.0),
+    "peak":  (f"2×(4×200 @ {P(-1)}–{P(1)} /20s), 100 easy between + {{n}}×50 @ ≤{P(-6)} /15s", 1.0),
+    "taper": (f"6×100 @ {P(-2)}–{P(1)} /20s + 4×50 fast/easy", 1.0),
 }
 CSS_FIXED = {"base1": 200, "base2": 300, "base3": 1000, "build": 1200, "peak": 1700, "taper": 0}
 
@@ -111,7 +115,7 @@ def swim_end(mins, ph="base"):
         ms = f"{n}×500 @ {pace(CSS+8)}–{pace(CSS+14)}/100m /30s" + (f" + {main-n*500} easy" if main - n*500 else "")
     else:
         n = main // 1000
-        ms = f"{n}×1000 @ IM pace 1:42–1:46/100m /30s" + (f" + {main-n*1000} pull" if main - n*1000 else "")
+        ms = f"{n}×1000 @ IM pace {P(8)}–{P(12)}/100m /30s" + (f" + {main-n*1000} pull" if main - n*1000 else "")
     det = f"WU 400 easy. MS {ms}. CD 200. Hold pace — the goal is aerobic durability, not speed."
     return S("Swim", "Long aerobic swim", mins, det, SW_Z2, "3–4", 0, d / 1000)
 
@@ -180,7 +184,7 @@ def bike_z2(mins, im_blocks=None, heat=False, gym=False):
                f"{mins-15}' Z2 HR 130–143" + (f" incl. {im_blocks} at top of Z2 (HR 140–143) to touch IM effort" if im_blocks else "") +
                ", 5' easy. If no bike available, swap for an extra 45' aerobic swim.")
         return S("Bike", "Gym bike endurance", mins, det, "Z2 HR 130–143 · RPE 3–4", "3–4", 0, None)
-    det = f"Zwift endurance. 10' WU {w(.50)}→{w(.62)}W, {mins-15}' steady @ {Z2W}, cadence 85–95, 5' easy."
+    det = f"Outdoors (Zwift if weather is bad). Ride by HR 130–143. 10' WU {w(.50)}→{w(.62)}W, {mins-15}' steady @ {Z2W}, cadence 85–95, 5' easy."
     if im_blocks:
         det += f" Include {im_blocks} @ IM power {IMW} in aero position."
     if heat:
@@ -203,7 +207,8 @@ def bike_long(mins, wk, ph):
         extra = f"Middle {imh:g}h continuous @ IM power {IMW} in aero (race rehearsal: kit, bottles, nutrition)."
         g = "90–100"
     det = (f"Long ride {mins//60}h{mins%60:02d}. First 20' Z1–low Z2, then Z2 {Z2W}. {extra} "
-           "Indoors until your outdoor kit is sorted; once outdoors, pick flat, low-traffic roads and keep the same power.")
+           "Outdoors: flat, low-traffic roads, IM blocks in aero on the Speedmax. Ride Z2 by HR 130–143 (power is a guide if the bike has a meter); "
+           "HR wins if they disagree.")
     return S("Bike", "Long ride", mins, det, f"{BK_Z2}; blocks {BK_IM}", "3–4", 0, round(hrs * 30, 0),
              fuel=f"{g} g carbs/h from minute 20 · 500–800mg sodium/h · 500–750ml fluid/h (gut training)")
 
