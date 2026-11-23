@@ -184,7 +184,7 @@ def bike_z2(mins, im_blocks=None, heat=False, gym=False):
                f"{mins-15}' Z2 HR 130–143" + (f" incl. {im_blocks} at top of Z2 (HR 140–143) to touch IM effort" if im_blocks else "") +
                ", 5' easy. If no bike available, swap for an extra 45' aerobic swim.")
         return S("Bike", "Gym bike endurance", mins, det, "Z2 HR 130–143 · RPE 3–4", "3–4", 0, None)
-    det = f"Zwift endurance. 10' WU {w(.50)}→{w(.62)}W, {mins-15}' steady @ {Z2W}, cadence 85–95, 5' easy."
+    det = f"Outdoors (Zwift if weather is bad). Ride by HR 130–143. 10' WU {w(.50)}→{w(.62)}W, {mins-15}' steady @ {Z2W}, cadence 85–95, 5' easy."
     if im_blocks:
         det += f" Include {im_blocks} @ IM power {IMW} in aero position."
     if heat:
@@ -207,7 +207,8 @@ def bike_long(mins, wk, ph):
         extra = f"Middle {imh:g}h continuous @ IM power {IMW} in aero (race rehearsal: kit, bottles, nutrition)."
         g = "90–100"
     det = (f"Long ride {mins//60}h{mins%60:02d}. First 20' Z1–low Z2, then Z2 {Z2W}. {extra} "
-           "Indoors until your outdoor kit is sorted; once outdoors, pick flat, low-traffic roads and keep the same power.")
+           "Outdoors: flat, low-traffic roads, IM blocks in aero on the Speedmax. Ride Z2 by HR 130–143 (power is a guide if the bike has a meter); "
+           "HR wins if they disagree.")
     return S("Bike", "Long ride", mins, det, f"{BK_Z2}; blocks {BK_IM}", "3–4", 0, round(hrs * 30, 0),
              fuel=f"{g} g carbs/h from minute 20 · 500–800mg sodium/h · 500–750ml fluid/h (gut training)")
 

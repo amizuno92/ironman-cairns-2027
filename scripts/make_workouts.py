@@ -158,6 +158,10 @@ def build(dates):
     for d in dates:
         for s in [x for x in plan["sessions"] if x["date"] == d.isoformat()]:
             if s["sport"] == "Bike":
+                # Andrew rides outdoors; only structured sessions go to Zwift.
+                if not re.search(r"intervals|test|gym bike", s["title"], re.I):
+                    made.append((s["id"], None, "outdoor ride, no Zwift file"))
+                    continue
                 steps, note = steps_for(s)
                 if not steps:
                     made.append((s["id"], None, note))
