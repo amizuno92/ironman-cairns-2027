@@ -606,6 +606,110 @@ def stack_strength():
 
 stack_strength()
 
+# ---------------- one full rest day a week (athlete request, 23 Nov 2026) ----------------
+# Week 7: Sunday's recovery spin is dropped (Sunday rest). From week 8, Monday is the rest day in any week
+# that has none: recovery sessions are dropped, everything else moves to the best day that keeps the rules
+# (max 3 swims, swims midday, weekdays <= 120 min, one run a day).
+REST_LOG = []
+
+
+def _day(w, d):
+    return [x for x in SESSIONS if x["wk"] == w and x["day"] == d and x["sport"] != "Rest"]
+
+
+def _move(s, d, w):
+    s["day"] = d
+    s["date"] = WEEKS[w]["start"] + dt.timedelta(days=DAYS.index(d))
+
+
+def _load(w, d, drop=()):
+    return sum(x["dur"] for x in _day(w, d) if id(x) not in drop)
+
+
+def _place_run(s, w, drop):
+    """Move a Monday run to a weekday with no run, preferring days with no run either side (bone load).
+    If the only blocker is room, shift that day's strength session to another weekday that has room."""
+    runs = lambda d: any(x["sport"] in ("Run", "Race") for x in _day(w, d) if id(x) not in drop)
+    real = lambda d: any(x["sport"] in ("Run", "Race") and x["title"] != "Brick run" for x in _day(w, d) if id(x) not in drop)
+    days = [d for d in ("Tue", "Wed", "Thu", "Fri") if not runs(d)]
+    spaced = lambda d: not any(real(n) for n in (DAYS[DAYS.index(d) - 1], DAYS[(DAYS.index(d) + 1) % 7]) if n != "Mon")
+    str_days = lambda: [x["day"] for x in SESSIONS if x["wk"] == w and x["sport"] == "Strength" and id(x) not in drop]
+    near = lambda d, other: abs(DAYS.index(d) - DAYS.index(other)) <= 1
+    cands = [d for d in days if spaced(d)] + ([] if w <= 8 else [d for d in days if not spaced(d)])
+    for d in cands:
+        if _load(w, d, drop) + s["dur"] <= 120:
+            _move(s, d, w); REST_LOG.append((w, s["title"], d)); return True
+        st = [x for x in _day(w, d) if x["sport"] == "Strength"]
+        if st and _load(w, d, drop) - st[0]["dur"] + s["dur"] <= 120:
+            for d2 in ("Tue", "Wed", "Thu", "Fri"):
+                others = [o for o in str_days() if o != d]
+                if (d2 != d and not any(x["sport"] == "Strength" for x in _day(w, d2)) and _load(w, d2, drop) + st[0]["dur"] <= 120
+                        and not any(near(d2, o) for o in others)):
+                    _move(st[0], d2, w); _move(s, d, w)
+                    REST_LOG.append((w, s["title"], f"{d} ({st[0]['title']} → {d2})")); return True
+        # last resort: also move the other strength session so the two stay a day apart
+        if w < 20 and st and _load(w, d, drop) - st[0]["dur"] + s["dur"] <= 120:
+            other = [x for x in SESSIONS if x["wk"] == w and x["sport"] == "Strength" and x is not st[0] and id(x) not in drop]
+            for d2 in ("Tue", "Wed", "Thu", "Fri"):
+                for d3 in ("Tue", "Wed", "Thu", "Fri", "Sun"):
+                    if (other and d2 not in (d, d3) and d3 != d and not near(d2, d3)
+                            and _load(w, d2, drop) + st[0]["dur"] <= 120
+                            and (d3 == other[0]["day"] or _load(w, d3, drop) + other[0]["dur"] <= (480 if d3 == "Sun" else 120))
+                            and not any(x["sport"] == "Strength" for x in _day(w, d2))):
+                        if d3 != other[0]["day"]:
+                            _move(other[0], d3, w)
+                        _move(st[0], d2, w); _move(s, d, w)
+                        REST_LOG.append((w, s["title"], f"{d} ({st[0]['title']} → {d2}, {other[0]['title']} → {d3})")); return True
+    return False
+
+
+def rest_day():
+    global SESSIONS
+    drop = set()
+    sun7 = [x for x in _day(7, "Sun") if x["title"] == "Recovery spin"]
+    for x in sun7:
+        drop.add(id(x)); REST_LOG.append((7, x["title"], "dropped (Sunday rest)"))
+    for w in WEEKS:
+        if w < 8:
+            continue
+        if any(not _day(w, d) for d in DAYS):
+            continue  # already has a rest day
+        for s in sorted(_day(w, "Mon"), key=lambda x: x["sport"] != "Swim"):
+            if s["title"].startswith("Recovery"):
+                drop.add(id(s)); REST_LOG.append((w, s["title"], "dropped")); continue
+            if s["sport"] == "Swim":
+                sun = _day(w, "Sun")
+                spin = [x for x in sun if x["title"] == "Recovery spin"]
+                if spin:
+                    drop.add(id(spin[0])); _move(s, "Sun", w); REST_LOG.append((w, s["title"], "Sun (replaces spin)")); continue
+                if not any(x["sport"] in ("Swim", "Race") for x in sun):
+                    _move(s, "Sun", w); REST_LOG.append((w, s["title"], "Sun")); continue
+                order = ["Thu", "Tue", "Wed", "Fri"]
+                ok = lambda d: not any(x["sport"] == "Swim" for x in _day(w, d))
+            elif s["sport"] == "Run":
+                if _place_run(s, w, drop):
+                    continue
+                drop.add(id(s)); REST_LOG.append((w, s["title"], "dropped (no room)")); continue
+            else:
+                order = ["Tue", "Wed", "Thu", "Fri", "Sun"]
+                ok = lambda d: not any(x["sport"] in ("Strength", "Race") for x in _day(w, d))
+            for d in order:
+                cap = 480 if d in ("Sat", "Sun") else 120
+                if ok(d) and _load(w, d, drop) + s["dur"] <= cap:
+                    _move(s, d, w); REST_LOG.append((w, s["title"], d)); break
+            else:
+                drop.add(id(s)); REST_LOG.append((w, s["title"], "dropped (no room)"))
+    SESSIONS = [x for x in SESSIONS if id(x) not in drop and x["sport"] != "Rest"]
+    for w in WEEKS:
+        for d in DAYS:
+            if not _day(w, d):
+                r = rest("Rest day."); r.update(wk=w, day=d, phase=WEEKS[w]["phase"],
+                                               date=WEEKS[w]["start"] + dt.timedelta(days=DAYS.index(d)))
+                SESSIONS.append(r)
+
+
+rest_day()
+
 # ---------------- sub-11 bike targets (from Build 1, wk 15) ----------------
 def sub11_bike():
     for s in SESSIONS:

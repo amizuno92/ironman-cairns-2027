@@ -61,7 +61,7 @@
       "phase": "Base 2",
       "kind": "load",
       "focus": "Walk-run stage 4, then continuous running next week.",
-      "planned_hours": 10.25
+      "planned_hours": 9.83
     },
     {
       "week": 8,
@@ -69,7 +69,7 @@
       "phase": "Base 2",
       "kind": "load",
       "focus": "First continuous runs (25–30'). Long ride 2h45.",
-      "planned_hours": 11.17
+      "planned_hours": 10.58
     },
     {
       "week": 9,
@@ -77,7 +77,7 @@
       "phase": "Base 2",
       "kind": "load",
       "focus": "Continuous running established (4 runs incl. first brick). Run volume now capped at +10%/wk.",
-      "planned_hours": 12.0
+      "planned_hours": 11.33
     },
     {
       "week": 10,
@@ -101,7 +101,7 @@
       "phase": "Base 3",
       "kind": "load",
       "focus": "Strides added. Long ride 3h15.",
-      "planned_hours": 12.57
+      "planned_hours": 12.07
     },
     {
       "week": 13,
@@ -109,7 +109,7 @@
       "phase": "Base 3",
       "kind": "load",
       "focus": "Biggest base week.",
-      "planned_hours": 13.42
+      "planned_hours": 12.83
     },
     {
       "week": 14,
@@ -125,7 +125,7 @@
       "phase": "Build 1",
       "kind": "load",
       "focus": "Build begins: threshold bike, IM-power blocks on long rides, open water from wk 17.",
-      "planned_hours": 13.62
+      "planned_hours": 13.03
     },
     {
       "week": 16,
@@ -133,7 +133,7 @@
       "phase": "Build 1",
       "kind": "load",
       "focus": "First run quality (cruise intervals) — only if wk 14 checkpoint passed.",
-      "planned_hours": 14.22
+      "planned_hours": 13.63
     },
     {
       "week": 17,
@@ -141,7 +141,7 @@
       "phase": "Build 1",
       "kind": "load",
       "focus": "Open-water swims start Sundays. Get the wetsuit before this week.",
-      "planned_hours": 14.65
+      "planned_hours": 13.9
     },
     {
       "week": 18,
@@ -149,7 +149,7 @@
       "phase": "Build 1",
       "kind": "recovery",
       "focus": "Recovery + CSS retest.",
-      "planned_hours": 10.83
+      "planned_hours": 10.08
     },
     {
       "week": 19,
@@ -157,7 +157,7 @@
       "phase": "Build 2",
       "kind": "load",
       "focus": "Optional: a local sprint tri on Sun 21 Feb for transition practice (swap for Sun long run).",
-      "planned_hours": 15.1
+      "planned_hours": 14.35
     },
     {
       "week": 20,
@@ -165,7 +165,7 @@
       "phase": "Build 2",
       "kind": "load",
       "focus": "Long ride 5h.",
-      "planned_hours": 16.03
+      "planned_hours": 15.28
     },
     {
       "week": 21,
@@ -173,7 +173,7 @@
       "phase": "Build 2",
       "kind": "load",
       "focus": "Peak build week before T100.",
-      "planned_hours": 16.67
+      "planned_hours": 15.92
     },
     {
       "week": 22,
@@ -181,7 +181,7 @@
       "phase": "Build 2",
       "kind": "recovery",
       "focus": "Recovery + FTP retest. Set T100 race targets from new FTP.",
-      "planned_hours": 12.08
+      "planned_hours": 11.33
     },
     {
       "week": 23,
@@ -205,7 +205,7 @@
       "phase": "Build 3",
       "kind": "load",
       "focus": "Big block: London long run + IM long ride.",
-      "planned_hours": 17.08
+      "planned_hours": 16.33
     },
     {
       "week": 26,
@@ -213,7 +213,7 @@
       "phase": "Build 3",
       "kind": "load",
       "focus": "Peak pre-London week: 6h ride + 27.5km long run (Z2).",
-      "planned_hours": 18.05
+      "planned_hours": 17.3
     },
     {
       "week": 27,
@@ -221,7 +221,7 @@
       "phase": "Build 3",
       "kind": "reduced",
       "focus": "London mini-taper (run −30%); last long ride before the 19-day bike gap.",
-      "planned_hours": 14.43
+      "planned_hours": 13.27
     },
     {
       "week": 28,
@@ -253,7 +253,7 @@
       "phase": "Peak",
       "kind": "load",
       "focus": "Back on the bike — IM-specific block. Heat acclimation starts (Thu).",
-      "planned_hours": 16.25
+      "planned_hours": 14.83
     },
     {
       "week": 32,
@@ -261,7 +261,7 @@
       "phase": "Peak",
       "kind": "load",
       "focus": "Biggest IM-specific week: 5h15 ride (3.5h @ IM power) + 45' brick; 3.8km continuous swim.",
-      "planned_hours": 17.58
+      "planned_hours": 16.17
     },
     {
       "week": 33,
@@ -269,7 +269,7 @@
       "phase": "Peak",
       "kind": "reduced",
       "focus": "Last big weekend (2 weeks out), then taper begins.",
-      "planned_hours": 14.5
+      "planned_hours": 13.08
     },
     {
       "week": 34,
@@ -277,7 +277,7 @@
       "phase": "Taper",
       "kind": "taper",
       "focus": "Taper (~60%): keep intensity, cut volume. Last strength session Mon.",
-      "planned_hours": 9.92
+      "planned_hours": 9.42
     },
     {
       "week": 35,
@@ -285,7 +285,7 @@
       "phase": "Taper",
       "kind": "race",
       "focus": "Race week — travel to Cairns, sleep, carb-load Fri–Sat (8–10 g/kg ≈ 640–800 g/day).",
-      "planned_hours": 16.92
+      "planned_hours": 16.33
     }
   ],
   "sessions": [
@@ -1480,57 +1480,6 @@
       "high_min": 0
     },
     {
-      "id": "w07-sun-bike-1",
-      "week": 7,
-      "date": "2026-11-29",
-      "day": "Sun",
-      "phase": "Base 2",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "when": "AM",
-      "duration_min": 25,
-      "distance_km": 11.0,
-      "details": "Easy spin, 25' at high cadence (90–100 rpm). Replaces a 4th swim — keeps the legs moving after Saturday's long ride.",
-      "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2",
-      "rpe": "1–2",
-      "fuel": "Water/electrolytes only",
-      "high_min": 0
-    },
-    {
-      "id": "w08-mon-swim-1",
-      "week": 8,
-      "date": "2026-11-30",
-      "day": "Mon",
-      "phase": "Base 2",
-      "sport": "Swim",
-      "title": "Aerobic endurance",
-      "when": "Midday",
-      "duration_min": 60,
-      "distance_km": 3.0,
-      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "",
-      "high_min": 0
-    },
-    {
-      "id": "w08-mon-run-1",
-      "week": 8,
-      "date": "2026-11-30",
-      "day": "Mon",
-      "phase": "Base 2",
-      "sport": "Run",
-      "title": "Easy run",
-      "when": "AM",
-      "duration_min": 25,
-      "distance_km": 4.2,
-      "details": "Easy continuous 25'. First continuous runs — flat & soft surface. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
-      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "Water/electrolytes only",
-      "high_min": 0
-    },
-    {
       "id": "w08-tue-bike-1",
       "week": 8,
       "date": "2026-12-01",
@@ -1548,20 +1497,20 @@
       "high_min": 25
     },
     {
-      "id": "w08-tue-strength-1",
+      "id": "w08-tue-run-1",
       "week": 8,
       "date": "2026-12-01",
       "day": "Tue",
       "phase": "Base 2",
-      "sport": "Strength",
-      "title": "Strength A — base",
+      "sport": "Run",
+      "title": "Easy run",
       "when": "PM",
-      "duration_min": 45,
-      "distance_km": null,
-      "details": "Do this AFTER the bike intervals — ideally 6h+ later (bike AM, gym PM). Lower + pull: back squat 4×6, Bulgarian split squat 3×8/leg, Romanian DL 3×6, pull-ups 3×8, calf raise 3×12, bicep curl 3×10, side plank 3×30s. TIBIA (keep): seated soleus raise 3×12 heavy, tibialis raise 3×15, pogo hops 3×20 (single-leg hops from wk 8 if pain-free). See Strength tab.",
-      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
-      "rpe": "7–8",
-      "fuel": "",
+      "duration_min": 25,
+      "distance_km": 4.2,
+      "details": "Easy continuous 25'. First continuous runs — flat & soft surface. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
+      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
+      "rpe": "3–4",
+      "fuel": "Water/electrolytes only",
       "high_min": 0
     },
     {
@@ -1580,6 +1529,23 @@
       "rpe": "7–8",
       "fuel": "",
       "high_min": 28
+    },
+    {
+      "id": "w08-wed-strength-1",
+      "week": 8,
+      "date": "2026-12-02",
+      "day": "Wed",
+      "phase": "Base 2",
+      "sport": "Strength",
+      "title": "Strength A — base",
+      "when": "PM",
+      "duration_min": 45,
+      "distance_km": null,
+      "details": "Do this AFTER the bike intervals — ideally 6h+ later (bike AM, gym PM). Lower + pull: back squat 4×6, Bulgarian split squat 3×8/leg, Romanian DL 3×6, pull-ups 3×8, calf raise 3×12, bicep curl 3×10, side plank 3×30s. TIBIA (keep): seated soleus raise 3×12 heavy, tibialis raise 3×15, pogo hops 3×20 (single-leg hops from wk 8 if pain-free). See Strength tab.",
+      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
+      "rpe": "7–8",
+      "fuel": "",
+      "high_min": 0
     },
     {
       "id": "w08-thu-bike-1",
@@ -1616,23 +1582,6 @@
       "high_min": 0
     },
     {
-      "id": "w08-thu-strength-1",
-      "week": 8,
-      "date": "2026-12-03",
-      "day": "Thu",
-      "phase": "Base 2",
-      "sport": "Strength",
-      "title": "Strength B — base",
-      "when": "PM (after run)",
-      "duration_min": 40,
-      "distance_km": null,
-      "details": "Hips + push: hip thrust 3×10, step-ups 3×8/leg, single-leg RDL 3×8/leg, DB overhead press 3×8, lateral raise 3×12, tricep pushdown 3×12, Pallof press 3×12. See Strength tab.",
-      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
-      "rpe": "7–8",
-      "fuel": "",
-      "high_min": 0
-    },
-    {
       "id": "w08-fri-swim-1",
       "week": 8,
       "date": "2026-12-04",
@@ -1646,6 +1595,23 @@
       "details": "WU 400 easy. MS 4×500 @ 1:38–1:44/100m /30s + 400 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
       "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
+      "fuel": "",
+      "high_min": 0
+    },
+    {
+      "id": "w08-fri-strength-1",
+      "week": 8,
+      "date": "2026-12-04",
+      "day": "Fri",
+      "phase": "Base 2",
+      "sport": "Strength",
+      "title": "Strength B — base",
+      "when": "PM",
+      "duration_min": 40,
+      "distance_km": null,
+      "details": "Hips + push: hip thrust 3×10, step-ups 3×8/leg, single-leg RDL 3×8/leg, DB overhead press 3×8, lateral raise 3×12, tricep pushdown 3×12, Pallof press 3×12. See Strength tab.",
+      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
+      "rpe": "7–8",
       "fuel": "",
       "high_min": 0
     },
@@ -1667,48 +1633,14 @@
       "high_min": 0
     },
     {
-      "id": "w08-sun-bike-1",
+      "id": "w08-sun-swim-1",
       "week": 8,
       "date": "2026-12-06",
       "day": "Sun",
-      "phase": "Base 2",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "when": "AM",
-      "duration_min": 35,
-      "distance_km": 16.0,
-      "details": "Easy spin, 35' at high cadence (90–100 rpm). Replaces a 4th swim — keeps the legs moving after Saturday's long ride.",
-      "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2",
-      "rpe": "1–2",
-      "fuel": "Water/electrolytes only",
-      "high_min": 0
-    },
-    {
-      "id": "w08-sun-run-1",
-      "week": 8,
-      "date": "2026-12-06",
-      "day": "Sun",
-      "phase": "Base 2",
-      "sport": "Run",
-      "title": "Easy run",
-      "when": "AM",
-      "duration_min": 30,
-      "distance_km": 5.0,
-      "details": "Easy continuous 30'. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
-      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "Water/electrolytes only",
-      "high_min": 0
-    },
-    {
-      "id": "w09-mon-swim-1",
-      "week": 9,
-      "date": "2026-12-07",
-      "day": "Mon",
       "phase": "Base 2",
       "sport": "Swim",
       "title": "Aerobic endurance",
-      "when": "Midday",
+      "when": "Midday / any",
       "duration_min": 60,
       "distance_km": 3.0,
       "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
@@ -1718,10 +1650,10 @@
       "high_min": 0
     },
     {
-      "id": "w09-mon-run-1",
-      "week": 9,
-      "date": "2026-12-07",
-      "day": "Mon",
+      "id": "w08-sun-run-1",
+      "week": 8,
+      "date": "2026-12-06",
+      "day": "Sun",
       "phase": "Base 2",
       "sport": "Run",
       "title": "Easy run",
@@ -1752,20 +1684,20 @@
       "high_min": 30
     },
     {
-      "id": "w09-tue-strength-1",
+      "id": "w09-tue-run-1",
       "week": 9,
       "date": "2026-12-08",
       "day": "Tue",
       "phase": "Base 2",
-      "sport": "Strength",
-      "title": "Strength A — base",
+      "sport": "Run",
+      "title": "Easy run",
       "when": "PM",
-      "duration_min": 45,
-      "distance_km": null,
-      "details": "Do this AFTER the bike intervals — ideally 6h+ later (bike AM, gym PM). Lower + pull: back squat 4×6, Bulgarian split squat 3×8/leg, Romanian DL 3×6, pull-ups 3×8, calf raise 3×12, bicep curl 3×10, side plank 3×30s. TIBIA (keep): seated soleus raise 3×12 heavy, tibialis raise 3×15, pogo hops 3×20 (single-leg hops from wk 8 if pain-free). See Strength tab.",
-      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
-      "rpe": "7–8",
-      "fuel": "",
+      "duration_min": 30,
+      "distance_km": 5.0,
+      "details": "Easy continuous 30'. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
+      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
+      "rpe": "3–4",
+      "fuel": "Water/electrolytes only",
       "high_min": 0
     },
     {
@@ -1784,6 +1716,23 @@
       "rpe": "7–8",
       "fuel": "",
       "high_min": 28
+    },
+    {
+      "id": "w09-wed-strength-1",
+      "week": 9,
+      "date": "2026-12-09",
+      "day": "Wed",
+      "phase": "Base 2",
+      "sport": "Strength",
+      "title": "Strength A — base",
+      "when": "PM",
+      "duration_min": 45,
+      "distance_km": null,
+      "details": "Do this AFTER the bike intervals — ideally 6h+ later (bike AM, gym PM). Lower + pull: back squat 4×6, Bulgarian split squat 3×8/leg, Romanian DL 3×6, pull-ups 3×8, calf raise 3×12, bicep curl 3×10, side plank 3×30s. TIBIA (keep): seated soleus raise 3×12 heavy, tibialis raise 3×15, pogo hops 3×20 (single-leg hops from wk 8 if pain-free). See Strength tab.",
+      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
+      "rpe": "7–8",
+      "fuel": "",
+      "high_min": 0
     },
     {
       "id": "w09-thu-bike-1",
@@ -1820,23 +1769,6 @@
       "high_min": 0
     },
     {
-      "id": "w09-thu-strength-1",
-      "week": 9,
-      "date": "2026-12-10",
-      "day": "Thu",
-      "phase": "Base 2",
-      "sport": "Strength",
-      "title": "Strength B — base",
-      "when": "PM (after run)",
-      "duration_min": 40,
-      "distance_km": null,
-      "details": "Hips + push: hip thrust 3×10, step-ups 3×8/leg, single-leg RDL 3×8/leg, DB overhead press 3×8, lateral raise 3×12, tricep pushdown 3×12, Pallof press 3×12. See Strength tab.",
-      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
-      "rpe": "7–8",
-      "fuel": "",
-      "high_min": 0
-    },
-    {
       "id": "w09-fri-swim-1",
       "week": 9,
       "date": "2026-12-11",
@@ -1850,6 +1782,23 @@
       "details": "WU 400 easy. MS 4×500 @ 1:38–1:44/100m /30s + 400 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.",
       "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
       "rpe": "3–4",
+      "fuel": "",
+      "high_min": 0
+    },
+    {
+      "id": "w09-fri-strength-1",
+      "week": 9,
+      "date": "2026-12-11",
+      "day": "Fri",
+      "phase": "Base 2",
+      "sport": "Strength",
+      "title": "Strength B — base",
+      "when": "PM",
+      "duration_min": 40,
+      "distance_km": null,
+      "details": "Hips + push: hip thrust 3×10, step-ups 3×8/leg, single-leg RDL 3×8/leg, DB overhead press 3×8, lateral raise 3×12, tricep pushdown 3×12, Pallof press 3×12. See Strength tab.",
+      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
+      "rpe": "7–8",
       "fuel": "",
       "high_min": 0
     },
@@ -1888,20 +1837,20 @@
       "high_min": 0
     },
     {
-      "id": "w09-sun-bike-1",
+      "id": "w09-sun-swim-1",
       "week": 9,
       "date": "2026-12-13",
       "day": "Sun",
       "phase": "Base 2",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "when": "AM",
-      "duration_min": 40,
-      "distance_km": 18.0,
-      "details": "Easy spin, 40' at high cadence (90–100 rpm). Replaces a 4th swim — keeps the legs moving after Saturday's long ride.",
-      "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2",
-      "rpe": "1–2",
-      "fuel": "Water/electrolytes only",
+      "sport": "Swim",
+      "title": "Aerobic endurance",
+      "when": "Midday / any",
+      "duration_min": 60,
+      "distance_km": 3.0,
+      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
+      "rpe": "3–4",
+      "fuel": "",
       "high_min": 0
     },
     {
@@ -1919,40 +1868,6 @@
       "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "Water",
-      "high_min": 0
-    },
-    {
-      "id": "w10-mon-swim-1",
-      "week": 10,
-      "date": "2026-12-14",
-      "day": "Mon",
-      "phase": "Base 2",
-      "sport": "Swim",
-      "title": "Aerobic endurance",
-      "when": "Midday",
-      "duration_min": 45,
-      "distance_km": 2.2,
-      "details": "WU 300 easy + 4×50 build /15s. MS 3×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "",
-      "high_min": 0
-    },
-    {
-      "id": "w10-mon-strength-1",
-      "week": 10,
-      "date": "2026-12-14",
-      "day": "Mon",
-      "phase": "Base 2",
-      "sport": "Strength",
-      "title": "Strength A — base",
-      "when": "PM",
-      "duration_min": 30,
-      "distance_km": null,
-      "details": "Lower + pull: back squat 4×6, Bulgarian split squat 3×8/leg, Romanian DL 3×6, pull-ups 3×8, calf raise 3×12, bicep curl 3×10, side plank 3×30s. TIBIA (keep): seated soleus raise 3×12 heavy, tibialis raise 3×15, pogo hops 3×20 (single-leg hops from wk 8 if pain-free). See Strength tab.",
-      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
-      "rpe": "7–8",
-      "fuel": "",
       "high_min": 0
     },
     {
@@ -1987,6 +1902,23 @@
       "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "Water/electrolytes only",
+      "high_min": 0
+    },
+    {
+      "id": "w10-tue-strength-1",
+      "week": 10,
+      "date": "2026-12-15",
+      "day": "Tue",
+      "phase": "Base 2",
+      "sport": "Strength",
+      "title": "Strength A — base",
+      "when": "PM (after run)",
+      "duration_min": 30,
+      "distance_km": null,
+      "details": "Lower + pull: back squat 4×6, Bulgarian split squat 3×8/leg, Romanian DL 3×6, pull-ups 3×8, calf raise 3×12, bicep curl 3×10, side plank 3×30s. TIBIA (keep): seated soleus raise 3×12 heavy, tibialis raise 3×15, pogo hops 3×20 (single-leg hops from wk 8 if pain-free). See Strength tab.",
+      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
+      "rpe": "7–8",
+      "fuel": "",
       "high_min": 0
     },
     {
@@ -2092,6 +2024,23 @@
       "high_min": 0
     },
     {
+      "id": "w10-sun-swim-1",
+      "week": 10,
+      "date": "2026-12-20",
+      "day": "Sun",
+      "phase": "Base 2",
+      "sport": "Swim",
+      "title": "Aerobic endurance",
+      "when": "Midday / any",
+      "duration_min": 45,
+      "distance_km": 2.2,
+      "details": "WU 300 easy + 4×50 build /15s. MS 3×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
+      "rpe": "3–4",
+      "fuel": "",
+      "high_min": 0
+    },
+    {
       "id": "w10-sun-run-1",
       "week": 10,
       "date": "2026-12-20",
@@ -2106,40 +2055,6 @@
       "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "Water",
-      "high_min": 0
-    },
-    {
-      "id": "w11-mon-swim-1",
-      "week": 11,
-      "date": "2026-12-21",
-      "day": "Mon",
-      "phase": "Base 3",
-      "sport": "Swim",
-      "title": "Aerobic endurance",
-      "when": "Midday",
-      "duration_min": 60,
-      "distance_km": 3.0,
-      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "",
-      "high_min": 0
-    },
-    {
-      "id": "w11-mon-run-1",
-      "week": 11,
-      "date": "2026-12-21",
-      "day": "Mon",
-      "phase": "Base 3",
-      "sport": "Run",
-      "title": "Easy run",
-      "when": "AM",
-      "duration_min": 30,
-      "distance_km": 5.0,
-      "details": "Easy continuous 30'. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
-      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "Water/electrolytes only",
       "high_min": 0
     },
     {
@@ -2160,20 +2075,20 @@
       "high_min": 32
     },
     {
-      "id": "w11-tue-strength-1",
+      "id": "w11-tue-run-1",
       "week": 11,
       "date": "2026-12-22",
       "day": "Tue",
       "phase": "Base 3",
-      "sport": "Strength",
-      "title": "Strength A — base",
+      "sport": "Run",
+      "title": "Easy run",
       "when": "PM",
-      "duration_min": 45,
-      "distance_km": null,
-      "details": "Do this AFTER the bike intervals — ideally 6h+ later (bike AM, gym PM). Lower + pull: back squat 4×6, Bulgarian split squat 3×8/leg, Romanian DL 3×6, pull-ups 3×8, calf raise 3×12, bicep curl 3×10, side plank 3×30s. TIBIA (keep): seated soleus raise 3×12 heavy, tibialis raise 3×15, pogo hops 3×20 (single-leg hops from wk 8 if pain-free). See Strength tab.",
-      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
-      "rpe": "7–8",
-      "fuel": "",
+      "duration_min": 30,
+      "distance_km": 5.0,
+      "details": "Easy continuous 30'. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
+      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
+      "rpe": "3–4",
+      "fuel": "Water/electrolytes only",
       "high_min": 0
     },
     {
@@ -2194,6 +2109,23 @@
       "high_min": 28
     },
     {
+      "id": "w11-wed-strength-1",
+      "week": 11,
+      "date": "2026-12-23",
+      "day": "Wed",
+      "phase": "Base 3",
+      "sport": "Strength",
+      "title": "Strength A — base",
+      "when": "PM",
+      "duration_min": 45,
+      "distance_km": null,
+      "details": "Do this AFTER the bike intervals — ideally 6h+ later (bike AM, gym PM). Lower + pull: back squat 4×6, Bulgarian split squat 3×8/leg, Romanian DL 3×6, pull-ups 3×8, calf raise 3×12, bicep curl 3×10, side plank 3×30s. TIBIA (keep): seated soleus raise 3×12 heavy, tibialis raise 3×15, pogo hops 3×20 (single-leg hops from wk 8 if pain-free). See Strength tab.",
+      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
+      "rpe": "7–8",
+      "fuel": "",
+      "high_min": 0
+    },
+    {
       "id": "w11-thu-bike-1",
       "week": 11,
       "date": "2026-12-24",
@@ -2211,19 +2143,19 @@
       "high_min": 0
     },
     {
-      "id": "w11-thu-strength-1",
+      "id": "w11-fri-swim-1",
       "week": 11,
-      "date": "2026-12-24",
-      "day": "Thu",
+      "date": "2026-12-25",
+      "day": "Fri",
       "phase": "Base 3",
-      "sport": "Strength",
-      "title": "Strength B — base",
-      "when": "PM",
-      "duration_min": 40,
-      "distance_km": null,
-      "details": "Hips + push: hip thrust 3×10, step-ups 3×8/leg, single-leg RDL 3×8/leg, DB overhead press 3×8, lateral raise 3×12, tricep pushdown 3×12, Pallof press 3×12. See Strength tab.",
-      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
-      "rpe": "7–8",
+      "sport": "Swim",
+      "title": "Aerobic endurance",
+      "when": "Midday",
+      "duration_min": 60,
+      "distance_km": 3.0,
+      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
+      "rpe": "3–4",
       "fuel": "",
       "high_min": 0
     },
@@ -2313,37 +2245,20 @@
       "high_min": 0
     },
     {
-      "id": "w12-mon-swim-1",
-      "week": 12,
-      "date": "2026-12-28",
-      "day": "Mon",
+      "id": "w11-sun-strength-1",
+      "week": 11,
+      "date": "2026-12-27",
+      "day": "Sun",
       "phase": "Base 3",
-      "sport": "Swim",
-      "title": "Aerobic endurance",
-      "when": "Midday",
-      "duration_min": 60,
-      "distance_km": 3.0,
-      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
-      "rpe": "3–4",
+      "sport": "Strength",
+      "title": "Strength B — base",
+      "when": "PM",
+      "duration_min": 40,
+      "distance_km": null,
+      "details": "Hips + push: hip thrust 3×10, step-ups 3×8/leg, single-leg RDL 3×8/leg, DB overhead press 3×8, lateral raise 3×12, tricep pushdown 3×12, Pallof press 3×12. See Strength tab.",
+      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
+      "rpe": "7–8",
       "fuel": "",
-      "high_min": 0
-    },
-    {
-      "id": "w12-mon-run-1",
-      "week": 12,
-      "date": "2026-12-28",
-      "day": "Mon",
-      "phase": "Base 3",
-      "sport": "Run",
-      "title": "Easy run",
-      "when": "AM",
-      "duration_min": 35,
-      "distance_km": 5.8,
-      "details": "Easy continuous 35'. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
-      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "Water/electrolytes only",
       "high_min": 0
     },
     {
@@ -2466,6 +2381,23 @@
       "high_min": 0
     },
     {
+      "id": "w12-fri-run-1",
+      "week": 12,
+      "date": "2027-01-01",
+      "day": "Fri",
+      "phase": "Base 3",
+      "sport": "Run",
+      "title": "Easy run",
+      "when": "AM",
+      "duration_min": 35,
+      "distance_km": 5.8,
+      "details": "Easy continuous 35'. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
+      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
+      "rpe": "3–4",
+      "fuel": "Water/electrolytes only",
+      "high_min": 0
+    },
+    {
       "id": "w12-sat-bike-1",
       "week": 12,
       "date": "2027-01-02",
@@ -2500,20 +2432,20 @@
       "high_min": 0
     },
     {
-      "id": "w12-sun-bike-1",
+      "id": "w12-sun-swim-1",
       "week": 12,
       "date": "2027-01-03",
       "day": "Sun",
       "phase": "Base 3",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "when": "AM",
-      "duration_min": 30,
-      "distance_km": 14.0,
-      "details": "Easy spin, 30' at high cadence (90–100 rpm). Replaces a 4th swim — keeps the legs moving after Saturday's long ride.",
-      "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2",
-      "rpe": "1–2",
-      "fuel": "Water/electrolytes only",
+      "sport": "Swim",
+      "title": "Aerobic endurance",
+      "when": "Midday / any",
+      "duration_min": 60,
+      "distance_km": 3.0,
+      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
+      "rpe": "3–4",
+      "fuel": "",
       "high_min": 0
     },
     {
@@ -2531,40 +2463,6 @@
       "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "Water",
-      "high_min": 0
-    },
-    {
-      "id": "w13-mon-swim-1",
-      "week": 13,
-      "date": "2027-01-04",
-      "day": "Mon",
-      "phase": "Base 3",
-      "sport": "Swim",
-      "title": "Aerobic endurance",
-      "when": "Midday",
-      "duration_min": 60,
-      "distance_km": 3.0,
-      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "",
-      "high_min": 0
-    },
-    {
-      "id": "w13-mon-run-1",
-      "week": 13,
-      "date": "2027-01-04",
-      "day": "Mon",
-      "phase": "Base 3",
-      "sport": "Run",
-      "title": "Easy run",
-      "when": "AM",
-      "duration_min": 35,
-      "distance_km": 5.8,
-      "details": "Easy continuous 35'. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
-      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "Water/electrolytes only",
       "high_min": 0
     },
     {
@@ -2687,6 +2585,23 @@
       "high_min": 0
     },
     {
+      "id": "w13-fri-run-1",
+      "week": 13,
+      "date": "2027-01-08",
+      "day": "Fri",
+      "phase": "Base 3",
+      "sport": "Run",
+      "title": "Easy run",
+      "when": "AM",
+      "duration_min": 35,
+      "distance_km": 5.8,
+      "details": "Easy continuous 35'. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
+      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
+      "rpe": "3–4",
+      "fuel": "Water/electrolytes only",
+      "high_min": 0
+    },
+    {
       "id": "w13-sat-bike-1",
       "week": 13,
       "date": "2027-01-09",
@@ -2721,20 +2636,20 @@
       "high_min": 0
     },
     {
-      "id": "w13-sun-bike-1",
+      "id": "w13-sun-swim-1",
       "week": 13,
       "date": "2027-01-10",
       "day": "Sun",
       "phase": "Base 3",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "when": "AM",
-      "duration_min": 35,
-      "distance_km": 16.0,
-      "details": "Easy spin, 35' at high cadence (90–100 rpm). Replaces a 4th swim — keeps the legs moving after Saturday's long ride.",
-      "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2",
-      "rpe": "1–2",
-      "fuel": "Water/electrolytes only",
+      "sport": "Swim",
+      "title": "Aerobic endurance",
+      "when": "Midday / any",
+      "duration_min": 60,
+      "distance_km": 3.0,
+      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
+      "rpe": "3–4",
+      "fuel": "",
       "high_min": 0
     },
     {
@@ -2752,40 +2667,6 @@
       "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "Water",
-      "high_min": 0
-    },
-    {
-      "id": "w14-mon-swim-1",
-      "week": 14,
-      "date": "2027-01-11",
-      "day": "Mon",
-      "phase": "Base 3",
-      "sport": "Swim",
-      "title": "Aerobic endurance",
-      "when": "Midday",
-      "duration_min": 45,
-      "distance_km": 2.2,
-      "details": "WU 300 easy + 4×50 build /15s. MS 3×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "",
-      "high_min": 0
-    },
-    {
-      "id": "w14-mon-strength-1",
-      "week": 14,
-      "date": "2027-01-11",
-      "day": "Mon",
-      "phase": "Base 3",
-      "sport": "Strength",
-      "title": "Strength A — base",
-      "when": "PM",
-      "duration_min": 30,
-      "distance_km": null,
-      "details": "Lower + pull: back squat 4×6, Bulgarian split squat 3×8/leg, Romanian DL 3×6, pull-ups 3×8, calf raise 3×12, bicep curl 3×10, side plank 3×30s. TIBIA (keep): seated soleus raise 3×12 heavy, tibialis raise 3×15, pogo hops 3×20 (single-leg hops from wk 8 if pain-free). See Strength tab.",
-      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
-      "rpe": "7–8",
-      "fuel": "",
       "high_min": 0
     },
     {
@@ -2820,6 +2701,23 @@
       "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "Water/electrolytes only",
+      "high_min": 0
+    },
+    {
+      "id": "w14-tue-strength-1",
+      "week": 14,
+      "date": "2027-01-12",
+      "day": "Tue",
+      "phase": "Base 3",
+      "sport": "Strength",
+      "title": "Strength A — base",
+      "when": "PM (after run)",
+      "duration_min": 30,
+      "distance_km": null,
+      "details": "Lower + pull: back squat 4×6, Bulgarian split squat 3×8/leg, Romanian DL 3×6, pull-ups 3×8, calf raise 3×12, bicep curl 3×10, side plank 3×30s. TIBIA (keep): seated soleus raise 3×12 heavy, tibialis raise 3×15, pogo hops 3×20 (single-leg hops from wk 8 if pain-free). See Strength tab.",
+      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
+      "rpe": "7–8",
+      "fuel": "",
       "high_min": 0
     },
     {
@@ -2925,6 +2823,23 @@
       "high_min": 0
     },
     {
+      "id": "w14-sun-swim-1",
+      "week": 14,
+      "date": "2027-01-17",
+      "day": "Sun",
+      "phase": "Base 3",
+      "sport": "Swim",
+      "title": "Aerobic endurance",
+      "when": "Midday / any",
+      "duration_min": 45,
+      "distance_km": 2.2,
+      "details": "WU 300 easy + 4×50 build /15s. MS 3×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
+      "rpe": "3–4",
+      "fuel": "",
+      "high_min": 0
+    },
+    {
       "id": "w14-sun-run-1",
       "week": 14,
       "date": "2027-01-17",
@@ -2939,40 +2854,6 @@
       "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "Water",
-      "high_min": 0
-    },
-    {
-      "id": "w15-mon-swim-1",
-      "week": 15,
-      "date": "2027-01-18",
-      "day": "Mon",
-      "phase": "Build 1",
-      "sport": "Swim",
-      "title": "Aerobic endurance",
-      "when": "Midday",
-      "duration_min": 60,
-      "distance_km": 3.0,
-      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "",
-      "high_min": 0
-    },
-    {
-      "id": "w15-mon-run-1",
-      "week": 15,
-      "date": "2027-01-18",
-      "day": "Mon",
-      "phase": "Build 1",
-      "sport": "Run",
-      "title": "Easy run",
-      "when": "AM",
-      "duration_min": 35,
-      "distance_km": 5.8,
-      "details": "Easy continuous 35'. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
-      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "Water/electrolytes only",
       "high_min": 0
     },
     {
@@ -3061,6 +2942,23 @@
       "high_min": 0
     },
     {
+      "id": "w15-thu-strength-1",
+      "week": 15,
+      "date": "2027-01-21",
+      "day": "Thu",
+      "phase": "Build 1",
+      "sport": "Strength",
+      "title": "Strength B — build",
+      "when": "PM",
+      "duration_min": 30,
+      "distance_km": null,
+      "details": "Hips + push, light legs (long ride tomorrow): hip thrust 2×10 moderate, step-ups 2×8/leg light, single-leg RDL 2×8 light, DB overhead press 3×8, lateral raise 3×12, tricep pushdown 3×12, Pallof press 3×10. See Strength tab.",
+      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
+      "rpe": "7–8",
+      "fuel": "",
+      "high_min": 0
+    },
+    {
       "id": "w15-fri-swim-1",
       "week": 15,
       "date": "2027-01-22",
@@ -3078,20 +2976,20 @@
       "high_min": 0
     },
     {
-      "id": "w15-fri-strength-1",
+      "id": "w15-fri-run-1",
       "week": 15,
       "date": "2027-01-22",
       "day": "Fri",
       "phase": "Build 1",
-      "sport": "Strength",
-      "title": "Strength B — build",
-      "when": "PM",
-      "duration_min": 30,
-      "distance_km": null,
-      "details": "Hips + push, light legs (long ride tomorrow): hip thrust 2×10 moderate, step-ups 2×8/leg light, single-leg RDL 2×8 light, DB overhead press 3×8, lateral raise 3×12, tricep pushdown 3×12, Pallof press 3×10. See Strength tab.",
-      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
-      "rpe": "7–8",
-      "fuel": "",
+      "sport": "Run",
+      "title": "Easy run",
+      "when": "AM",
+      "duration_min": 35,
+      "distance_km": 5.8,
+      "details": "Easy continuous 35'. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
+      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
+      "rpe": "3–4",
+      "fuel": "Water/electrolytes only",
       "high_min": 0
     },
     {
@@ -3129,20 +3027,20 @@
       "high_min": 0
     },
     {
-      "id": "w15-sun-bike-1",
+      "id": "w15-sun-swim-1",
       "week": 15,
       "date": "2027-01-24",
       "day": "Sun",
       "phase": "Build 1",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "when": "AM",
-      "duration_min": 35,
-      "distance_km": 16.0,
-      "details": "Easy spin, 35' at high cadence (90–100 rpm). Replaces a 4th swim — keeps the legs moving after Saturday's long ride.",
-      "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2",
-      "rpe": "1–2",
-      "fuel": "Water/electrolytes only",
+      "sport": "Swim",
+      "title": "Aerobic endurance",
+      "when": "Midday / any",
+      "duration_min": 60,
+      "distance_km": 3.0,
+      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
+      "rpe": "3–4",
+      "fuel": "",
       "high_min": 0
     },
     {
@@ -3161,40 +3059,6 @@
       "rpe": "3–4",
       "fuel": "Water",
       "high_min": 0
-    },
-    {
-      "id": "w16-mon-swim-1",
-      "week": 16,
-      "date": "2027-01-25",
-      "day": "Mon",
-      "phase": "Build 1",
-      "sport": "Swim",
-      "title": "Aerobic endurance",
-      "when": "Midday",
-      "duration_min": 60,
-      "distance_km": 3.0,
-      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "",
-      "high_min": 0
-    },
-    {
-      "id": "w16-mon-run-1",
-      "week": 16,
-      "date": "2027-01-25",
-      "day": "Mon",
-      "phase": "Build 1",
-      "sport": "Run",
-      "title": "Easy run + strides",
-      "when": "AM",
-      "duration_min": 30,
-      "distance_km": 5.0,
-      "details": "Easy continuous 30'. Finish with 6×20s relaxed strides (not sprints), walk back recovery. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
-      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "Water/electrolytes only",
-      "high_min": 2
     },
     {
       "id": "w16-tue-bike-1",
@@ -3282,6 +3146,23 @@
       "high_min": 0
     },
     {
+      "id": "w16-thu-strength-1",
+      "week": 16,
+      "date": "2027-01-28",
+      "day": "Thu",
+      "phase": "Build 1",
+      "sport": "Strength",
+      "title": "Strength B — build",
+      "when": "PM",
+      "duration_min": 30,
+      "distance_km": null,
+      "details": "Hips + push, light legs (long ride tomorrow): hip thrust 2×10 moderate, step-ups 2×8/leg light, single-leg RDL 2×8 light, DB overhead press 3×8, lateral raise 3×12, tricep pushdown 3×12, Pallof press 3×10. See Strength tab.",
+      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
+      "rpe": "7–8",
+      "fuel": "",
+      "high_min": 0
+    },
+    {
       "id": "w16-fri-swim-1",
       "week": 16,
       "date": "2027-01-29",
@@ -3299,21 +3180,21 @@
       "high_min": 0
     },
     {
-      "id": "w16-fri-strength-1",
+      "id": "w16-fri-run-1",
       "week": 16,
       "date": "2027-01-29",
       "day": "Fri",
       "phase": "Build 1",
-      "sport": "Strength",
-      "title": "Strength B — build",
-      "when": "PM",
+      "sport": "Run",
+      "title": "Easy run + strides",
+      "when": "AM",
       "duration_min": 30,
-      "distance_km": null,
-      "details": "Hips + push, light legs (long ride tomorrow): hip thrust 2×10 moderate, step-ups 2×8/leg light, single-leg RDL 2×8 light, DB overhead press 3×8, lateral raise 3×12, tricep pushdown 3×12, Pallof press 3×10. See Strength tab.",
-      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
-      "rpe": "7–8",
-      "fuel": "",
-      "high_min": 0
+      "distance_km": 5.0,
+      "details": "Easy continuous 30'. Finish with 6×20s relaxed strides (not sprints), walk back recovery. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
+      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
+      "rpe": "3–4",
+      "fuel": "Water/electrolytes only",
+      "high_min": 2
     },
     {
       "id": "w16-sat-bike-1",
@@ -3350,20 +3231,20 @@
       "high_min": 0
     },
     {
-      "id": "w16-sun-bike-1",
+      "id": "w16-sun-swim-1",
       "week": 16,
       "date": "2027-01-31",
       "day": "Sun",
       "phase": "Build 1",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "when": "AM",
-      "duration_min": 35,
-      "distance_km": 16.0,
-      "details": "Easy spin, 35' at high cadence (90–100 rpm). Replaces a 4th swim — keeps the legs moving after Saturday's long ride.",
-      "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2",
-      "rpe": "1–2",
-      "fuel": "Water/electrolytes only",
+      "sport": "Swim",
+      "title": "Aerobic endurance",
+      "when": "Midday / any",
+      "duration_min": 60,
+      "distance_km": 3.0,
+      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
+      "rpe": "3–4",
+      "fuel": "",
       "high_min": 0
     },
     {
@@ -3382,40 +3263,6 @@
       "rpe": "3–4",
       "fuel": "60–90 g carbs/h (you've handled 90 g/h) + electrolytes",
       "high_min": 0
-    },
-    {
-      "id": "w17-mon-bike-1",
-      "week": 17,
-      "date": "2027-02-01",
-      "day": "Mon",
-      "phase": "Build 1",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "when": "AM",
-      "duration_min": 45,
-      "distance_km": 20.0,
-      "details": "Easy spin, 45' at high cadence (90–100 rpm). Replaces the Monday pool swim (Sunday open water is the 3rd swim). Flushes legs after the long run.",
-      "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2",
-      "rpe": "1–2",
-      "fuel": "Water/electrolytes only",
-      "high_min": 0
-    },
-    {
-      "id": "w17-mon-run-1",
-      "week": 17,
-      "date": "2027-02-01",
-      "day": "Mon",
-      "phase": "Build 1",
-      "sport": "Run",
-      "title": "Easy run + strides",
-      "when": "PM",
-      "duration_min": 30,
-      "distance_km": 5.0,
-      "details": "Easy continuous 30'. Finish with 6×20s relaxed strides (not sprints), walk back recovery. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
-      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "Water/electrolytes only",
-      "high_min": 2
     },
     {
       "id": "w17-tue-bike-1",
@@ -3503,6 +3350,23 @@
       "high_min": 0
     },
     {
+      "id": "w17-thu-strength-1",
+      "week": 17,
+      "date": "2027-02-04",
+      "day": "Thu",
+      "phase": "Build 1",
+      "sport": "Strength",
+      "title": "Strength B — build",
+      "when": "PM",
+      "duration_min": 30,
+      "distance_km": null,
+      "details": "Hips + push, light legs (long ride tomorrow): hip thrust 2×10 moderate, step-ups 2×8/leg light, single-leg RDL 2×8 light, DB overhead press 3×8, lateral raise 3×12, tricep pushdown 3×12, Pallof press 3×10. See Strength tab.",
+      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
+      "rpe": "7–8",
+      "fuel": "",
+      "high_min": 0
+    },
+    {
       "id": "w17-fri-swim-1",
       "week": 17,
       "date": "2027-02-05",
@@ -3520,21 +3384,21 @@
       "high_min": 0
     },
     {
-      "id": "w17-fri-strength-1",
+      "id": "w17-fri-run-1",
       "week": 17,
       "date": "2027-02-05",
       "day": "Fri",
       "phase": "Build 1",
-      "sport": "Strength",
-      "title": "Strength B — build",
-      "when": "PM",
+      "sport": "Run",
+      "title": "Easy run + strides",
+      "when": "AM",
       "duration_min": 30,
-      "distance_km": null,
-      "details": "Hips + push, light legs (long ride tomorrow): hip thrust 2×10 moderate, step-ups 2×8/leg light, single-leg RDL 2×8 light, DB overhead press 3×8, lateral raise 3×12, tricep pushdown 3×12, Pallof press 3×10. See Strength tab.",
-      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
-      "rpe": "7–8",
-      "fuel": "",
-      "high_min": 0
+      "distance_km": 5.0,
+      "details": "Easy continuous 30'. Finish with 6×20s relaxed strides (not sprints), walk back recovery. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
+      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
+      "rpe": "3–4",
+      "fuel": "Water/electrolytes only",
+      "high_min": 2
     },
     {
       "id": "w17-sat-bike-1",
@@ -3605,40 +3469,6 @@
       "high_min": 0
     },
     {
-      "id": "w18-mon-bike-1",
-      "week": 18,
-      "date": "2027-02-08",
-      "day": "Mon",
-      "phase": "Build 1",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "when": "AM",
-      "duration_min": 45,
-      "distance_km": 20.0,
-      "details": "Easy spin, 45' at high cadence (90–100 rpm). Replaces the Monday pool swim (Sunday open water is the 3rd swim). Flushes legs after the long run.",
-      "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2",
-      "rpe": "1–2",
-      "fuel": "Water/electrolytes only",
-      "high_min": 0
-    },
-    {
-      "id": "w18-mon-strength-1",
-      "week": 18,
-      "date": "2027-02-08",
-      "day": "Mon",
-      "phase": "Build 1",
-      "sport": "Strength",
-      "title": "Strength A — build",
-      "when": "PM",
-      "duration_min": 30,
-      "distance_km": null,
-      "details": "Lower + pull, maintenance (heavy, low volume): back squat 3×5, Bulgarian split squat 2×6/leg, Romanian DL 2×6, pull-ups 3×6, bicep curl 2×10, side plank 2×30s. TIBIA (keep): seated soleus raise 3×10 heavy, tibialis raise 2×15, single-leg hops 3×10/leg. See Strength tab.",
-      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
-      "rpe": "7–8",
-      "fuel": "",
-      "high_min": 0
-    },
-    {
       "id": "w18-tue-bike-1",
       "week": 18,
       "date": "2027-02-09",
@@ -3688,6 +3518,23 @@
       "rpe": "9",
       "fuel": "",
       "high_min": 10
+    },
+    {
+      "id": "w18-wed-strength-1",
+      "week": 18,
+      "date": "2027-02-10",
+      "day": "Wed",
+      "phase": "Build 1",
+      "sport": "Strength",
+      "title": "Strength A — build",
+      "when": "PM",
+      "duration_min": 30,
+      "distance_km": null,
+      "details": "Lower + pull, maintenance (heavy, low volume): back squat 3×5, Bulgarian split squat 2×6/leg, Romanian DL 2×6, pull-ups 3×6, bicep curl 2×10, side plank 2×30s. TIBIA (keep): seated soleus raise 3×10 heavy, tibialis raise 2×15, single-leg hops 3×10/leg. See Strength tab.",
+      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
+      "rpe": "7–8",
+      "fuel": "",
+      "high_min": 0
     },
     {
       "id": "w18-thu-bike-1",
@@ -3823,23 +3670,6 @@
       "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "Water",
-      "high_min": 0
-    },
-    {
-      "id": "w19-mon-bike-1",
-      "week": 19,
-      "date": "2027-02-15",
-      "day": "Mon",
-      "phase": "Build 2",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "when": "AM",
-      "duration_min": 45,
-      "distance_km": 20.0,
-      "details": "Easy spin, 45' at high cadence (90–100 rpm). Replaces the Monday pool swim (Sunday open water is the 3rd swim). Flushes legs after the long run.",
-      "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2",
-      "rpe": "1–2",
-      "fuel": "Water/electrolytes only",
       "high_min": 0
     },
     {
@@ -4047,23 +3877,6 @@
       "high_min": 0
     },
     {
-      "id": "w20-mon-bike-1",
-      "week": 20,
-      "date": "2027-02-22",
-      "day": "Mon",
-      "phase": "Build 2",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "when": "AM",
-      "duration_min": 45,
-      "distance_km": 20.0,
-      "details": "Easy spin, 45' at high cadence (90–100 rpm). Replaces the Monday pool swim (Sunday open water is the 3rd swim). Flushes legs after the long run.",
-      "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2",
-      "rpe": "1–2",
-      "fuel": "Water/electrolytes only",
-      "high_min": 0
-    },
-    {
       "id": "w20-tue-bike-1",
       "week": 20,
       "date": "2027-02-23",
@@ -4265,23 +4078,6 @@
       "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "60–90 g carbs/h (you've handled 90 g/h) + electrolytes",
-      "high_min": 0
-    },
-    {
-      "id": "w21-mon-bike-1",
-      "week": 21,
-      "date": "2027-03-01",
-      "day": "Mon",
-      "phase": "Build 2",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "when": "AM",
-      "duration_min": 45,
-      "distance_km": 20.0,
-      "details": "Easy spin, 45' at high cadence (90–100 rpm). Replaces the Monday pool swim (Sunday open water is the 3rd swim). Flushes legs after the long run.",
-      "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2",
-      "rpe": "1–2",
-      "fuel": "Water/electrolytes only",
       "high_min": 0
     },
     {
@@ -4489,40 +4285,6 @@
       "high_min": 0
     },
     {
-      "id": "w22-mon-bike-1",
-      "week": 22,
-      "date": "2027-03-08",
-      "day": "Mon",
-      "phase": "Build 2",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "when": "AM",
-      "duration_min": 45,
-      "distance_km": 20.0,
-      "details": "Easy spin, 45' at high cadence (90–100 rpm). Replaces the Monday pool swim (Sunday open water is the 3rd swim). Flushes legs after the long run.",
-      "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2",
-      "rpe": "1–2",
-      "fuel": "Water/electrolytes only",
-      "high_min": 0
-    },
-    {
-      "id": "w22-mon-strength-1",
-      "week": 22,
-      "date": "2027-03-08",
-      "day": "Mon",
-      "phase": "Build 2",
-      "sport": "Strength",
-      "title": "Strength A — build",
-      "when": "PM",
-      "duration_min": 30,
-      "distance_km": null,
-      "details": "Lower + pull, maintenance (heavy, low volume): back squat 3×5, Bulgarian split squat 2×6/leg, Romanian DL 2×6, pull-ups 3×6, bicep curl 2×10, side plank 2×30s. TIBIA (keep): seated soleus raise 3×10 heavy, tibialis raise 2×15, single-leg hops 3×10/leg. See Strength tab.",
-      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
-      "rpe": "7–8",
-      "fuel": "",
-      "high_min": 0
-    },
-    {
       "id": "w22-tue-bike-1",
       "week": 22,
       "date": "2027-03-09",
@@ -4554,6 +4316,23 @@
       "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "Water/electrolytes only",
+      "high_min": 0
+    },
+    {
+      "id": "w22-tue-strength-1",
+      "week": 22,
+      "date": "2027-03-09",
+      "day": "Tue",
+      "phase": "Build 2",
+      "sport": "Strength",
+      "title": "Strength A — build",
+      "when": "PM (after run)",
+      "duration_min": 30,
+      "distance_km": null,
+      "details": "Lower + pull, maintenance (heavy, low volume): back squat 3×5, Bulgarian split squat 2×6/leg, Romanian DL 2×6, pull-ups 3×6, bicep curl 2×10, side plank 2×30s. TIBIA (keep): seated soleus raise 3×10 heavy, tibialis raise 2×15, single-leg hops 3×10/leg. See Strength tab.",
+      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
+      "rpe": "7–8",
+      "fuel": "",
       "high_min": 0
     },
     {
@@ -5101,23 +4880,6 @@
       "high_min": 0
     },
     {
-      "id": "w25-mon-bike-1",
-      "week": 25,
-      "date": "2027-03-29",
-      "day": "Mon",
-      "phase": "Build 3",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "when": "AM",
-      "duration_min": 45,
-      "distance_km": 20.0,
-      "details": "Easy spin, 45' at high cadence (90–100 rpm). Replaces the Monday pool swim (Sunday open water is the 3rd swim). Flushes legs after the long run.",
-      "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2",
-      "rpe": "1–2",
-      "fuel": "Water/electrolytes only",
-      "high_min": 0
-    },
-    {
       "id": "w25-tue-bike-1",
       "week": 25,
       "date": "2027-03-30",
@@ -5319,23 +5081,6 @@
       "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
       "rpe": "3–4",
       "fuel": "60–90 g carbs/h (you've handled 90 g/h) + electrolytes",
-      "high_min": 0
-    },
-    {
-      "id": "w26-mon-bike-1",
-      "week": 26,
-      "date": "2027-04-05",
-      "day": "Mon",
-      "phase": "Build 3",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "when": "AM",
-      "duration_min": 45,
-      "distance_km": 20.0,
-      "details": "Easy spin, 45' at high cadence (90–100 rpm). Replaces the Monday pool swim (Sunday open water is the 3rd swim). Flushes legs after the long run.",
-      "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2",
-      "rpe": "1–2",
-      "fuel": "Water/electrolytes only",
       "high_min": 0
     },
     {
@@ -5543,40 +5288,6 @@
       "high_min": 0
     },
     {
-      "id": "w27-mon-swim-1",
-      "week": 27,
-      "date": "2027-04-12",
-      "day": "Mon",
-      "phase": "Build 3",
-      "sport": "Swim",
-      "title": "Aerobic endurance",
-      "when": "Midday",
-      "duration_min": 60,
-      "distance_km": 3.0,
-      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "",
-      "high_min": 0
-    },
-    {
-      "id": "w27-mon-run-1",
-      "week": 27,
-      "date": "2027-04-12",
-      "day": "Mon",
-      "phase": "Build 3",
-      "sport": "Run",
-      "title": "Easy run + strides",
-      "when": "AM",
-      "duration_min": 40,
-      "distance_km": 6.7,
-      "details": "Easy continuous 40'. Finish with 6×20s relaxed strides (not sprints), walk back recovery. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
-      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "Water/electrolytes only",
-      "high_min": 2
-    },
-    {
       "id": "w27-tue-bike-1",
       "week": 27,
       "date": "2027-04-13",
@@ -5730,20 +5441,20 @@
       "high_min": 0
     },
     {
-      "id": "w27-sun-bike-1",
+      "id": "w27-sun-swim-1",
       "week": 27,
       "date": "2027-04-18",
       "day": "Sun",
       "phase": "Build 3",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "when": "AM",
-      "duration_min": 30,
-      "distance_km": 14.0,
-      "details": "Easy spin, 30' at high cadence (90–100 rpm). Replaces a 4th swim — keeps the legs moving after Saturday's long ride.",
-      "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2",
-      "rpe": "1–2",
-      "fuel": "Water/electrolytes only",
+      "sport": "Swim",
+      "title": "Aerobic endurance",
+      "when": "Midday / any",
+      "duration_min": 60,
+      "distance_km": 3.0,
+      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
+      "rpe": "3–4",
+      "fuel": "",
       "high_min": 0
     },
     {
@@ -6019,40 +5730,6 @@
       "high_min": 0
     },
     {
-      "id": "w30-mon-swim-1",
-      "week": 30,
-      "date": "2027-05-03",
-      "day": "Mon",
-      "phase": "London",
-      "sport": "Swim",
-      "title": "Aerobic endurance",
-      "when": "Midday",
-      "duration_min": 55,
-      "distance_km": 2.8,
-      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 100 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "",
-      "high_min": 0
-    },
-    {
-      "id": "w30-mon-strength-1",
-      "week": 30,
-      "date": "2027-05-03",
-      "day": "Mon",
-      "phase": "London",
-      "sport": "Strength",
-      "title": "Strength A — build",
-      "when": "PM",
-      "duration_min": 35,
-      "distance_km": null,
-      "details": "Lower + pull, maintenance (heavy, low volume): back squat 3×5, Bulgarian split squat 2×6/leg, Romanian DL 2×6, pull-ups 3×6, bicep curl 2×10, side plank 2×30s. TIBIA (keep): seated soleus raise 3×10 heavy, tibialis raise 2×15, single-leg hops 3×10/leg. See Strength tab.",
-      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
-      "rpe": "7–8",
-      "fuel": "",
-      "high_min": 0
-    },
-    {
       "id": "w30-tue-bike-1",
       "week": 30,
       "date": "2027-05-04",
@@ -6223,6 +5900,23 @@
       "high_min": 0
     },
     {
+      "id": "w30-sun-swim-1",
+      "week": 30,
+      "date": "2027-05-09",
+      "day": "Sun",
+      "phase": "London",
+      "sport": "Swim",
+      "title": "Aerobic endurance",
+      "when": "Midday / any",
+      "duration_min": 55,
+      "distance_km": 2.8,
+      "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 100 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
+      "rpe": "3–4",
+      "fuel": "",
+      "high_min": 0
+    },
+    {
       "id": "w30-sun-run-1",
       "week": 30,
       "date": "2027-05-09",
@@ -6240,37 +5934,20 @@
       "high_min": 0
     },
     {
-      "id": "w31-mon-bike-1",
-      "week": 31,
-      "date": "2027-05-10",
-      "day": "Mon",
-      "phase": "Peak",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "when": "AM",
-      "duration_min": 45,
-      "distance_km": 20.0,
-      "details": "Easy spin, 45' at high cadence (90–100 rpm). Replaces the Monday pool swim (Sunday open water is the 3rd swim). Flushes legs after the long run.",
-      "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2",
-      "rpe": "1–2",
-      "fuel": "Water/electrolytes only",
-      "high_min": 0
-    },
-    {
-      "id": "w31-mon-run-1",
-      "week": 31,
-      "date": "2027-05-10",
-      "day": "Mon",
-      "phase": "Peak",
-      "sport": "Run",
-      "title": "Easy run",
+      "id": "w30-sun-strength-1",
+      "week": 30,
+      "date": "2027-05-09",
+      "day": "Sun",
+      "phase": "London",
+      "sport": "Strength",
+      "title": "Strength A — build",
       "when": "PM",
-      "duration_min": 40,
-      "distance_km": 6.7,
-      "details": "Easy continuous 40'. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
-      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "Water/electrolytes only",
+      "duration_min": 35,
+      "distance_km": null,
+      "details": "Lower + pull, maintenance (heavy, low volume): back squat 3×5, Bulgarian split squat 2×6/leg, Romanian DL 2×6, pull-ups 3×6, bicep curl 2×10, side plank 2×30s. TIBIA (keep): seated soleus raise 3×10 heavy, tibialis raise 2×15, single-leg hops 3×10/leg. See Strength tab.",
+      "target": "RPE 7–8 on main lifts, 1–3 reps in reserve",
+      "rpe": "7–8",
+      "fuel": "",
       "high_min": 0
     },
     {
@@ -6478,40 +6155,6 @@
       "high_min": 0
     },
     {
-      "id": "w32-mon-bike-1",
-      "week": 32,
-      "date": "2027-05-17",
-      "day": "Mon",
-      "phase": "Peak",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "when": "AM",
-      "duration_min": 45,
-      "distance_km": 20.0,
-      "details": "Easy spin, 45' at high cadence (90–100 rpm). Replaces the Monday pool swim (Sunday open water is the 3rd swim). Flushes legs after the long run.",
-      "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2",
-      "rpe": "1–2",
-      "fuel": "Water/electrolytes only",
-      "high_min": 0
-    },
-    {
-      "id": "w32-mon-run-1",
-      "week": 32,
-      "date": "2027-05-17",
-      "day": "Mon",
-      "phase": "Peak",
-      "sport": "Run",
-      "title": "Easy run",
-      "when": "PM",
-      "duration_min": 40,
-      "distance_km": 6.7,
-      "details": "Easy continuous 40'. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
-      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "Water/electrolytes only",
-      "high_min": 0
-    },
-    {
       "id": "w32-tue-bike-1",
       "week": 32,
       "date": "2027-05-18",
@@ -6714,40 +6357,6 @@
       "rpe": "3–4",
       "fuel": "60–90 g carbs/h (you've handled 90 g/h) + electrolytes",
       "high_min": 0
-    },
-    {
-      "id": "w33-mon-bike-1",
-      "week": 33,
-      "date": "2027-05-24",
-      "day": "Mon",
-      "phase": "Peak",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "when": "AM",
-      "duration_min": 45,
-      "distance_km": 20.0,
-      "details": "Easy spin, 45' at high cadence (90–100 rpm). Replaces the Monday pool swim (Sunday open water is the 3rd swim). Flushes legs after the long run.",
-      "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2",
-      "rpe": "1–2",
-      "fuel": "Water/electrolytes only",
-      "high_min": 0
-    },
-    {
-      "id": "w33-mon-run-1",
-      "week": 33,
-      "date": "2027-05-24",
-      "day": "Mon",
-      "phase": "Peak",
-      "sport": "Run",
-      "title": "Easy run + strides",
-      "when": "PM",
-      "duration_min": 40,
-      "distance_km": 6.7,
-      "details": "Easy continuous 40'. Finish with 6×20s relaxed strides (not sprints), walk back recovery. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
-      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "Water/electrolytes only",
-      "high_min": 2
     },
     {
       "id": "w33-tue-bike-1",
@@ -6954,23 +6563,6 @@
       "high_min": 0
     },
     {
-      "id": "w34-mon-swim-1",
-      "week": 34,
-      "date": "2027-05-31",
-      "day": "Mon",
-      "phase": "Taper",
-      "sport": "Swim",
-      "title": "Aerobic endurance",
-      "when": "Midday",
-      "duration_min": 45,
-      "distance_km": 2.2,
-      "details": "WU 300 easy + 4×50 build /15s. MS 3×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
-      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "",
-      "high_min": 0
-    },
-    {
       "id": "w34-tue-bike-1",
       "week": 34,
       "date": "2027-06-01",
@@ -7124,20 +6716,20 @@
       "high_min": 0
     },
     {
-      "id": "w34-sun-bike-1",
+      "id": "w34-sun-swim-1",
       "week": 34,
       "date": "2027-06-06",
       "day": "Sun",
       "phase": "Taper",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "when": "AM",
-      "duration_min": 30,
-      "distance_km": 14.0,
-      "details": "Easy spin, 30' at high cadence (90–100 rpm). Replaces a 4th swim — keeps the legs moving after Saturday's long ride.",
-      "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2",
-      "rpe": "1–2",
-      "fuel": "Water/electrolytes only",
+      "sport": "Swim",
+      "title": "Aerobic endurance",
+      "when": "Midday / any",
+      "duration_min": 45,
+      "distance_km": 2.2,
+      "details": "WU 300 easy + 4×50 build /15s. MS 3×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy + paddles) + 300 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).",
+      "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4",
+      "rpe": "3–4",
+      "fuel": "",
       "high_min": 0
     },
     {
@@ -7158,40 +6750,6 @@
       "high_min": 0
     },
     {
-      "id": "w35-mon-swim-1",
-      "week": 35,
-      "date": "2027-06-07",
-      "day": "Mon",
-      "phase": "Taper",
-      "sport": "Swim",
-      "title": "Recovery swim",
-      "when": "Midday",
-      "duration_min": 35,
-      "distance_km": 1.6,
-      "details": "Easy 1600m: 200s & 400s, mix free/pull, 20s rest. Long, smooth strokes.",
-      "target": "Z1 ≥1:48/100m · RPE 2",
-      "rpe": "2",
-      "fuel": "",
-      "high_min": 0
-    },
-    {
-      "id": "w35-mon-run-1",
-      "week": 35,
-      "date": "2027-06-07",
-      "day": "Mon",
-      "phase": "Taper",
-      "sport": "Run",
-      "title": "Easy run + strides",
-      "when": "AM",
-      "duration_min": 25,
-      "distance_km": 4.2,
-      "details": "Easy continuous 25'. Finish with 6×20s relaxed strides (not sprints), walk back recovery. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
-      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
-      "rpe": "3–4",
-      "fuel": "Water/electrolytes only",
-      "high_min": 2
-    },
-    {
       "id": "w35-tue-bike-1",
       "week": 35,
       "date": "2027-06-08",
@@ -7207,6 +6765,23 @@
       "rpe": "3–5",
       "fuel": "Water/electrolytes only",
       "high_min": 5
+    },
+    {
+      "id": "w35-tue-run-1",
+      "week": 35,
+      "date": "2027-06-08",
+      "day": "Tue",
+      "phase": "Taper",
+      "sport": "Run",
+      "title": "Easy run + strides",
+      "when": "PM",
+      "duration_min": 25,
+      "distance_km": 4.2,
+      "details": "Easy continuous 25'. Finish with 6×20s relaxed strides (not sprints), walk back recovery. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.",
+      "target": "Z1–Z2 HR 135–149 (hard cap 149) · RPE 3–4",
+      "rpe": "3–4",
+      "fuel": "Water/electrolytes only",
+      "high_min": 2
     },
     {
       "id": "w35-wed-swim-1",
