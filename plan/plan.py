@@ -379,8 +379,8 @@ week(9, "Base 2", "load", "Continuous running established (4 runs incl. first br
 # Week 10 was a recovery week; Andrew asked for a load week (23 Nov 2026). The trip (weeks 14–15) is the next easy block.
 week(10, "Base 2", "load", "Load week (was recovery). Longest VO2 reps so far. Watch resting HR/HRV: 7 hard weeks run into the trip.", {
     "Mon": [swim_aero(60), strength("A", B, 45)], "Tue": [bike_q(75, 10), run_easy(30)], "Wed": [swim_css(60, "base2")],
-    "Thu": [bike_z2(55), strength("B", B, 40), run_easy(30)], "Fri": [swim_end(60)],
-    "Sat": [bike_long(185, 10, B), run_brick(10, B)], "Sun": [run_long(44, B), swim_easy(40)]})
+    "Thu": [bike_z2(65), strength("B", B, 40), run_easy(30)], "Fri": [swim_end(60)],
+    "Sat": [bike_long(200, 10, B), run_brick(10, B)], "Sun": [run_long(44, B), swim_easy(40)]})
 week(11, "Base 3", "load", "Christmas week — Fri is optional/easy. Threshold work begins on the bike. Bumped (Andrew has time): long ride 3h45.", {
     "Mon": [swim_aero(60), strength("A", B, 45)], "Tue": [bike_q(75, 11), run_easy(30)], "Wed": [swim_css(65, "base3")],
     "Thu": [bike_z2(80), strength("B", B, 40)], "Fri": [run_easy(30, strides=True)],
