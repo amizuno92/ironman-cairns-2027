@@ -99,15 +99,15 @@ details p b{font-weight:600}
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600;700&display=swap">
 <main id="root" class="wrap"></main>
-<script type="application/json" id="state">{"order": {"Mon": [1, 0], "Tue": [2, 3], "Wed": [5, 4], "Thu": [6, 7], "Fri": [9, 8], "Sat": [10], "Sun": [11]}, "done": []}</script>
+<script type="application/json" id="state">{"order": {"Mon": [1, 0], "Tue": [2, 3], "Wed": [5, 4], "Thu": [6, 7], "Fri": [9, 8], "Sat": [10], "Sun": []}, "done": []}</script>
 <script id="app">
 (function(){
 var DAYS=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
 var DATES={"Mon": "23 Nov", "Tue": "24 Nov", "Wed": "25 Nov", "Thu": "26 Nov", "Fri": "27 Nov", "Sat": "28 Nov", "Sun": "29 Nov"};
-var NOTES={};
+var NOTES={"Sun": "Rest day"};
 var LONG=10;
 var ISO={"Mon": "2026-11-23", "Tue": "2026-11-24", "Wed": "2026-11-25", "Thu": "2026-11-26", "Fri": "2026-11-27", "Sat": "2026-11-28", "Sun": "2026-11-29"};
-var PLAN={"Mon": [1, 0], "Tue": [2, 3], "Wed": [5, 4], "Thu": [6, 7], "Fri": [9, 8], "Sat": [10], "Sun": [11]};
+var PLAN={"Mon": [1, 0], "Tue": [2, 3], "Wed": [5, 4], "Thu": [6, 7], "Fri": [9, 8], "Sat": [10], "Sun": []};
 var S=[
  {"id": 0, "day": "Mon", "sport": "Swim", "when": "Midday", "title": "Aerobic endurance", "dur": 55, "details": "WU 300 easy + 4×50 build /15s. MS 5×400 @ 1:38–1:44/100m, 20s rest (every 2nd rep with pull buoy) + 100 steady pull. CD 200 easy. All reps ≥50m (Watch-safe).", "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4", "rpe": "3–4", "fuel": "", "dist": 2.8},
  {"id": 1, "day": "Mon", "sport": "Run", "when": "AM", "title": "Walk-run (stage 4)", "dur": 30, "details": "RETURN-TO-RUN stage 4: 5' brisk walk, 3×(8' run / 1' walk), finish with walk. Flat, soft surface (grass/path), short quick steps (cadence +5%). Alternate days only. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.", "target": "Z1 HR ≤141 · RPE 2–3", "rpe": "2–3", "fuel": "Water/electrolytes only", "dist": 4.0, "run": true},
@@ -119,8 +119,7 @@ var S=[
  {"id": 7, "day": "Thu", "sport": "Strength", "when": "PM", "title": "Strength B: base", "dur": 40, "details": "Hips + push: hip thrust 3×10, step-ups 3×8/leg, single-leg RDL 3×8/leg, DB overhead press 3×8, lateral raise 3×12, tricep pushdown 3×12, Pallof press 3×12. See Strength tab.", "target": "RPE 7–8 on main lifts, 1–3 reps in reserve", "rpe": "7–8", "fuel": "", "legs": true},
  {"id": 8, "day": "Fri", "sport": "Swim", "when": "Midday", "title": "Long aerobic swim", "dur": 55, "details": "WU 400 easy. MS 4×500 @ 1:38–1:44/100m /30s + 200 easy. CD 200. Hold pace — the goal is aerobic durability, not speed.", "target": "Z2 1:38–1:44/100m (IM pace 1:40) · RPE 3–4", "rpe": "3–4", "fuel": "", "dist": 2.8},
  {"id": 9, "day": "Fri", "sport": "Run", "when": "AM", "title": "Walk-run (stage 4)", "dur": 30, "details": "RETURN-TO-RUN stage 4: 5' brisk walk, 3×(8' run / 1' walk), finish with walk. Flat, soft surface (grass/path), short quick steps (cadence +5%). Alternate days only. Bone rule: pain ≤2/10 during, none next morning — else stop, 2 days off, drop back one stage.", "target": "Z1 HR ≤141 · RPE 2–3", "rpe": "2–3", "fuel": "Water/electrolytes only", "dist": 4.0, "run": true},
- {"id": 10, "day": "Sat", "sport": "Bike", "when": "AM", "title": "Long ride", "dur": 130, "details": "Long ride 2h10. First 20' Z1–low Z2, then Z2 161–186W. Smooth, steady, seated. Outdoors: flat, low-traffic roads, IM blocks in aero on the Speedmax. Ride Z2 by HR 130–143 (power is a guide if the bike has a meter); HR wins if they disagree.", "target": "Z2 161–186W (62–72%) · HR 130–143 · RPE 3–4; blocks IM power 171–184W (66–71%) · HR ≤143 · RPE 4", "rpe": "3–4", "fuel": "60–70 g carbs/h from minute 20 · 500–800mg sodium/h · 500–750ml fluid/h (gut training)", "dist": 65.0, "long": true},
- {"id": 11, "day": "Sun", "sport": "Bike", "when": "AM", "title": "Recovery spin", "dur": 25, "details": "Easy spin, 25' at high cadence (90–100 rpm). Replaces a 4th swim — keeps the legs moving after Saturday's long ride.", "target": "Z1 <142W (<55%) · HR <130 · RPE 1–2", "rpe": "1–2", "fuel": "Water/electrolytes only", "dist": 11.0}
+ {"id": 10, "day": "Sat", "sport": "Bike", "when": "AM", "title": "Long ride", "dur": 130, "details": "Long ride 2h10. First 20' Z1–low Z2, then Z2 161–186W. Smooth, steady, seated. Outdoors: flat, low-traffic roads, IM blocks in aero on the Speedmax. Ride Z2 by HR 130–143 (power is a guide if the bike has a meter); HR wins if they disagree.", "target": "Z2 161–186W (62–72%) · HR 130–143 · RPE 3–4; blocks IM power 171–184W (66–71%) · HR ≤143 · RPE 4", "rpe": "3–4", "fuel": "60–70 g carbs/h from minute 20 · 500–800mg sodium/h · 500–750ml fluid/h (gut training)", "dist": 65.0, "long": true}
 ];
 var BY={}; S.forEach(function(s){BY[s.id]=s});
 var SPORTS=[["Swim","swim"],["Bike","bike"],["Run","run"],["Strength","strength"]];
@@ -222,7 +221,7 @@ function render(){
     '<div class="stat"><span>Swim volume</span><b>'+S.filter(function(s){return s.sport==="Swim"}).reduce(function(a,s){return a+s.dist},0).toFixed(1)+' km</b><span>3 walk-runs · alternate days</span></div>'+
    '</div>'+
    '<div class="board" id="board">'+cols+'</div>'+
-   '<p class="foot">Week 7 focus: Walk-run stage 4, then continuous running next week. Planned 10.25h. Times assume swims at midday, runs and rides in the morning, gym in the evening. Warnings show when a move breaks a rule.</p>';
+   '<p class="foot">Week 7 focus: Walk-run stage 4, then continuous running next week. Planned 9.83h. Times assume swims at midday, runs and rides in the morning, gym in the evening. Warnings show when a move breaks a rule.</p>';
 }
 
 // ---------- persistence ----------
