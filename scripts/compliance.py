@@ -130,11 +130,11 @@ def assess(a, p, rules, plan):
                 if rc["avg_rep_w"] and rc["avg_rep_w"] > rc["band_w"][1] + rules["power_over_w"]:
                     flags.append({"level": "info", "code": "reps_over", "msg": f"reps averaged {rc['avg_rep_w']}W, above {rc['band_w'][0]}–{rc['band_w'][1]}W"})
         elif k in ("bike_endurance", "bike_long", "bike_recovery"):
-            band = power_band(p["target"]) or (0, 133)
+            band = power_band(p["target"])  # gym-bike sessions are HR-only: no power check
             ref = m["np_w"] or m["avg_w"]
             if k == "bike_recovery":
-                band = (0, 133)
-            if ref and ref > band[1] + rules["power_over_w"]:
+                band = (0, round(0.55 * (plan.get("ftp_w") or 242)))
+            if band and ref and ref > band[1] + rules["power_over_w"]:
                 flags.append({"level": "warn", "code": "too_hard", "msg": f"NP {ref}W above the {band[1]}W ceiling for this ride"})
             z = m["zone_secs"]
             hard = sum(z.get(x, 0) for x in ("Z4", "Z5", "Z6", "Z7"))

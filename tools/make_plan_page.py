@@ -41,7 +41,7 @@ def main():
                         f'<text x="{pad_l-6}" y="{y(t)+4:.1f}" class="ax" text-anchor="end">{t}h</text>')
     for i, w in enumerate(weeks):
         x = pad_l + i * bw + 1.5
-        cls = {"recovery": "rec", "taper": "tap", "race": "race"}.get(w["kind"], "load")
+        cls = {"recovery": "rec", "taper": "tap", "race": "race", "travel": "rec"}.get(w["kind"], "load")
         bars.append(f'<a href="#w{w["week"]}"><rect x="{x:.1f}" y="{y(w["planned_hours"]):.1f}" width="{bw-3:.1f}" '
                     f'height="{y(0)-y(w["planned_hours"]):.1f}" class="b {cls}" data-wk="{w["week"]}">'
                     f'<title>Week {w["week"]} · {w["phase"]} · {w["planned_hours"]}h</title></rect></a>')
@@ -83,7 +83,7 @@ def main():
         days_used = {s["day"] for s in ss}
         rest = [dd for dd in DAYS if dd not in days_used]
         rest_s = f'<p class="rest">Rest: {", ".join(rest)}</p>' if rest else ""
-        tag = {"recovery": "Recovery", "taper": "Taper", "race": "Race week", "reduced": "Reduced"}.get(w["kind"], "")
+        tag = {"recovery": "Recovery", "taper": "Taper", "race": "Race week", "reduced": "Reduced", "travel": "Travel"}.get(w["kind"], "")
         tag_s = f'<span class="tag {w["kind"]}">{tag}</span>' if tag else ""
         ftp_s = f'<span class="tag test">FTP checkpoint {ftp_w[w["week"]]} W</span>' if w["week"] in ftp_w else ""
         rng = f"{start.day} {start:%b} – {end.day} {end:%b}"
