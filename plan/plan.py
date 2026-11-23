@@ -106,8 +106,10 @@ def swim_css(mins, key):
 def swim_end(mins, ph="base"):
     d = r100(mins * 50)
     if d >= 4600 and ph in ("peak",):
-        det = ("WU 400 easy. MS 3800 CONTINUOUS @ IM pace 1:44/100m — clock checks: 1000 @17:20, "
-               "2000 @34:40, 3000 @52:00, 3800 @65:52. CD 200. Sight every 6th stroke (head-up) to rehearse.")
+        ip = CSS + 10
+        ck = lambda m: f"{int(m * ip / 100 // 60)}:{int(m * ip / 100 % 60):02d}"
+        det = (f"WU 400 easy. MS 3800 CONTINUOUS @ IM pace {pace(ip)}/100m — clock checks: 1000 @{ck(1000)}, "
+               f"2000 @{ck(2000)}, 3000 @{ck(3000)}, 3800 @{ck(3800)}. CD 200. Sight every 6th stroke (head-up) to rehearse.")
         return S("Swim", "IM-distance swim (3.8km)", mins, det, SW_Z2, "4", 0, 4.4)
     main = d - 600
     if ph == "base":
@@ -760,6 +762,117 @@ def spread_runs():
 
 
 spread_runs()
+
+# ---------------- Indonesia surf trip, Fri 8 – Tue 26 Jan 2027 (athlete, 23 Nov 2026) ----------------
+# Surfing 2–4 h a day, gym with strength, treadmill and stationary bike; no swimming apart from surfing;
+# gym-bike watts unknown, so bike sessions run on HR/RPE. Training allowed on the morning of 8 Jan.
+# Weeks 13–15 are travel weeks (hours rule skips them; runs continue so they count for run km);
+# week 16 is re-entry; FTP test moves to week 17; week-17 long ride 4h (was 4h15) and brick 15' to stay within 10%.
+TRIP = (dt.date(2027, 1, 8), dt.date(2027, 1, 26))
+SURF = "Surfing counts as the swim work this week. "
+
+
+def gym_bike_int(mins):
+    det = ("Gym stationary bike, by HR and feel (watts if the bike shows them, but gym watts read differently from your trainer). "
+           "WU 15' easy → steady incl. 3×30s fast cadence. MS 5×4' HARD (RPE 8, HR climbing into 155–165 by the end of each rep) "
+           f"/3' easy. Remaining time easy Z2 (HR 130–143). Ride early, before surfing, with a fan if there is one.")
+    return S("Bike", "Gym bike intervals", mins, det, "Reps RPE 8 · HR 155–165 by rep end · easy HR <130", "8", 20, None)
+
+
+def gym_bike_z2(mins, long=False):
+    det = (f"Gym stationary bike: 10' easy, then {mins-15}' Z2 HR 130–143 (RPE 3–4), cadence 85–95, 5' easy. "
+           "Heat pushes HR up: keep HR in range even if it feels easy. 500–750 ml fluid/h + electrolytes."
+           + (" Longest ride of the week. Shorter than the plan at home — 2 h+ on a gym bike after surfing is not worth it." if long else ""))
+    return S("Bike", "Gym bike long" if long else "Gym bike endurance", mins, det, "Z2 HR 130–143 · RPE 3–4", "3–4", 0, None,
+             fuel="40–60 g carbs/h" if long else None)
+
+
+def _add(w, d, sess):
+    sess.update(wk=w, day=d, phase=WEEKS[w]["phase"], date=WEEKS[w]["start"] + dt.timedelta(days=DAYS.index(d)))
+    SESSIONS.append(sess)
+    return sess
+
+
+def _rm(w, d, pred=lambda x: True):
+    global SESSIONS
+    SESSIONS = [x for x in SESSIONS if not (x["wk"] == w and x["day"] == d and pred(x))]
+
+
+def trip_note(x):
+    x["details"] = "INDONESIA. " + x["details"] + (" Heat: run early or on a treadmill; HR cap still applies." if x["sport"] == "Run" else "")
+
+
+def indonesia():
+    global SESSIONS
+    # week 13: Thu run/strength unchanged; Fri 8 Jan swim moves to the morning before the airport; Sat/Sun in Indonesia
+    for x in _day(13, "Fri"):
+        if x["sport"] == "Swim":
+            x.update(swim_end(45, "base")); x["details"] = "Before the airport (AM is fine today). " + x["details"]; x["title"] = "Long aerobic swim"
+    WEEKS[13]["kind"] = "travel"
+    WEEKS[13]["focus"] = "Biggest base week until Thu. Fri 8 Jan: swim in the morning, fly to Indonesia. Sat/Sun on the trip."
+    _rm(13, "Sat"); _rm(13, "Sun", lambda x: x["sport"] == "Swim")
+    _add(13, "Sat", gym_bike_z2(90, long=True))
+    for x in _day(13, "Sun"):
+        trip_note(x)
+    # weeks 14 and 15: travel weeks
+    for w in (14, 15):
+        WEEKS[w]["kind"] = "travel"
+        WEEKS[w]["focus"] = ("INDONESIA surf trip (8–26 Jan). " + SURF + "Gym: bike Tue/Thu/Sat by HR, runs as planned "
+                             "(early or treadmill — heat), strength Tue/Thu. Tests move to after the trip.")
+        _rm(w, "Tue", lambda x: x["sport"] == "Bike"); _add(w, "Tue", gym_bike_int(60))
+        _rm(w, "Wed")
+        _rm(w, "Thu", lambda x: x["sport"] == "Bike"); _add(w, "Thu", gym_bike_z2(60))
+        _rm(w, "Fri")
+        _rm(w, "Sat", lambda x: x["sport"] == "Bike"); _add(w, "Sat", gym_bike_z2(90, long=True))
+        _rm(w, "Sun", lambda x: x["sport"] == "Swim")
+        for x in SESSIONS:
+            if x["wk"] == w and x["sport"] in ("Run", "Strength"):
+                trip_note(x)
+                if x["sport"] == "Strength":
+                    x["details"] += " Surfing is heavy pulling: drop pull-ups and lateral raises this week; keep legs, core and tibia work."
+    WEEKS[14]["focus"] += (" CHECKPOINT (runs continue on the trip): tibia symptom-free on all runs since wk 8? If yes → London stays on "
+                           "& run intensity unlocks from wk 17. If not → see a sports doctor.")
+    # week 16: home Tue 26 Jan; re-entry week
+    WEEKS[16]["kind"] = "travel"  # return week: lighter, counted like the trip weeks
+    WEEKS[16]["focus"] = ("Back from Indonesia (home Tue 26 Jan). Re-entry: easy swims, shorter long ride. "
+                          "No run quality yet — cruise intervals start wk 17.")
+    _rm(16, "Tue")
+    for x in _day(16, "Wed"):
+        if x["sport"] == "Swim":
+            x.update(swim_easy(45)); x["details"] = "First swim in 2½ weeks: easy, feel the water. " + x["details"]
+    _add(16, "Wed", strength("A", "build", 40))
+    trip_run = _add(16, "Wed", run_easy(35)); trip_run["details"] = "Back on home roads. " + trip_run["details"]
+    _rm(16, "Thu", lambda x: x["sport"] == "Strength")
+    for x in _day(16, "Sat"):
+        if x["title"] == "Long ride":
+            x.update(bike_long(180, 16, "build")); x["title"] = "Long ride"
+    # week 17: FTP test replaces the Tuesday intervals; long ride capped so the return is <= +10%
+    for x in _day(17, "Tue"):
+        if x["sport"] == "Bike":
+            x.update(bike_test())
+    for x in _day(17, "Sat"):
+        if x["title"] == "Long ride":
+            x.update(bike_long(240, 17, "build")); x["title"] = "Long ride"
+        if x["title"] == "Brick run":
+            x.update(run_brick(15, "build"))
+    WEEKS[17]["focus"] = "FTP ramp test Tue (moved from wk 14). " + WEEKS[17]["focus"]
+    SESSIONS = [x for x in SESSIONS if x["sport"] != "Rest"]
+    for w in (13, 14, 15, 16, 17):
+        for d in DAYS:
+            if not _day(w, d):
+                r = rest("Rest day." if not (TRIP[0] <= WEEKS[w]["start"] + dt.timedelta(days=DAYS.index(d)) <= TRIP[1])
+                         else "Indonesia: surf day, no structured training."); r.update(wk=w, day=d, phase=WEEKS[w]["phase"],
+                                               date=WEEKS[w]["start"] + dt.timedelta(days=DAYS.index(d)))
+                SESSIONS.append(r)
+    for w in WEEKS:
+        for d in DAYS:
+            if not any(x["wk"] == w and x["day"] == d for x in SESSIONS):
+                r = rest("Rest day."); r.update(wk=w, day=d, phase=WEEKS[w]["phase"],
+                                               date=WEEKS[w]["start"] + dt.timedelta(days=DAYS.index(d)))
+                SESSIONS.append(r)
+
+
+indonesia()
 
 # ---------------- sub-11 bike targets (from Build 1, wk 15) ----------------
 def sub11_bike():

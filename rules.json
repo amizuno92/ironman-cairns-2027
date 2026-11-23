@@ -23,7 +23,7 @@
   "pain_words": ["pain", "shin", "tibia", "sore", "ache", "niggle", "tender", "sharp", "throb"],
   "ftp_checkpoints": [
     {"week": 6, "target_w": 252},
-    {"week": 14, "target_w": 260},
+    {"week": 17, "target_w": 260},
     {"week": 22, "target_w": 268}
   ]
 }

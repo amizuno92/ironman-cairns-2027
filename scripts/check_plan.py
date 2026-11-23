@@ -28,10 +28,10 @@ def main():
             if prev_h and hours[n] > prev_h * (1 + r["weekly_hours_increase_max"]) + 0.01:
                 errors.append(f"Week {n}: {hours[n]:.2f}h is >{int(r['weekly_hours_increase_max'] * 100)}% above the last load week ({prev_h:.2f}h)")
             if n > 9 and prev_km and run_km[n] > prev_km * (1 + r["weekly_run_km_increase_max"]) + 0.05:
-                errors.append(f"Week {n}: run {run_km[n]:.1f} km is >10% above the last load week ({prev_km:.1f} km)")
+                errors.append(f"Week {n}: run {run_km[n]:.1f} km is >10% above the last load/travel week ({prev_km:.1f} km)")
             prev_h = hours[n]
-            if n >= 9:
-                prev_km = run_km[n]
+        if n >= 9 and w["kind"] in ("load", "travel"):
+            prev_km = run_km[n]  # travel weeks keep their runs, so they set the run baseline too
         if swims[n] > r["max_swims_per_week"]:
             errors.append(f"Week {n}: {swims[n]} swims (max {r['max_swims_per_week']})")
     for (date, day), m in day_min.items():
