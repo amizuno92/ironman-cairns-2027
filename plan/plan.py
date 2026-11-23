@@ -151,6 +151,7 @@ Q_BIKE = {
     7: ("6×4' @ {} /3' easy", (1.07, 1.13), 24),
     8: ("5×5' @ {} /3' easy", (1.05, 1.10), 25),
     9: ("6×5' @ {} /3' easy", (1.05, 1.10), 30),
+    10: ("5×6' @ {} /3' easy", (1.05, 1.09), 30),
     11: ("4×8' @ {} /4' easy", (0.97, 1.03), 32),
     12: ("3×12' @ {} /5' easy", (0.95, 1.01), 36),
     13: ("4×10' @ {} /4' easy", (0.95, 1.01), 40),
@@ -375,18 +376,19 @@ week(9, "Base 2", "load", "Continuous running established (4 runs incl. first br
     "Mon": [swim_aero(60), strength("A", B, 45)], "Tue": [bike_q(75, 9), run_easy(30)], "Wed": [swim_css(60, "base2")],
     "Thu": [bike_z2(50), strength("B", B, 40), run_easy(30)], "Fri": [swim_end(60)],
     "Sat": [bike_long(180, 9, B), run_brick(10, B)], "Sun": [run_long(40, B), swim_easy(40)]})
-week(10, "Base 2", "recovery", "Recovery week (~70%).", {
-    "Mon": [swim_aero(45), strength("A", B, 30)], "Tue": [bike_z2(45), run_easy(30)], "Wed": [swim_css(45, "base2")],
-    "Thu": [bike_easy(45), strength("B", B, 30), run_easy(25)], "Fri": [swim_easy(40)], "Sat": [bike_long(120, 10, B)],
-    "Sun": [run_long(35, B)]})
-week(11, "Base 3", "load", "Christmas week — Fri is optional/easy. Threshold work begins on the bike.", {
-    "Mon": [swim_aero(60), strength("A", B, 45)], "Tue": [bike_q(75, 11), run_easy(30)], "Wed": [swim_css(60, "base3")],
-    "Thu": [bike_z2(60), strength("B", B, 40)], "Fri": [run_easy(30, strides=True)],
-    "Sat": [bike_long(190, 11, B), run_brick(10, B)], "Sun": [run_long(48, B), swim_end(45)]})
-week(12, "Base 3", "load", "Strides added. Long ride 3h15.", {
+# Week 10 was a recovery week; Andrew asked for a load week (23 Nov 2026). The trip (weeks 14–15) is the next easy block.
+week(10, "Base 2", "load", "Load week (was recovery). Longest VO2 reps so far. Watch resting HR/HRV: 7 hard weeks run into the trip.", {
+    "Mon": [swim_aero(60), strength("A", B, 45)], "Tue": [bike_q(75, 10), run_easy(30)], "Wed": [swim_css(60, "base2")],
+    "Thu": [bike_z2(65), strength("B", B, 40), run_easy(30)], "Fri": [swim_end(60)],
+    "Sat": [bike_long(200, 10, B), run_brick(10, B)], "Sun": [run_long(44, B), swim_easy(40)]})
+week(11, "Base 3", "load", "Christmas week — Fri is optional/easy. Threshold work begins on the bike. Bumped (Andrew has time): long ride 3h45.", {
+    "Mon": [swim_aero(60), strength("A", B, 45)], "Tue": [bike_q(75, 11), run_easy(30)], "Wed": [swim_css(65, "base3")],
+    "Thu": [bike_z2(80), strength("B", B, 40)], "Fri": [run_easy(30, strides=True)],
+    "Sat": [bike_long(225, 11, B), run_brick(10, B)], "Sun": [run_long(48, B), swim_end(45)]})
+week(12, "Base 3", "load", "Strides added. Long ride 3h55 (bumped with week 11).", {
     "Mon": [swim_aero(60), strength("A", B, 45)], "Tue": [bike_q(75, 12), run_easy(35)],
-    "Wed": [swim_css(60, "base3"), run_easy(30, strides=True)], "Thu": [bike_z2(60), strength("B", B, 40)],
-    "Fri": [swim_end(60)], "Sat": [bike_long(195, 12, B), run_brick(10, B)], "Sun": [run_long(54, B), swim_easy(30)]})
+    "Wed": [swim_css(60, "base3"), run_easy(30, strides=True)], "Thu": [bike_z2(80), strength("B", B, 40)],
+    "Fri": [swim_end(60)], "Sat": [bike_long(235, 12, B), run_brick(10, B)], "Sun": [run_long(54, B), swim_easy(30)]})
 week(13, "Base 3", "load", "Biggest base week.", {
     "Mon": [swim_aero(60), strength("A", B, 45)], "Tue": [bike_q(75, 13), run_easy(35)],
     "Wed": [swim_css(65, "base3"), run_easy(35, strides=True)], "Thu": [bike_z2(70), strength("B", B, 40)],
@@ -766,7 +768,8 @@ spread_runs()
 # ---------------- Indonesia surf trip, Fri 8 – Tue 26 Jan 2027 (athlete, 23 Nov 2026) ----------------
 # Surfing 2–4 h a day, gym with strength, treadmill and stationary bike; no swimming apart from surfing;
 # gym-bike watts unknown, so bike sessions run on HR/RPE. Training allowed on the morning of 8 Jan.
-# Weeks 13–15 are travel weeks (hours rule skips them; runs continue so they count for run km);
+# Week 13 is a shortened load week; weeks 14–15 are travel weeks (hours rule skips them; runs continue so
+# they count for run km);
 # week 16 is re-entry; FTP test moves to week 17; week-17 long ride 4h (was 4h15) and brick 15' to stay within 10%.
 TRIP = (dt.date(2027, 1, 8), dt.date(2027, 1, 26))
 SURF = "Surfing counts as the swim work this week. "
@@ -804,16 +807,19 @@ def trip_note(x):
 
 def indonesia():
     global SESSIONS
-    # week 13: Thu run/strength unchanged; Fri 8 Jan swim moves to the morning before the airport; Sat/Sun in Indonesia
-    for x in _day(13, "Fri"):
-        if x["sport"] == "Swim":
-            x.update(swim_end(45, "base")); x["details"] = "Before the airport (AM is fine today). " + x["details"]; x["title"] = "Long aerobic swim"
-    WEEKS[13]["kind"] = "travel"
-    WEEKS[13]["focus"] = "Biggest base week until Thu. Fri 8 Jan: swim in the morning, fly to Indonesia. Sat/Sun on the trip."
-    _rm(13, "Sat"); _rm(13, "Sun", lambda x: x["sport"] == "Swim")
-    _add(13, "Sat", gym_bike_z2(90, long=True))
-    for x in _day(13, "Sun"):
-        trip_note(x)
+    # week 13: a load week cut short (Andrew, 23 Nov 2026). Long ride Thu, long run Fri morning before the
+    # afternoon flight; Sat surf; Sun easy run in Indonesia. Counts as load in content, but its shortened hours
+    # don't set the 10% baseline (kind "load_short").
+    SESSIONS = [x for x in SESSIONS if x["wk"] != 13]
+    WEEKS[13]["kind"] = "load_short"
+    WEEKS[13]["focus"] = ("Load week, cut short by the trip: long ride Thu, long run Fri morning, fly Fri afternoon. "
+                          "Sat surf, Sun easy run in Indonesia.")
+    _add(13, "Tue", bike_q(75, 13)); _add(13, "Tue", run_easy(35)); _add(13, "Tue", strength("A", B, 45))
+    _add(13, "Wed", swim_css(65, "base3")); _add(13, "Wed", strength("B", B, 40))
+    _add(13, "Thu", bike_long(210, 13, B)); _add(13, "Thu", run_brick(10, B))
+    lr = _add(13, "Fri", run_long(60, B)); lr["details"] = "Early, before the airport. " + lr["details"]
+    sw = _add(13, "Fri", swim_end(45, "base")); sw["details"] = "Optional, if there's time before the airport (AM is fine today). " + sw["details"]
+    ez = _add(13, "Sun", run_easy(30)); trip_note(ez)
     # weeks 14 and 15: travel weeks
     for w in (14, 15):
         WEEKS[w]["kind"] = "travel"

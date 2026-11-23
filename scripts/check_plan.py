@@ -24,13 +24,19 @@ def main():
     prev_h = prev_km = None
     for n in sorted(weeks):
         w = weeks[n]
+        if w["kind"] in ("load", "load_short"):
+            if w["kind"] == "load_short":  # cut-short load week: checked, but doesn't set the hours baseline
+                if prev_h and hours[n] > prev_h * (1 + r["weekly_hours_increase_max"]) + 0.01:
+                    errors.append(f"Week {n}: {hours[n]:.2f}h is >10% above the last load week ({prev_h:.2f}h)")
+                if prev_km and run_km[n] > prev_km * (1 + r["weekly_run_km_increase_max"]) + 0.05:
+                    errors.append(f"Week {n}: run {run_km[n]:.1f} km is >10% above the last load/travel week ({prev_km:.1f} km)")
         if w["kind"] == "load":
             if prev_h and hours[n] > prev_h * (1 + r["weekly_hours_increase_max"]) + 0.01:
                 errors.append(f"Week {n}: {hours[n]:.2f}h is >{int(r['weekly_hours_increase_max'] * 100)}% above the last load week ({prev_h:.2f}h)")
             if n > 9 and prev_km and run_km[n] > prev_km * (1 + r["weekly_run_km_increase_max"]) + 0.05:
                 errors.append(f"Week {n}: run {run_km[n]:.1f} km is >10% above the last load/travel week ({prev_km:.1f} km)")
             prev_h = hours[n]
-        if n >= 9 and w["kind"] in ("load", "travel"):
+        if n >= 9 and w["kind"] in ("load", "load_short", "travel"):
             prev_km = run_km[n]  # travel weeks keep their runs, so they set the run baseline too
         if swims[n] > r["max_swims_per_week"]:
             errors.append(f"Week {n}: {swims[n]} swims (max {r['max_swims_per_week']})")

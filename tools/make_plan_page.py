@@ -83,7 +83,7 @@ def main():
         days_used = {s["day"] for s in ss}
         rest = [dd for dd in DAYS if dd not in days_used]
         rest_s = f'<p class="rest">Rest: {", ".join(rest)}</p>' if rest else ""
-        tag = {"recovery": "Recovery", "taper": "Taper", "race": "Race week", "reduced": "Reduced", "travel": "Travel"}.get(w["kind"], "")
+        tag = {"recovery": "Recovery", "taper": "Taper", "race": "Race week", "reduced": "Reduced", "travel": "Travel", "load_short": "Cut short"}.get(w["kind"], "")
         tag_s = f'<span class="tag {w["kind"]}">{tag}</span>' if tag else ""
         ftp_s = f'<span class="tag test">FTP checkpoint {ftp_w[w["week"]]} W</span>' if w["week"] in ftp_w else ""
         rng = f"{start.day} {start:%b} – {end.day} {end:%b}"

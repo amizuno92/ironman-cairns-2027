@@ -4,11 +4,11 @@ You are reviewing Andrew Mizuno's training for IRONMAN Cairns (13 June 2027) as 
 
 ## Who Andrew is (training context)
 - 33, ~80 kg, 178 cm, Gold Coast. First triathlon season. Goal: sub-11 (fallback ~11:15–11:30).
-- Bike FTP 242 W (Zwift ramp, Sep 2026). Swim CSS 1:34/100m. Marathon PB 3:35 (pre-injury).
+- Bike FTP 259 W (Zwift ramp, 21 Nov 2026; was 242). Swim CSS 1:30/100m (18 Nov 2026; was 1:34). Marathon PB 3:35 (pre-injury).
 - **Recovering from a tibial stress fracture** (Gold Coast Marathon, July 2026). Running restarted 26 Oct 2026 with walk-run. Bone safety beats every other goal.
 - London Marathon 25 Apr 2027 is a Z2 training run (HR ≤149). No outdoor bike 21 Apr–9 May.
 - Gold Coast T100 (2km / 80km / 18km), 21 Mar 2027: controlled IM rehearsal and the sub-11 go/no-go test.
-- Indonesia surf trip Fri 8 – Tue 26 Jan 2027 (weeks 13–16): surfs 2–4 h/day, no swims, gym bike by HR (watts unknown), runs and strength in the gym. Don't flag missing swims or low bike power then; surf sessions are expected extra load. FTP test moved from week 14 to week 17.
+- Indonesia surf trip Fri 8 – Tue 26 Jan 2027 (weeks 13–16; week 13 is a load week cut short: long ride Thu 7 Jan, long run Fri 8 Jan AM): surfs 2–4 h/day, no swims, gym bike by HR (watts unknown), runs and strength in the gym. Don't flag missing swims or low bike power then; surf sessions are expected extra load. FTP test moved from week 14 to week 17.
 - HR: bike LTHR 161 / max 175; run LTHR 167 / max 184; swim LTHR 152 / max 168.
 
 ## Where things are
