@@ -117,19 +117,12 @@
       "sport": "Bike",
       "title": "Long ride",
       "duration_min": 130
-    },
-    {
-      "id": "w07-sun-bike-1",
-      "date": "2026-11-29",
-      "sport": "Bike",
-      "title": "Recovery spin",
-      "duration_min": 25
     }
   ],
   "week_to_date": {
     "actual_hours": 1.23,
     "planned_hours_to_date": 1.42,
-    "planned_hours_week": 10.25,
+    "planned_hours_week": 9.83,
     "by_sport_actual_h": {
       "Run": 0.43,
       "Swim": 0.8
@@ -137,7 +130,7 @@
     "by_sport_planned_h": {
       "Swim": 2.75,
       "Run": 1.5,
-      "Bike": 4.58,
+      "Bike": 4.17,
       "Strength": 1.42
     },
     "run_km": 4.85,

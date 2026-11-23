@@ -1,0 +1,103 @@
+[
+  {
+    "id": "i213774410",
+    "name": "Zwift - W7 Tue - Intervals — Z5 VO2max",
+    "type": "VirtualRide",
+    "start_date_local": "2026-11-24T04:46:29",
+    "start_date": "2026-11-23T18:46:29Z",
+    "moving_time": 1868,
+    "elapsed_time": 1868,
+    "distance": 18673.43,
+    "icu_average_watts": 184,
+    "icu_weighted_avg_watts": 215,
+    "icu_intensity": 83.01158,
+    "icu_ftp": 259,
+    "icu_training_load": 36,
+    "average_heartrate": 124,
+    "max_heartrate": 158,
+    "average_cadence": 85.92174,
+    "average_speed": 9.991,
+    "pace": 9.996483,
+    "decoupling": -8.696434,
+    "icu_efficiency_factor": 1.733871,
+    "icu_variability_index": 1.1684783,
+    "icu_zone_times": [
+      {
+        "id": "Z1",
+        "secs": 723
+      },
+      {
+        "id": "Z2",
+        "secs": 599
+      },
+      {
+        "id": "Z3",
+        "secs": 7
+      },
+      {
+        "id": "Z4",
+        "secs": 6
+      },
+      {
+        "id": "Z5",
+        "secs": 534
+      },
+      {
+        "id": "Z6",
+        "secs": 0
+      },
+      {
+        "id": "Z7",
+        "secs": 0
+      },
+      {
+        "id": "SS",
+        "secs": 7
+      }
+    ],
+    "icu_hr_zone_times": [
+      1082,
+      397,
+      197,
+      193,
+      0,
+      0,
+      0
+    ],
+    "icu_hr_zones": [
+      129,
+      144,
+      149,
+      160,
+      165,
+      170,
+      175
+    ],
+    "icu_power_zones": [
+      55,
+      75,
+      90,
+      105,
+      120,
+      150,
+      999
+    ],
+    "interval_summary": [
+      "2x 3m57s 285w",
+      "1x 64s 284w"
+    ],
+    "device_name": "ZWIFT H~",
+    "trainer": true,
+    "source": "ZWIFT",
+    "total_elevation_gain": 29.0,
+    "carbs_used": 101,
+    "calories": 328,
+    "icu_ctl": 49.113358,
+    "icu_atl": 53.645493,
+    "icu_weight": 80.4,
+    "icu_lap_count": 13,
+    "polarization_index": 3.46,
+    "lthr": 161,
+    "athlete_max_hr": 175
+  }
+]
