@@ -1,0 +1,56 @@
+[
+  {
+    "id": "i214229776",
+    "name": "Run",
+    "type": "Run",
+    "start_date_local": "2026-11-25T04:37:57",
+    "start_date": "2026-11-24T18:37:57Z",
+    "moving_time": 1563,
+    "elapsed_time": 1564,
+    "distance": 4713.62,
+    "icu_intensity": 58.77835,
+    "icu_training_load": 15,
+    "average_heartrate": 129,
+    "max_heartrate": 147,
+    "average_cadence": 80.52588,
+    "average_speed": 3.075,
+    "pace": 3.0157518,
+    "icu_hr_zone_times": [
+      1408,
+      157,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "icu_hr_zones": [
+      140,
+      149,
+      157,
+      166,
+      171,
+      176,
+      184
+    ],
+    "interval_summary": [
+      "1x 3s 82bpm",
+      "3x 8m 129bpm",
+      "2x 60s 125bpm",
+      "1x 1s 145bpm"
+    ],
+    "icu_rpe": 4,
+    "session_rpe": 104,
+    "device_name": "Watch6,18",
+    "source": "OAUTH_CLIENT",
+    "total_elevation_gain": 38.18805,
+    "calories": 335,
+    "icu_ctl": 49.068893,
+    "icu_atl": 54.732555,
+    "icu_weight": 80.4,
+    "icu_lap_count": 7,
+    "polarization_index": 0.0,
+    "lthr": 167,
+    "athlete_max_hr": 184
+  }
+]
