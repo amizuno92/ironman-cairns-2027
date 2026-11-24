@@ -163,6 +163,8 @@ Q_BIKE = {
     19: ("5×5' @ {} /3' easy", (1.03, 1.08), 25),
     20: ("6×5' @ {} /3' easy", (1.03, 1.08), 30),
     21: ("2×20' @ {} /5' easy", (0.94, 1.00), 40),
+    23: ("3×12' @ {} /4' easy", (0.95, 1.01), 36),
+    24: ("2×20' @ {} /5' easy", (0.94, 1.00), 40),
     25: ("5×6' @ {} /3' easy", (1.03, 1.08), 30),
     26: ("3×12' @ {} /4' easy", (0.95, 1.01), 36),
     27: ("2×12' @ {} /5' easy", (0.95, 1.00), 24),
@@ -396,7 +398,7 @@ week(13, "Base 3", "load", "Biggest base week.", {
     "Wed": [swim_css(65, "base3"), run_easy(35, strides=True)], "Thu": [bike_z2(70), strength("B", B, 40)],
     "Fri": [swim_end(65)], "Sat": [bike_long(210, 13, B), run_brick(10, B)], "Sun": [run_long(60, B), swim_easy(35)]})
 week(14, "Base 3", "recovery",
-     "Recovery + tests. CHECKPOINT: tibia symptom-free on all runs since wk 8? If yes → London stays on & run intensity unlocks from wk 16. If not → see a sports doctor; drop London to the Olympic/T100 plan only.", {
+     "Recovery + tests. CHECKPOINT: tibia symptom-free on all runs since wk 8? If yes → London stays on & run intensity unlocks from wk 16. If not → see a sports doctor; drop London.", {
     "Mon": [swim_aero(45), strength("A", B, 30)], "Tue": [bike_test(), run_easy(30)], "Wed": [swim_test()],
     "Thu": [bike_z2(60), strength("B", B, 30), run_easy(30, strides=True)], "Fri": [swim_easy(40)],
     "Sat": [bike_long(150, 14, B)], "Sun": [run_long(50, B)]})
@@ -429,31 +431,36 @@ week(20, "Build 2", "load", "Long ride 5h.", {
     "Wed": [swim_css(70, "build")], "Thu": [bike_z2(80, "2×20'"), run_easy(35, strides=True)],
     "Fri": [swim_end(75, BL), strength("B", BL, 30)], "Sat": [bike_long(300, 20, BL), run_brick(20, BL)],
     "Sun": [run_long(102, BL), swim_ows(45)]})
-week(21, "Build 2", "load", "Peak build week before T100.", {
+week(21, "Build 2", "load", "Peak build week (5h20 long ride).", {
     "Mon": [swim_aero(65, BL), strength("A", BL, 40)], "Tue": [bike_q(75, 21), run_q(45, 21)],
     "Wed": [swim_css(70, "build")], "Thu": [bike_z2(80, "2×20'"), run_easy(40, strides=True)],
     "Fri": [swim_end(75, BL), strength("B", BL, 30)], "Sat": [bike_long(320, 21, BL), run_brick(25, BL)],
     "Sun": [run_long(110, BL), swim_ows(45)]})
-week(22, "Build 2", "recovery", "Recovery + FTP retest. Set T100 race targets from new FTP.", {
+week(22, "Build 2", "recovery", "Recovery + FTP retest. New FTP sets the IM targets for the week-23 rehearsal.", {
     "Mon": [swim_aero(50, BL), strength("A", BL, 30)], "Tue": [bike_test(), run_easy(35)],
     "Wed": [swim_css(55, "build"), run_easy(35)], "Thu": [bike_z2(60, "2×10'"), run_easy(35, strides=True)],
     "Fri": [swim_easy(45), strength("B", BL, 25)], "Sat": [bike_long(180, 22, BL), run_brick(15, BL)],
     "Sun": [run_long(80, BL), swim_ows(40)]})
-week(23, "Race: T100", "race", "Gold Coast T100 (2km/80km/18km) Sun 21 Mar — controlled IM-rehearsal effort, not all-out (London in 5 weeks).", {
-    "Mon": [swim_aero(50, BL), strength("A", PK, 25)],
-    "Tue": [misc("Bike", "Race-pace touch", 60, f"15' WU; 3×8' @ T100 power {T100W} (74–78%) /4'; rest Z2.",
-                 f"T100 power {T100W} · HR ≤150", "5–6", 24, 30), run_easy(30, strides=True)],
-    "Wed": [swim_css(45, "taper"), run_easy(25)],
-    "Thu": [bike_openers(50), swim_ows(30)], "Fri": [swim_easy(25)],
-    "Sat": [bike_openers(30), misc("Run", "Shakeout", 15, "15' easy jog + 4 strides. Rack bike, check gear.", RN_Z1, "2", 1, 2.5)],
-    "Sun": [race("RACE — Gold Coast T100 (2/80/18)", 300,
-                 "Swim 2km steady (1:40–1:44/100m). " f"Bike 80km @ {T100W} (74–78% FTP), HR ≤150, aero. Run 18km: HR 142–149 for 12km, "
-                 "may float to ≤155 last 6km only if tibia + legs feel great. Rehearse IM nutrition. Practise transitions.",
-                 f"Swim Z2–Z3 · Bike {T100W} · Run HR ≤149 then ≤155", "90 g carbs/h on bike, 60–90 g/h on run, 800mg sodium/h", 100, 60)]})
-week(24, "Build 3", "recovery", "Post-race recovery; rebuild by Saturday.", {
-    "Mon": [swim_easy(40)], "Tue": [bike_easy(45)], "Wed": [swim_aero(50, BL), strength("A", BL, 30)],
-    "Thu": [bike_z2(60), run_easy(30)], "Fri": [swim_end(60, BL), strength("B", BL, 25), run_easy(30)],
-    "Sat": [bike_long(180, 24, BL)], "Sun": [run_long(90, BL, marathon_prep=True), swim_ows(35)]})
+# Andrew dropped the Gold Coast T100 (23 Nov 2026): the trip and London already break up the block.
+# Week 23 keeps its job as the sub-11 go/no-go with a solo rehearsal day; weeks 23–24 become load weeks.
+REHEARSAL = misc("Bike", "Sub-11 rehearsal ride", 240,
+                 f"Race-morning routine (breakfast 3 h before, same kit, Speedmax in aero). 30' Z2, then 3×45' @ IM power "
+                 f"{IMW_SUB11} (70–75% FTP) /5' Z2, rest Z2. HR ≤145 on the blocks. Fuel exactly as race day. "
+                 "Go/no-go: blocks held at ≥72% FTP with HR ≤145 and decoupling <5% → sub-11 targets stay.",
+                 f"IM power {IMW_SUB11} · HR ≤145", "5–6", 0, 120, "90 g carbs/h, 800 mg sodium/h, 750 ml/h")
+week(23, "Build 2", "load", "Sub-11 rehearsal Sat (replaces the T100): 4 h ride with 3×45' at IM power, then 45' at IM run effort.", {
+    "Mon": [swim_aero(65, BL), strength("A", BL, 40)], "Tue": [bike_q(75, 23), run_easy(40)],
+    "Wed": [swim_css(70, "build")], "Thu": [bike_z2(70), run_easy(35, strides=True)],
+    "Fri": [swim_end(60, BL), strength("B", BL, 30)],
+    "Sat": [REHEARSAL, misc("Run", "Rehearsal run off the bike", 45,
+                            "Straight off the bike, under 3' in transition. 45' at IM run effort HR 142–149, flat, short quick steps. "
+                            "Fuel 60–90 g carbs/h. Stop if the tibia says anything.", "HR 142–149 (IM run effort)", "5", 0, 8.0)],
+    "Sun": [run_long(90, BL), swim_ows(40)]})
+week(24, "Build 3", "load", "Back-to-back build into the London block.", {
+    "Mon": [swim_aero(60, BL), strength("A", BL, 40)], "Tue": [bike_q(75, 24), run_easy(40)],
+    "Wed": [swim_css(65, "build")], "Thu": [bike_z2(75, "2×20'"), run_easy(45, strides=True)],
+    "Fri": [swim_end(65, BL), strength("B", BL, 30)], "Sat": [bike_long(285, 24, BL), run_brick(20, BL)],
+    "Sun": [run_long(120, BL, marathon_prep=True), swim_ows(35)]})
 week(25, "Build 3", "load", "Big block: London long run + IM long ride.", {
     "Mon": [swim_aero(65, PK), strength("A", BL, 40)], "Tue": [bike_q(75, 25), run_q(45, 25)],
     "Wed": [swim_css(70, "peak")], "Thu": [bike_z2(80, "2×20'"), run_easy(40, strides=True)],
@@ -517,7 +524,7 @@ week(35, "Taper", "race", "Race week — travel to Cairns, sleep, carb-load Fri�
     "Sat": [bike_openers(25), swim_easy(15), rest("Bike check-in. Feet up.")],
     "Sun": [race("RACE — IRONMAN Cairns 🏁", 735,
                  f"Swim 3.8km @ {pace(CSS+10)}–{pace(CSS+14)}/100m (~{round((CSS+12)*38/60)}'). Bike 180km @ 70–75% FTP NP "
-                 f"({IMW_SUB11} at {FTP}W; ~188–201W if FTP reaches 268W), HR ≤145, cap {w(.88)}W on rises. Set the final number from the wk-22 FTP test and T100. "
+                 f"({IMW_SUB11} at {FTP}W; ~188–201W if FTP reaches 268W), HR ≤145, cap {w(.88)}W on rises. Set the final number from the wk-22 FTP test and the wk-23 rehearsal. "
                  "Run 42.2km: HR 140–149 first 30km (≈5:50–6:15/km), walk aid stations from km 1, then empty the tank. See Race Day tab.",
                  "Swim Z2 · Bike 70–75% FTP · Run HR ≤149", "Bike 90–100 g carbs/h, Run 60–90 g/h, 700–1000mg sodium/h", 226, 0)]})
 
