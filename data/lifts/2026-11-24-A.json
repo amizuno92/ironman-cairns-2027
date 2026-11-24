@@ -1,0 +1,190 @@
+{
+  "date": "2026-11-24",
+  "label": "Strength A",
+  "week": 7,
+  "source": "Lift Log artifact",
+  "exercises": [
+    {
+      "name": "Back Squat",
+      "sets": [
+        {
+          "load": 80,
+          "reps": 6
+        },
+        {
+          "load": 80,
+          "reps": 6
+        },
+        {
+          "load": 80,
+          "reps": 6
+        },
+        {
+          "load": 80,
+          "reps": 6
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Bulgarian Split Squat",
+      "sets": [
+        {
+          "load": 20,
+          "reps": 8
+        },
+        {
+          "load": 20,
+          "reps": 8
+        },
+        {
+          "load": 20,
+          "reps": 8
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Romanian Deadlift",
+      "sets": [
+        {
+          "load": 85,
+          "reps": 6
+        },
+        {
+          "load": 85,
+          "reps": 6
+        },
+        {
+          "load": 85,
+          "reps": 6
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Pull-up",
+      "sets": [
+        {
+          "load": 17.5,
+          "reps": 7
+        },
+        {
+          "load": 17.5,
+          "reps": 7
+        },
+        {
+          "load": 17.5,
+          "reps": 7
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Leg press calf raise",
+      "sets": [
+        {
+          "load": 40,
+          "reps": 12
+        },
+        {
+          "load": 50,
+          "reps": 12
+        },
+        {
+          "load": 60,
+          "reps": 12
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Bicep Curl",
+      "sets": [
+        {
+          "load": 15,
+          "reps": 12
+        },
+        {
+          "load": 15,
+          "reps": 12
+        },
+        {
+          "load": 15,
+          "reps": 12
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Side Plank",
+      "sets": [
+        {
+          "secs": 45
+        },
+        {
+          "secs": 45
+        },
+        {
+          "secs": 45
+        }
+      ],
+      "unit": "s"
+    },
+    {
+      "name": "Seated Soleus Raise",
+      "sets": [
+        {
+          "load": 60,
+          "reps": 12
+        },
+        {
+          "load": 60,
+          "reps": 12
+        },
+        {
+          "load": 60,
+          "reps": 12
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Tibialis Raise",
+      "sets": [
+        {
+          "load": 0,
+          "reps": 15
+        },
+        {
+          "load": 0,
+          "reps": 15
+        },
+        {
+          "load": 0,
+          "reps": 15
+        }
+      ],
+      "unit": "bw"
+    },
+    {
+      "name": "Pogo Hops",
+      "sets": [
+        {
+          "load": 0,
+          "reps": 20
+        },
+        {
+          "load": 0,
+          "reps": 20
+        },
+        {
+          "load": 0,
+          "reps": 20
+        }
+      ],
+      "unit": "bw"
+    }
+  ],
+  "notes": "Squat 80, RDL 85 (+5 kg; Andrew prefers 5 kg jumps on big lifts until plateau). Pull-ups +17.5 x7. Calf: plates 40/50/60 total. BSS, side plank, tibialis, pogo at target (not reported)."
+}
