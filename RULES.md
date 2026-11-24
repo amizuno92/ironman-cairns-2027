@@ -22,4 +22,4 @@ Numbers live in `rules.json`; `scripts/check_plan.py` enforces the hard ones on 
 - **info**: short session, reps under/over band, decoupling >5% on rides ≥75′, no HR data, swim much faster than aerobic band, unplanned session, day over time limit.
 
 ## Sub-11 checkpoints
-FTP 252 W (wk 6) → 260 W (wk 14) → 268 W (wk 22). T100 test: 80 km at ~200 W NP, HR ≤150, then a strong 18 km.
+FTP 252 W (wk 6) → 260 W (wk 17, moved from wk 14 for the trip) → 268 W (wk 22). Rehearsal Sat 20 Mar (wk 23): 3×45′ at ≥72% FTP with HR ≤145 and decoupling <5%, then 45′ at IM run effort.

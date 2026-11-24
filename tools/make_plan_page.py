@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 WHEN = {"AM": 0, "Midday": 1, "Midday / any": 1, "Straight after ride": 2, "PM": 3, "PM (after run)": 4}
 SPORT = {"Swim": "swim", "Bike": "bike", "Run": "run", "Strength": "str", "Race": "race", "Brick": "bike"}
-EVENTS = {"2027-03-21": "Gold Coast T100", "2027-04-25": "London Marathon (Z2)", "2027-06-13": "IRONMAN Cairns"}
+EVENTS = {"2027-03-20": "Sub-11 rehearsal", "2027-04-25": "London Marathon (Z2)", "2027-06-13": "IRONMAN Cairns"}
 
 e = html.escape
 
@@ -195,7 +195,7 @@ tr.race .chip,tr.ev .chip{{background:var(--race-bg);color:var(--race)}}
     <h2>Season load</h2>
     {chart}
     <div class="strip">{strip}</div>
-    <div class="legend"><span><i style="background:var(--accent)"></i>Load</span><span><i style="background:var(--rec)"></i>Recovery</span><span><i style="background:var(--tap)"></i>Taper</span><span><i style="background:var(--race)"></i>Race</span><span>Key dates: T100 21 Mar · London 25 Apr · Cairns 13 Jun</span></div>
+    <div class="legend"><span><i style="background:var(--accent)"></i>Load</span><span><i style="background:var(--rec)"></i>Recovery</span><span><i style="background:var(--tap)"></i>Taper</span><span><i style="background:var(--race)"></i>Race</span><span>Key dates: Indonesia 8–26 Jan · Rehearsal 20 Mar · London 25 Apr · Cairns 13 Jun</span></div>
   </section>
   <div class="tools"><button id="now" type="button">Jump to this week</button><button id="all" type="button">Expand all</button><button id="none" type="button">Collapse all</button></div>
   {weeks}
