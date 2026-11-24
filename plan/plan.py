@@ -149,17 +149,19 @@ Q_BIKE = {
     4: ("6×3' @ {} /3' easy", (1.10, 1.16), 18),
     5: ("5×4' @ {} /3' easy", (1.07, 1.13), 20),
     7: ("6×4' @ {} /3' easy", (1.07, 1.13), 24),
-    8: ("5×5' @ {} /3' easy", (1.05, 1.10), 25),
-    9: ("6×5' @ {} /3' easy", (1.05, 1.10), 30),
-    10: ("5×6' @ {} /3' easy", (1.05, 1.09), 30),
+    # VO2 reps at 103–108% from wk 8: the ramp test (FTP 259) reads high for Andrew — on 24 Nov he held
+    # 284 W (110%) for 2 reps and failed rep 3 with HR only ~146. Week 9 holds 5×5' before 5×6' in week 10.
+    8: ("5×5' @ {} /3' easy", (1.03, 1.08), 25),
+    9: ("5×5' @ {} /3' easy", (1.03, 1.08), 25),
+    10: ("5×6' @ {} /3' easy", (1.03, 1.08), 30),
     11: ("4×8' @ {} /4' easy", (0.97, 1.03), 32),
     12: ("3×12' @ {} /5' easy", (0.95, 1.01), 36),
     13: ("4×10' @ {} /4' easy", (0.95, 1.01), 40),
     15: ("3×15' @ {} /5' easy", (0.93, 0.99), 45),
     16: ("2×20' @ {} /5' easy", (0.93, 0.99), 40),
     17: ("3×15' @ {} /4' easy", (0.94, 1.00), 45),
-    19: ("5×5' @ {} /3' easy", (1.06, 1.12), 25),
-    20: ("6×5' @ {} /3' easy", (1.06, 1.12), 30),
+    19: ("5×5' @ {} /3' easy", (1.03, 1.08), 25),
+    20: ("6×5' @ {} /3' easy", (1.03, 1.08), 30),
     21: ("2×20' @ {} /5' easy", (0.94, 1.00), 40),
     25: ("5×6' @ {} /3' easy", (1.03, 1.08), 30),
     26: ("3×12' @ {} /4' easy", (0.95, 1.01), 36),
@@ -174,11 +176,11 @@ Q_BIKE = {
 def bike_q(mins, wk):
     fmt, (lo, hi), work = Q_BIKE[wk]
     ms = fmt.format(W(lo, hi))
-    zone = "Z5 VO2max" if lo >= 1.05 else "Z4 threshold"
+    zone = "Z5 VO2max" if lo >= 1.03 else "Z4 threshold"
     det = (f"Zwift structured. WU 15' Z1→Z2 incl. 3×30s @ 100+rpm. MS {ms}. Remaining time Z2 ({w(.62)}–{w(.70)}W). "
            f"CD 5–10' easy. Cadence 85–100 on efforts.")
     return S("Bike", f"Intervals — {zone}", mins, det, f"{zone}: {W(lo, hi)} · easy between {BK_Z1}",
-             "8–9" if lo >= 1.05 else "7–8", work, round(mins / 60 * 30, 0))
+             "8–9" if lo >= 1.03 else "7–8", work, round(mins / 60 * 30, 0))
 
 
 def bike_z2(mins, im_blocks=None, heat=False, gym=False):
