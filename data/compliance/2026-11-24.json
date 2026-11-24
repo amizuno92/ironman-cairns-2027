@@ -77,17 +77,36 @@
       "planned_id": "w07-tue-bike-1",
       "planned_title": "Intervals — Z5 VO2max",
       "sport": "Bike"
-    }
-  ],
-  "missed_so_far_this_week": [
+    },
     {
-      "id": "w07-tue-strength-1",
-      "date": "2026-11-24",
-      "sport": "Strength",
-      "title": "Strength A — base",
-      "duration_min": 45
+      "activity_id": "i213900902",
+      "name": "Strength Training",
+      "actual_date": "2026-11-24",
+      "planned_date": "2026-11-24",
+      "moved": false,
+      "kind": "strength",
+      "planned_min": 45,
+      "actual_min": 64.5,
+      "duration_ratio": 1.43,
+      "avg_hr": 106,
+      "max_hr": 148,
+      "load": 21,
+      "rpe": null,
+      "feel": null,
+      "notes": null,
+      "flags": [
+        {
+          "level": "warn",
+          "code": "too_long",
+          "msg": "1h04 vs 45' planned (43% over)"
+        }
+      ],
+      "planned_id": "w07-tue-strength-1",
+      "planned_title": "Strength A — base",
+      "sport": "Strength"
     }
   ],
+  "missed_so_far_this_week": [],
   "still_to_do_this_week": [
     {
       "id": "w07-wed-swim-1",
@@ -140,13 +159,14 @@
     }
   ],
   "week_to_date": {
-    "actual_hours": 1.75,
+    "actual_hours": 2.83,
     "planned_hours_to_date": 3.33,
     "planned_hours_week": 9.83,
     "by_sport_actual_h": {
       "Run": 0.43,
       "Swim": 0.8,
-      "Bike": 0.52
+      "Bike": 0.52,
+      "Strength": 1.07
     },
     "by_sport_planned_h": {
       "Swim": 2.75,
@@ -170,8 +190,8 @@
       48.0
     ],
     "ctl": 49.9,
-    "atl": 58.0,
-    "tsb": -8.1
+    "atl": 60.8,
+    "tsb": -10.9
   },
   "flags": [
     {
@@ -183,6 +203,11 @@
       "level": "warn",
       "code": "reps_missed",
       "msg": "3/6 reps completed"
+    },
+    {
+      "level": "warn",
+      "code": "too_long",
+      "msg": "1h04 vs 45' planned (43% over)"
     }
   ]
 }
