@@ -1,8 +1,12 @@
 {
   "id": "2026-11-25",
-  "restingHR": 54,
+  "restingHR": 49,
+  "hrvSDNN": 32.0,
   "weight": 80.0,
   "ctl": 51.16291,
   "atl": 66.58042,
-  "rampRate": 2.467369
+  "rampRate": 2.467369,
+  "spO2": 97.25,
+  "steps": 11180,
+  "vo2max": 65.0
 }
