@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-26",
+  "label": "Strength B",
+  "week": 7,
+  "source": "Lift Log artifact",
+  "exercises": [
+    {
+      "name": "Pendulum Squat",
+      "sets": [
+        {
+          "load": 12.5,
+          "reps": 10
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Hip Thrust",
+      "sets": [
+        {
+          "load": 67.7,
+          "reps": 10
+        },
+        {
+          "load": 67.7,
+          "reps": 10
+        },
+        {
+          "load": 67.7,
+          "reps": 10
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Step-up",
+      "sets": [
+        {
+          "load": 30,
+          "reps": 8
+        },
+        {
+          "load": 30,
+          "reps": 8
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Single-leg Romanian Deadlift",
+      "sets": [
+        {
+          "load": 15,
+          "reps": 8
+        },
+        {
+          "load": 15,
+          "reps": 8
+        },
+        {
+          "load": 15,
+          "reps": 8
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Dumbbell Overhead Press",
+      "sets": [
+        {
+          "load": 27.5,
+          "reps": 10
+        },
+        {
+          "load": 27.5,
+          "reps": 10
+        },
+        {
+          "load": 27.5,
+          "reps": 10
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Lateral Raises",
+      "sets": [
+        {
+          "load": 12.5,
+          "reps": 14
+        },
+        {
+          "load": 12.5,
+          "reps": 14
+        },
+        {
+          "load": 12.5,
+          "reps": 14
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Tricep Pushdown",
+      "sets": [
+        {
+          "load": 24.9,
+          "reps": 12
+        },
+        {
+          "load": 24.9,
+          "reps": 12
+        },
+        {
+          "load": 24.9,
+          "reps": 12
+        }
+      ],
+      "unit": "kg"
+    },
+    {
+      "name": "Pallof Press",
+      "sets": [
+        {
+          "load": 13.6,
+          "reps": 12
+        },
+        {
+          "load": 13.6,
+          "reps": 12
+        },
+        {
+          "load": 13.6,
+          "reps": 12
+        }
+      ],
+      "unit": "kg"
+    }
+  ],
+  "notes": "Pendulum top set only (plates added). Step-ups 15 kg each hand (30 total). SL RDL 15 kg. Rest at target."
+}
