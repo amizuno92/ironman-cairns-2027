@@ -88,11 +88,55 @@
     "carbs_used": 109,
     "calories": 591,
     "icu_ctl": 50.947323,
-    "icu_atl": 63.308224,
+    "icu_atl": 67.035645,
     "icu_weight": 80.0,
     "icu_lap_count": 1,
     "polarization_index": 1.09,
     "lthr": 161,
     "athlete_max_hr": 175
+  },
+  {
+    "id": "i214711289",
+    "name": "Strength Training",
+    "type": "WeightTraining",
+    "start_date_local": "2026-11-26T05:40:27",
+    "start_date": "2026-11-25T19:40:27Z",
+    "moving_time": 4048,
+    "elapsed_time": 4048,
+    "icu_intensity": 49.907253,
+    "icu_training_load": 28,
+    "average_heartrate": 111,
+    "max_heartrate": 146,
+    "icu_hr_zone_times": [
+      3871,
+      133,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "icu_hr_zones": [
+      140,
+      149,
+      157,
+      166,
+      171,
+      176,
+      184
+    ],
+    "interval_summary": [
+      "1x 1h7m 111bpm"
+    ],
+    "device_name": "Watch6,18",
+    "source": "OAUTH_CLIENT",
+    "calories": 462,
+    "icu_ctl": 50.947323,
+    "icu_atl": 67.035645,
+    "icu_weight": 80.0,
+    "icu_lap_count": 1,
+    "polarization_index": 0.0,
+    "lthr": 167,
+    "athlete_max_hr": 184
   }
 ]
