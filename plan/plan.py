@@ -774,6 +774,59 @@ def spread_runs():
 
 spread_runs()
 
+
+# ---------------- weekly template (Andrew, 28 Nov 2026) ----------------
+# Mon rest · Tue interval ride + gym · Wed run + swim · Thu endurance ride + gym · Fri run + swim ·
+# Sat long ride (+ brick) · Sun long run + 3rd swim. Applied to normal training weeks from week 8.
+# Trip (13–16), London (27–30), taper and race weeks keep their own layout.
+def weekly_template():
+    for w in WEEKS:
+        if w < 8 or w in range(13, 17) or w in range(27, 31) or WEEKS[w]["kind"] in ("taper", "race"):
+            continue
+        wk = [x for x in SESSIONS if x["wk"] == w and x["sport"] != "Rest"]
+        runs = [x for x in wk if x["sport"] == "Run" and x["title"] not in ("Brick run", "Rehearsal run off the bike")
+                and not x["title"].startswith("Long run")]
+        has_long = any(x["sport"] == "Run" and x["title"].startswith("Long run") for x in wk)
+        runs.sort(key=lambda x: (not x["title"].startswith(("Run —", "Cruise", "Intervals", "Tempo")), x["title"].startswith("Easy run") and "strides" not in x["title"]))
+        for x, d in zip(runs, ["Wed", "Fri", "Tue", "Thu"] if has_long else ["Wed", "Fri", "Sun", "Tue"]):
+            _move(x, d, w)
+        for x in wk:
+            if x["sport"] == "Run" and x["title"].startswith("Long run"):
+                _move(x, "Sun", w)
+        swims = [x for x in wk if x["sport"] == "Swim"]
+        css = [x for x in swims if x["title"].startswith(("CSS", "TEST"))]
+        long = [x for x in swims if x not in css and x["title"].startswith(("Long aerobic", "IM-distance", "Long"))]
+        other = [x for x in swims if x not in css and x not in long]
+        order = css + long + other
+        for x, d in zip(order, ["Wed", "Fri", "Sun", "Thu"]):
+            _move(x, d, w)
+        for x in wk:
+            if x["sport"] == "Bike" and (x["title"].startswith(("Intervals", "TEST")) or x["title"] == "Race-pace touch"):
+                _move(x, "Tue", w)
+            elif x["sport"] == "Bike" and x["title"] in ("Long ride", "Sub-11 rehearsal ride"):
+                _move(x, "Sat", w)
+            elif x["sport"] == "Bike" and x["title"] == "Endurance ride":
+                tue_bike = any(y["sport"] == "Bike" and y["day"] == "Tue" and y is not x for y in wk)
+                thu_bike = any(y["sport"] == "Bike" and y["day"] == "Thu" and y is not x and y["title"] == "Endurance ride" for y in wk)
+                _move(x, "Tue" if (thu_bike and not tue_bike) else "Thu", w)
+            elif x["sport"] == "Bike" and x["day"] == "Mon":
+                _move(x, "Sun", w)
+            elif x["sport"] == "Strength":
+                _move(x, "Tue" if x["title"].startswith("Strength A") else "Thu", w)
+            elif x["title"] in ("Brick run", "Rehearsal run off the bike"):
+                _move(x, "Sat", w)
+
+
+weekly_template()
+for _w in WEEKS:
+    SESSIONS[:] = [x for x in SESSIONS if not (x["wk"] == _w and x["sport"] == "Rest" and any(
+        y["wk"] == _w and y["day"] == x["day"] and y["sport"] != "Rest" for y in SESSIONS))]
+    for _d in DAYS:
+        if not any(x["wk"] == _w and x["day"] == _d for x in SESSIONS):
+            _r = rest("Rest day."); _r.update(wk=_w, day=_d, phase=WEEKS[_w]["phase"],
+                                             date=WEEKS[_w]["start"] + dt.timedelta(days=DAYS.index(_d)))
+            SESSIONS.append(_r)
+
 # ---------------- Indonesia surf trip, Fri 8 – Tue 26 Jan 2027 (athlete, 23 Nov 2026) ----------------
 # Surfing 2–4 h a day, gym with strength, treadmill and stationary bike; no swimming apart from surfing;
 # gym-bike watts unknown, so bike sessions run on HR/RPE. Training allowed on the morning of 8 Jan.
